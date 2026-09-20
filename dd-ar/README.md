@@ -22,5 +22,6 @@
 | [tools/make-ar-translations.py](tools/make-ar-translations.py) | يحوّل أي ملف ترجمة عربي لنسخة "جاهزة للعرض" بمحركات Unity |
 | [tools/unity-loc-bundle.py](tools/unity-loc-bundle.py) | يقرأ/يعيد بناء ملفات ترجمة Unity Localization (`.bundle`) |
 | [windows/collect-localization-files.bat](windows/collect-localization-files.bat) | سكريبت ويندوز: يجمّع ملفات التعريب من اللعبة ويزيّبهم على سطح المكتب |
+| [windows/extract-strings.bat](windows/extract-strings.bat) + [dd-strings.ps1](windows/dd-strings.ps1) | 🆕 يستخرج نصوص اللعبة ويحوّلها لنص يُلزق (لو الرفع مش شغال) |
 
 **البداية السريعة:** افتح `START-HERE-AR.md` واتّبع بالأرقام، أو ابعتلي ملفات اللعبة وأنا أرجّعلك الترجمة جاهزة.
