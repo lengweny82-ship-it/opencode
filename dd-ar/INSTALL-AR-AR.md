@@ -46,6 +46,16 @@ powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw
 
 لو أي خطوة فيها شك → **مش بيكتب أي حاجة** وبيقف ويقول السبب.
 
+## لو اللعبة قالت "No translation found"
+دي معناها إن اللعبة بترفض تحمّل الملف لأن **بصمة** الملف في ملف الفهرسة (`catalog.bin`) مش مطابقة.
+الحل: سطر بسيط بيصحّح البصمة (البصمة = CRC32 للمحتوى المفكوك جوه الملف — اتأكدنا منها):
+
+```
+powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog3.ps1 -OutFile $env:TEMP\dd15.ps1; & $env:TEMP\dd15.ps1"
+```
+
+وبيرجّع الأصل بسطر `dd-fix-catalog3.ps1 -Restore`.
+
 ## لو حصلت مشكلة
 - ابعتلي اسكرين شوت للشاشة
 - أو ابعتلي لينك التقرير (REPORT LINK) اللي ظهر في الآخر
