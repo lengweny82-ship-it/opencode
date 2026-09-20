@@ -119,7 +119,7 @@ function Has-Ascii([byte[]]$b, [int]$start, [int]$len, [string]$needle) {
   $txt = [System.Text.Encoding]::ASCII.GetString($b, $start, $end - $start)
   return ($txt.IndexOf($needle) -ge 0)
 }
-function Hex32([int64]$v) { return ("0x" + ([int]($v -band 255)).ToString("x2") + ([int](($v -shr 8) -band 255)).ToString("x2") + ([int](($v -shr 16) -band 255)).ToString("x2") + ([int](($v -shr 24) -band 255)).ToString("x2")) }
+function Hex32([int64]$v) { $u = [int64]($v -band 4294967295); return ("0x" + $u.ToString("x8")) }
 
 Log "Double Dealers - catalog fix (step 2)"
 Log ("date : " + (Get-Date).ToString("yyyy-MM-dd HH:mm"))
