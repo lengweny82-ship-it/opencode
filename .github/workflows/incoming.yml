@@ -18,15 +18,15 @@ jobs:
       - name: fetch the uploaded file
         run: |
           mkdir -p dd-ar/incoming
-          : > dd-ar/incoming/report.txt
-          for u in "https://litter.catbox.moe/vq9v8e.txt" "https://n.uguu.se/ZBwBOGgu.txt" "https://paste.rs/wlQel"; do
-            code=$(curl -sS -L -m 120 -o dd-ar/incoming/FONT-OBJECTS.txt -w "%{http_code}" "$u" || echo ERR)
-            sz=$(stat -c%s dd-ar/incoming/FONT-OBJECTS.txt 2>/dev/null || echo 0)
+          rm -f dd-ar/incoming/report.txt
+          for u in "https://litter.catbox.moe/80limu.txt" "https://paste.rs/pGCgA" "https://n.uguu.se/LaYLNrmZ.txt"; do
+            code=$(curl -sS -L -m 120 -o dd-ar/incoming/ATLAS-DUMP.txt -w "%{http_code}" "$u" || echo ERR)
+            sz=$(stat -c%s dd-ar/incoming/ATLAS-DUMP.txt 2>/dev/null || echo 0)
             echo "$u code=$code size=$sz" >> dd-ar/incoming/report.txt
             if [ "$sz" -gt 40000 ]; then echo "USED $u" >> dd-ar/incoming/report.txt; break; fi
           done
-          echo "sha256 $(sha256sum dd-ar/incoming/FONT-OBJECTS.txt | cut -d' ' -f1)" >> dd-ar/incoming/report.txt
-          head -c 120 dd-ar/incoming/FONT-OBJECTS.txt >> dd-ar/incoming/report.txt || true
+          echo "sha256 $(sha256sum dd-ar/incoming/ATLAS-DUMP.txt | cut -d' ' -f1)" >> dd-ar/incoming/report.txt
+          head -c 200 dd-ar/incoming/ATLAS-DUMP.txt >> dd-ar/incoming/report.txt || true
           cat dd-ar/incoming/report.txt
       - uses: actions/upload-artifact@v4
         with:
@@ -38,5 +38,5 @@ jobs:
           git config user.name "incoming-bot"
           git config user.email "incoming-bot@users.noreply.github.com"
           git add -f dd-ar/incoming
-          git commit -m "dd-ar: incoming font data [skip ci]"
+          git commit -m "dd-ar: incoming atlas dump [skip ci]"
           git push origin HEAD:arena/01a0bf68-opencode
