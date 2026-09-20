@@ -434,6 +434,14 @@ function Sha16([byte[]]$b) {
   return $sb.ToString()
 }
 
+function Sha6([byte[]]$b) {
+  $sha = [System.Security.Cryptography.SHA256]::Create()
+  $h = $sha.ComputeHash($b)
+  $sb = New-Object System.Text.StringBuilder
+  for ($i = 0; $i -lt 3; $i++) { [void]$sb.Append($h[$i].ToString("x2")) }
+  return $sb.ToString()
+}
+
 function Pack-Bytes([byte[]]$data) {
   try {
     $ms = New-Object System.IO.MemoryStream
@@ -503,24 +511,18 @@ function Write-Pack($sb, [string]$name, [byte[]]$payload) {
   [void]$sb.AppendLine("MODE " + $script:packMode)
   [void]$sb.AppendLine("RAW " + $payload.Length)
   [void]$sb.AppendLine("SHA " + (Sha16 $payload))
-  $parts = 8
-  if ($packed.Length -lt 8000) { $parts = 2 }
-  $size = [int][Math]::Ceiling($packed.Length / $parts)
-  $n = 0
-  for ($i = 0; $i -lt $packed.Length; $i += $size) {
-    $len = [Math]::Min($size, $packed.Length - $i)
-    $slice = New-Object byte[] $len
-    [Array]::Copy($packed, $i, $slice, 0, $len)
-    $b64 = [Convert]::ToBase64String($slice)
-    [void]$sb.AppendLine("PART " + $n + " " + $b64.Length + " " + (Sha16 $slice))
-    for ($k = 0; $k -lt $b64.Length; $k += 76) {
-      $take = [Math]::Min(76, $b64.Length - $k)
-      [void]$sb.AppendLine($b64.Substring($k, $take))
-    }
-    $n++
+  $b64 = [Convert]::ToBase64String($packed)
+  $lineChars = 304
+  $idx = 0
+  for ($k = 0; $k -lt $b64.Length; $k += $lineChars) {
+    $take = [Math]::Min($lineChars, $b64.Length - $k)
+    $piece = $b64.Substring($k, $take)
+    $bytes = [Convert]::FromBase64String($piece)
+    [void]$sb.AppendLine("L " + $idx.ToString("0000") + " " + (Sha6 $bytes) + " " + $piece)
+    $idx++
   }
   [void]$sb.AppendLine("END " + $name)
-  Log ("  " + $name + " : packed " + $packed.Length + " bytes in " + $n + " parts  (raw " + $payload.Length + ")")
+  Log ("  " + $name + " : packed " + $packed.Length + " bytes in " + $idx + " lines  (raw " + $payload.Length + ")")
 }
 
 function Find-Catalog([string]$aaDir) {
@@ -536,7 +538,7 @@ function Find-Catalog([string]$aaDir) {
 
 # =============================================================== main
 Log "=========================================================="
-Log "  Double Dealers - send the unpacked language files"
+Log "  Double Dealers - send the unpacked language files (v2)"
 Log "=========================================================="
 Log ""
 
@@ -588,7 +590,7 @@ Log ("  german payload  : " + $pDe.Data.Length + " bytes")
 Log ("  english payload : " + $pEn.Data.Length + " bytes")
 
 $sb = New-Object System.Text.StringBuilder
-[void]$sb.AppendLine("DDX1")
+[void]$sb.AppendLine("DDX2")
 [void]$sb.AppendLine("GERMAN-FILE " + $fDe.Name)
 [void]$sb.AppendLine("GERMAN-SIZE " + $fDe.Length)
 Write-Pack $sb "GERMAN" $pDe.Data
