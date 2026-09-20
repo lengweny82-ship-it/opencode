@@ -19,11 +19,11 @@ jobs:
         run: |
           mkdir -p dd-ar/incoming
           rm -f dd-ar/incoming/report.txt
-          for u in "https://litter.catbox.moe/80limu.txt" "https://paste.rs/pGCgA" "https://n.uguu.se/LaYLNrmZ.txt"; do
-            code=$(curl -sS -L -m 120 -o dd-ar/incoming/ATLAS-DUMP.txt -w "%{http_code}" "$u" || echo ERR)
+          for u in "https://litter.catbox.moe/ozu6nh.txt" "https://d.uguu.se/yAsssPwf.txt"; do
+            code=$(curl -sS -L -m 180 -o dd-ar/incoming/ATLAS-DUMP.txt -w "%{http_code}" "$u" || echo ERR)
             sz=$(stat -c%s dd-ar/incoming/ATLAS-DUMP.txt 2>/dev/null || echo 0)
             echo "$u code=$code size=$sz" >> dd-ar/incoming/report.txt
-            if [ "$sz" -gt 40000 ]; then echo "USED $u" >> dd-ar/incoming/report.txt; break; fi
+            if [ "$sz" -gt 300000 ]; then echo "USED $u" >> dd-ar/incoming/report.txt; break; fi
           done
           echo "sha256 $(sha256sum dd-ar/incoming/ATLAS-DUMP.txt | cut -d' ' -f1)" >> dd-ar/incoming/report.txt
           head -c 200 dd-ar/incoming/ATLAS-DUMP.txt >> dd-ar/incoming/report.txt || true
@@ -38,5 +38,5 @@ jobs:
           git config user.name "incoming-bot"
           git config user.email "incoming-bot@users.noreply.github.com"
           git add -f dd-ar/incoming
-          git commit -m "dd-ar: incoming atlas dump [skip ci]"
+          git commit -m "dd-ar: incoming atlas probes [skip ci]"
           git push origin HEAD:arena/01a0bf68-opencode
