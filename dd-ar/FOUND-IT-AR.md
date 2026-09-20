@@ -154,3 +154,36 @@ https://github.com/lengweny82-ship-it/opencode/blob/arena/01a0bf68-opencode/dd-a
 ## ملاحظة عن الترجمة الرسمية
 
 الملفات دي بتورّيك حاجة مهمة: إضافة لغة جديدة عندهم = **إضافة ملف واحد**. يعني لو كلّمتهم على الديسكورد في طلب عربي، الموضوع عندهم **مش مستحيل** — المهم إن حد يبعتلهم الترجمة جاهزة. وهو ده اللي إحنا بنعمله دلوقتي. لو عايز بعد كده تبعتلهم ملف عربي جاهز، قوللي **"اكتب الرسالة"**.
+
+---
+
+# ✅ تم! نتيجة نهاية المطاف (تحديث)
+
+## اللي حصل
+
+| المرحلة | النتيجة |
+|---------|---------|
+| 1. اختراق تنسيق UnityFS | الملف `localization-string-tables-english(en)_assets_all.bundle` اتفكّ (LZ4HC + جدول **Big-Endian** + هيدر Unity 6 نسخة 22) |
+| 2. استخراج النصوص | **541 نص إنجليزي** من جوه الـ SerializedFile |
+| 3. الترجمة | **533 نص عربي** (الـ 8 الباقيين نصوص تقنية داخلية زي أسماء أنواع Unity مش بتظهر للاعب) |
+| 4. التركيب | ملف `_AutoTranslations.ar.txt` + سكريبت تركيب أوتوماتيكي |
+
+## الملفات النهائية
+
+- **ملف التعريب:** `dd-ar/translation/_AutoTranslations.ar.txt` (533 سطر `إنجليزي=عربي`)
+- **نسخة الحروف الموصولة:** `dd-ar/translation/_AutoTranslations.display-ready.ar.txt`
+- **الأصل القابل للتعديل:** `dd-ar/translation/pairs.txt` → إعادة البناء بـ `python3 translation/build.py`
+- **سكريبت التركيب:** `dd-ar/windows/install-translation.ps1`
+- **دليل المستخدم:** `dd-ar/TRANSLATION-READY-AR.md`
+
+## أمر التركيب (Win + R)
+
+```
+powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/install-translation.ps1 -OutFile $env:TEMP\dd-ar.ps1; & $env:TEMP\dd-ar.ps1"
+```
+
+مع `-DisplayReady` في الآخر لو العربي طالع مقطّع/مقلوب.
+
+## للرجوع (Uninstall)
+
+امسح فولدر `AutoTranslator\Translation\ar` — اللعبة ترجع إنجليزي زي ما كانت (مفيش أي ملف أصلي اتغيّر).
