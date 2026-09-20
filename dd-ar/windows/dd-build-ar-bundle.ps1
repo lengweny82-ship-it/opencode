@@ -35,6 +35,9 @@ $ARABIC_URL = "https://raw.githubusercontent.com/lengweny82-ship-it/opencode/are
 function Read-BE32([byte[]]$b, [int]$p) {
   return ([long]$b[$p] -shl 24) + ([long]$b[$p+1] -shl 16) + ([long]$b[$p+2] -shl 8) + [long]$b[$p+3]
 }
+function Read-LE32([byte[]]$b, [int]$p) {
+  return ([long]$b[$p]) + ([long]$b[$p+1] -shl 8) + ([long]$b[$p+2] -shl 16) + ([long]$b[$p+3] -shl 24)
+}
 function Read-NullString([byte[]]$b, [ref]$p) {
   $sb = New-Object System.Text.StringBuilder
   while ($p.Value -lt $b.Length -and $b[$p.Value] -ne 0) { [void]$sb.Append([char]$b[$p.Value]); $p.Value++ }
