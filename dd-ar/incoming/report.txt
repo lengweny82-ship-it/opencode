@@ -1,0 +1,10 @@
+https://litter.catbox.moe/vq9v8e.txt code=200 size=51073
+USED https://litter.catbox.moe/vq9v8e.txt
+sha256 09c9661c8007b15b95b72d59155ac5a53f5c1f352db98643099aec7dba7d184e
+DDX5
+FILE sharedassets0.assets
+SIZE 38165872
+DATAOFF 2352
+OBJTABLE 328 76
+OBJ 0 1 0 2352 2281
+OBJ 1 2 1 4640 1764
