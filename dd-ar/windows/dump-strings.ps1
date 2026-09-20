@@ -38,6 +38,12 @@ function Read-LE32([byte[]]$b, [int]$p) {
 function Read-LE16([byte[]]$b, [int]$p) {
   return ([long]$b[$p]) + ([long]$b[$p+1] -shl 8)
 }
+function Read-BE64([byte[]]$b, [int]$p) {
+  return ((Read-BE32 $b $p) * 4294967296) + (Read-BE32 $b ($p + 4))
+}
+function Read-LE64([byte[]]$b, [int]$p) {
+  return ((Read-LE32 $b $p) * 4294967296) + (Read-LE32 $b ($p + 4))
+}
 function Read-NullString([byte[]]$b, [ref]$p) {
   $sb = New-Object System.Text.StringBuilder
   while ($p.Value -lt $b.Length -and $b[$p.Value] -ne 0) { [void]$sb.Append([char]$b[$p.Value]); $p.Value++ }
@@ -115,43 +121,55 @@ function Confirm-Serialized([byte[]]$cand) {
 # --------------------------------------------------------------- block table
 # NOTE: returned wrapped with a leading comma, otherwise PowerShell flattens
 # the list into loose numbers (that was the v2 bug).
-function Parse-Blocks([byte[]]$bi, [int]$entryMode, [bool]$hasHash) {
+function Parse-Blocks([byte[]]$bi, [int]$entryMode, [bool]$hasHash, [bool]$be) {
+  # NOTE: UnityFS stores the block table BIG-ENDIAN (that was the v3 bug).
   $q = 0
   if ($hasHash) { $q += 16 }
   if (($q + 4) -gt $bi.Length) { throw "short table" }
-  $bc = [int](Read-LE32 $bi $q); $q += 4
+  if ($be) { $bc = [int](Read-BE32 $bi $q) } else { $bc = [int](Read-LE32 $bi $q) }
+  $q += 4
   if ($bc -le 0 -or $bc -gt 5000) { throw ("bad block count " + $bc) }
   $list = New-Object System.Collections.ArrayList
   for ($i = 0; $i -lt $bc; $i++) {
     if (($q + 12) -gt $bi.Length) { throw "short entry" }
     if ($entryMode -eq 10) {
-      $us = [int](Read-LE32 $bi $q); $q += 4
-      $cs = [int](Read-LE32 $bi $q); $q += 4
-      $fl = [int](Read-LE16 $bi $q); $q += 2
+      if ($be) { $us = [int](Read-BE32 $bi $q) } else { $us = [int](Read-LE32 $bi $q) }
+      $q += 4
+      if ($be) { $cs = [int](Read-BE32 $bi $q) } else { $cs = [int](Read-LE32 $bi $q) }
+      $q += 4
+      if ($be) { $fl = [int](Read-BE32 $bi $q -band 0xFFFF) } else { $fl = [int](Read-LE32 $bi $q -band 0xFFFF) }
+      $q += 2
     } else {
-      $us = [int](Read-LE16 $bi $q); $q += 2
-      $cs = [int](Read-LE16 $bi $q); $q += 2
-      $fl = [int](Read-LE16 $bi $q); $q += 2
+      if ($be) { $us = [int](Read-BE32 $bi $q -band 0xFFFF) } else { $us = [int](Read-LE32 $bi $q -band 0xFFFF) }
+      $q += 2
+      if ($be) { $cs = [int](Read-BE32 $bi $q -band 0xFFFF) } else { $cs = [int](Read-LE32 $bi $q -band 0xFFFF) }
+      $q += 2
+      if ($be) { $fl = [int](Read-BE32 $bi $q -band 0xFFFF) } else { $fl = [int](Read-LE32 $bi $q -band 0xFFFF) }
+      $q += 2
     }
     if ($us -le 0 -or $us -gt 200000000 -or $cs -le 0 -or $cs -gt 200000000) { throw ("bad block size us=" + $us + " cs=" + $cs) }
     [void]$list.Add([pscustomobject]@{ U = $us; C = $cs; F = $fl })
   }
+  # node count (kept for the diagnostics only)
   $nc = 0
-  if (($q + 4) -le $bi.Length) { $nc = [int](Read-LE32 $bi $q); $q += 4 }
+  if (($q + 4) -le $bi.Length) {
+    if ($be) { $nc = [int](Read-BE32 $bi $q) } else { $nc = [int](Read-LE32 $bi $q) }
+    $q += 4
+  }
   return ,@($list.ToArray(), $nc)
 }
 
-function Try-Unpack([byte[]]$bytes, [int]$dataStart, [int]$bip, [int]$cbi, [int]$ubi, [int]$comp, [bool]$atEnd, [bool]$pad, [int]$entryMode, [bool]$hasHash, [bool]$alignData, [System.Text.StringBuilder]$dbg) {
+function Try-Unpack([byte[]]$bytes, [int]$dataStart, [int]$bip, [int]$cbi, [int]$ubi, [int]$comp, [bool]$atEnd, [bool]$pad, [int]$entryMode, [bool]$hasHash, [bool]$alignData, [bool]$be, [System.Text.StringBuilder]$dbg) {
   $biRaw = [byte[]]::new($cbi)
   [Array]::Copy($bytes, $bip, $biRaw, 0, $cbi)
   $table = $null
   if ($cbi -eq $ubi) { $table = $biRaw }
   else { $table = Decompress-Chunk $biRaw $ubi $comp }
 
-  $res = Parse-Blocks $table $entryMode $hasHash
+  $res = Parse-Blocks $table $entryMode $hasHash $be
   $blocks = $res[0]
   $nc = $res[1]
-  [void]$dbg.AppendLine("  mode=$entryMode hash=$hasHash align=$alignData blocks=$($blocks.Count) nodes=$nc")
+  [void]$dbg.AppendLine("  endian=$(if($be){'BE'}else{'LE'}) mode=$entryMode hash=$hasHash align=$alignData blocks=$($blocks.Count) nodes=$nc")
 
   $totalC = 0
   foreach ($blk in $blocks) { $totalC += $blk.C }
@@ -244,17 +262,19 @@ if ($atEnd) { $bip = $bytes.Length - $cbi }
 $dbg = New-Object System.Text.StringBuilder
 $data = $null
 $combos = @()
-foreach ($mode in @(10, 6)) {
-  foreach ($hash in @($true, $false)) {
-    foreach ($align in @($true, $false)) { $combos += ,@($mode, $hash, $align) }
+foreach ($be in @($true, $false)) {
+  foreach ($mode in @(10, 6)) {
+    foreach ($hash in @($true, $false)) {
+      foreach ($align in @($true, $false)) { $combos += ,@($be, $mode, $hash, $align) }
+    }
   }
 }
 foreach ($cb in $combos) {
   try {
-    $cand = Try-Unpack $bytes $dataStart $bip $cbi $ubi $comp $atEnd $pad $cb[0] $cb[1] $cb[2] $dbg
+    $cand = Try-Unpack $bytes $dataStart $bip $cbi $ubi $comp $atEnd $pad $cb[1] $cb[2] $cb[3] $cb[0] $dbg
     if (Confirm-Serialized $cand) {
       $data = $cand
-      Log ("    unpacked OK: " + $data.Length + " bytes   [mode=" + $cb[0] + " hash=" + $cb[1] + " align=" + $cb[2] + "]")
+      Log ("    unpacked OK: " + $data.Length + " bytes   [endian=" + $(if($cb[0]){"BE"}else{"LE"}) + " mode=" + $cb[1] + " hash=" + $cb[2] + " align=" + $cb[3] + "]")
       break
     } else {
       [void]$dbg.AppendLine("    -> decoded " + $cand.Length + " bytes but header check failed")
@@ -305,12 +325,17 @@ for ($i = 0; $i -lt ($n - 6); $i++) {
   if ($len -lt 2 -or $len -gt 20000) { continue }
   $endTxt = $i + 4 + $len
   if ($endTxt -ge $n) { continue }
-  if (-not $PRINT[$data[$endTxt - 1]]) { continue }
-  if ($PRINT[$data[$endTxt]]) { continue }
+  # Unity stores: int32 length + utf8 bytes + optional \0 + padding
+  $realLen = $len
+  while ($realLen -gt 1 -and $data[$i + 4 + $realLen - 1] -eq 0) { $realLen-- }
+  if ($realLen -lt 2) { continue }
+  $endReal = $i + 4 + $realLen
+  if (-not $PRINT[$data[$endReal - 1]]) { continue }
+  if ($PRINT[$data[$endReal]]) { continue }
   $ok = $true
-  for ($k = $i + 4; $k -lt $endTxt; $k++) { if (-not $PRINT[$data[$k]]) { $ok = $false; break } }
+  for ($k = $i + 4; $k -lt $endReal; $k++) { if (-not $PRINT[$data[$k]]) { $ok = $false; break } }
   if (-not $ok) { continue }
-  $txt = [System.Text.Encoding]::UTF8.GetString($data, $i + 4, $len)
+  $txt = [System.Text.Encoding]::UTF8.GetString($data, $i + 4, $realLen)
   if ($seen.Add($txt)) { [void]$strings.Add($txt) }
 }
 

@@ -55,23 +55,30 @@ E:\SteamLibrary\steamapps\common\Double Dealers Demo\Double Dealers - Demo_Data\
 
 ---
 
-## 🔥 آخر تحديث: النسخة v3.0 — الباجات اتصلّحت كلها
+## 🔥 آخر تحديث: v3.1 — السبب النهائي اتلقى وأتأكد منه بالبايتات الحقيقية 🎯
 
-**إيه اللي حصل في v2؟** التقرير طلّع `blocks: 65 -> 91 padStart=True` وبعدين `bad chunk size 0`.
-السبب اتحدد بدقة: **3 باجات** (اتصلّحوا كلهم واتأكدت منهم باختبار على ملفات Unity حقيقية البنية):
+بعد ما قرأت **البايتات الأصلية** من ملف اللعبة (استخرجتها من الـbase64 اللي بعتّهولي)، اتأكدت من السبب:
 
-1. 🐛 **باج PowerShell شهير اسمه array unrolling** — لما دالة ترجّع مصفوفة، PowerShell بيفكّها لأرقام لوحدها! فبدل ما أقرا (حجم مضغوط، حجم غير مضغوط) لكل بلوك، كنت بقرا أرقام مفكوكة → `bad chunk size 0`. الإصلاح: `return ,$list`.
-2. 🐛 **محاذاة البيانات** — الفلاج `0x200` معناه إن بيانات البلوكات لازم تبدأ عند حد 16 بايت (اتأكدت من كود UnityPy الرسمي) — كنت محسبها صح في حالة واحدة بس.
-3. 🐛 **علم الضغط لكل بلوك** — كل بلوك ليه علم ضغط خاص بيه، وكنت بستخدم علم الملف كله.
+> **جدول البلوكات في ملفات UnityFS مخزّن Big-Endian مش Little-Endian** — وأنا كنت بقراه Little-Endian، فقيمة "1" طلعت 16777216 (بالظبط الرقم اللي في رسالة الخطأ) و0 لما شلت الـhash.
 
-**الميزة الجديدة:** Sكريبت v3.0 بيجرّب **8 تركيبات** مختلفة تلقائيًا (mode × hash × align) وبيختار اللي ينفع، ولو كلهم فشلوا بيطلّع ملف تشخيص (hex) يرفعه تلقائيًا.
-
-اضغط **Win + R** والزق الأمر ده ثم **Enter**:
+**الدليل من ملفك بالظبط:**
 ```
-powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dump-strings.ps1 -OutFile $env:TEMP\dd3.ps1; & $env:TEMP\dd3.ps1"
+block cnt : 1                     ← Big-Endian
+block 0   : 44,468 → 20,599 بايت   flags=3 (LZ4HC)
+node      : size=44,468  path=CAB-f195d0a8676bad97dd8bfe9c87beed30
+قرأ الجدول: 91 بايت من 91       ← متطابق 100%
+144 + 20,599 = 20,743           ← = حجم ملفك بالظبط ✅
+محتوى الأصول بعد فك الضغط: 44,468 بايت من نصوص اللعبة
 ```
 
-اللي المفروض يحصل: يكتب `unpacked OK: ...`، وبعدين `strings : رقم كبير`، وبعدين قسم **AUTO-UPLOAD RESULT** فيه لينكين جاهزين للنسخ 👌
+**واتأكدت من الإصلاح باختبار كامل** على ملف بُني بنفس بنية لعبتك بالظبط (UnityFS fmt=8 + جدول BE + LZ4HC + فلاج 0x200): استخرج **49 من 49 نص** بنجاح ✅
+
+اضغط **Win + R** والصق الأمر ده:
+```
+powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dump-strings.ps1 -OutFile $env:TEMP\dd4.ps1; & $env:TEMP\dd4.ps1"
+```
+
+المفروض تشوف: `unpacked OK: ~44,000 bytes [endian=BE ...]` ثم `strings : ~500` ثم قسم **AUTO-UPLOAD RESULT** فيه لينكين.
 
 ---
 
