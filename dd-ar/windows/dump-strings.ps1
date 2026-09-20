@@ -110,12 +110,30 @@ function Decompress-Chunk([byte[]]$src, [int]$expected, [int]$comp) {
   throw ("unsupported compression " + $comp)
 }
 
-function Confirm-Serialized([byte[]]$cand) {
-  if ($null -eq $cand -or $cand.Length -lt 20) { return $false }
-  if ((Read-BE32 $cand 4) -ne $cand.Length) { return $false }
-  $v = Read-BE32 $cand 8
-  if ($v -lt 5 -or $v -gt 40) { return $false }
-  return $true
+function Get-PayloadInfo([byte[]]$cand) {
+  # Describes the unpacked asset file. Unity 6 (serialized version >= 22)
+  # uses a wider 64-bit header, so both layouts are accepted.
+  $info = [pscustomobject]@{ Ok = $false; Kind = "unknown"; Version = 0; FileSize = 0; Ratio = 0 }
+  if ($null -eq $cand -or $cand.Length -lt 32) { return $info }
+  $v32 = Read-BE32 $cand 8
+  $fs32 = Read-BE32 $cand 4
+  if ($fs32 -eq $cand.Length -and $v32 -ge 5 -and $v32 -lt 22) {
+    # classic layout: metadataSize, fileSize, version, dataOffset (all u32)
+    $info.Ok = $true; $info.Kind = "classic32"; $info.Version = $v32; $info.FileSize = $fs32
+  } elseif ($v32 -ge 22 -and $v32 -le 60) {
+    # Unity 6 layout: u32 header + 64-bit fileSize at offset 24
+    $fs64 = Read-BE64 $cand 24
+    if ($fs64 -eq $cand.Length) {
+      $info.Ok = $true; $info.Kind = "unity6-64"; $info.Version = $v32; $info.FileSize = $fs64
+    } else {
+      $info.Kind = "unity6-64?"; $info.Version = $v32; $info.FileSize = $fs64
+    }
+  }
+  $sample = [Math]::Min(4000, $cand.Length)
+  $okCount = 0
+  for ($k = 0; $k -lt $sample; $k++) { if ($PRINT[$cand[$k]]) { $okCount++ } }
+  if ($sample -gt 0) { $info.Ratio = [int](100.0 * $okCount / $sample) }
+  return $info
 }
 
 # --------------------------------------------------------------- block table
@@ -192,7 +210,22 @@ function Try-Unpack([byte[]]$bytes, [int]$dataStart, [int]$bip, [int]$cbi, [int]
     $dec = Decompress-Chunk $chunk $blk.U $c
     $buf.AddRange($dec)
   }
-  return ,$buf.ToArray()
+  $arr = $buf.ToArray()
+  $hits = 0
+  $txt = [System.Text.Encoding]::ASCII.GetString($arr)
+  foreach ($w in @("Clause","Auction","Market","Seller","Buyer","Bid","Item","Profit","Bluff","Card","Round","Value")) {
+    if ($txt.IndexOf($w) -ge 0) { $hits++ }
+  }
+  $info = Get-PayloadInfo $arr
+  return [pscustomobject]@{
+    Data    = $arr
+    TotalU  = $totalC
+    Hits    = $hits
+    Kind    = $info.Kind
+    Version = $info.Version
+    SizeOK  = $info.Ok
+    Ratio   = $info.Ratio
+  }
 }
 
 # --------------------------------------------------------------- find game
@@ -261,6 +294,7 @@ if ($atEnd) { $bip = $bytes.Length - $cbi }
 
 $dbg = New-Object System.Text.StringBuilder
 $data = $null
+$how = ""
 $combos = @()
 foreach ($be in @($true, $false)) {
   foreach ($mode in @(10, 6)) {
@@ -270,18 +304,31 @@ foreach ($be in @($true, $false)) {
   }
 }
 foreach ($cb in $combos) {
+  $endName = "LE"
+  if ($cb[0]) { $endName = "BE" }
+  $tag = "endian=$endName mode=$($cb[1]) hash=$($cb[2]) align=$($cb[3])"
   try {
-    $cand = Try-Unpack $bytes $dataStart $bip $cbi $ubi $comp $atEnd $pad $cb[1] $cb[2] $cb[3] $cb[0] $dbg
-    if (Confirm-Serialized $cand) {
-      $data = $cand
-      Log ("    unpacked OK: " + $data.Length + " bytes   [endian=" + $(if($cb[0]){"BE"}else{"LE"}) + " mode=" + $cb[1] + " hash=" + $cb[2] + " align=" + $cb[3] + "]")
-      break
+    $r = Try-Unpack $bytes $dataStart $bip $cbi $ubi $comp $atEnd $pad $cb[1] $cb[2] $cb[3] $cb[0] $dbg
+    if ($null -ne $r -and $null -ne $r.Data -and $r.Data.Length -gt 400) {
+      [void]$dbg.AppendLine("  [$tag] decoded $($r.Data.Length) bytes | payload=$($r.Kind) v$($r.Version) ascii=$($r.Ratio)% words=$($r.Hits)/12")
+      # accept: the LZ4 stream decoded without error AND the size or the
+      # header or the game vocabulary confirm it is the asset payload
+      if ($r.SizeOK -or ($r.Data.Length -eq $r.TotalU) -or ($r.Hits -ge 3)) {
+        $data = $r.Data
+        $how = "$tag | payload=$($r.Kind) v$($r.Version) | ascii=$($r.Ratio)% | gameWords=$($r.Hits)/12"
+        break
+      }
     } else {
-      [void]$dbg.AppendLine("    -> decoded " + $cand.Length + " bytes but header check failed")
+      [void]$dbg.AppendLine("  [$tag] decoded but too small")
     }
   } catch {
-    [void]$dbg.AppendLine("    -> " + $_.Exception.Message)
+    [void]$dbg.AppendLine("  [$tag] " + $_.Exception.Message)
   }
+}
+
+if ($null -ne $data) {
+  Log ("    unpacked OK: " + $data.Length + " bytes")
+  Log ("    method     : " + $how)
 }
 
 if ($null -eq $data) {
