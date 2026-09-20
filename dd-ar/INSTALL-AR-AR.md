@@ -1,4 +1,22 @@
-# تعريب Double Dealers — خطوة واحدة بس
+# تعريب Double Dealers — الخطوة الحالية
+
+> ## 🔴 الخطوة اللي فاضلة دلوقتي بالظبط
+> 1. **اقفل اللعبة**
+> 2. اضغط **Win + R** والصق السطر ده:
+>
+> ```
+> powershell -ep bypass -NoExit -c "$f=Join-Path $env:TEMP 'dd16.ps1'; iwr 'https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog4.ps1' -OutFile $f -UseBasicParsing; if ((Get-Item $f).Length -lt 2000) { Write-Host 'download problem - try again' -ForegroundColor Red } else { & $f }"
+> ```
+>
+> 3. النافذة **مش هتقفل لوحدها** (السطر ده بيمنعها). لو ظهر أي كلام أحمر → **خد سكرين شوت**.
+> 4. في الآخر هيطلع **لينكات** → ابعتها لي.
+> 5. بعدها: افتح اللعبة → Settings → Language → **Deutsch**.
+>
+> *(لو عايز ترجّع كل حاجة في أي وقت: شغّل نفس السطر وبعد كلمة FINISHED اكتب:  & $f -Restore)*
+
+---
+
+# تعريب Double Dealers — التفاصيل الكاملة
 
 ## إيه اللي حصل قبل كده؟
 - الملف اللي بعتّه **وصل كامل سليم** (اتأكدت منه حرف حرف ✔)
