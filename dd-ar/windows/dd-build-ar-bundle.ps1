@@ -399,15 +399,23 @@ function Extract-All([byte[]]$data) {
     for ($k = $i + 4; $k -lt $endReal; $k++) { if (-not $PRINT[$data[$k]]) { $ok = $false; break } }
     if (-not $ok) { continue }
     $txt = [System.Text.Encoding]::UTF8.GetString($data, $i + 4, $realLen)
-    [void]$list.Add([pscustomobject]@{ Off = $i + 4; Len = $realLen; Text = $txt })
+    $id = [long]0
+    if (($i - 8) -ge 0) { $id = [BitConverter]::ToInt64($data, $i - 8) }
+    [void]$list.Add([pscustomobject]@{ Off = $i + 4; Len = $realLen; Text = $txt; Id = $id })
   }
   return ,$list
 }
 function Get-Unique([System.Collections.ArrayList]$all) {
   $seen = New-Object 'System.Collections.Generic.HashSet[string]'
   $uniq = New-Object System.Collections.ArrayList
-  foreach ($it in $all) { if ($seen.Add($it.Text)) { [void]$uniq.Add($it.Text) } }
+  foreach ($it in $all) { if ($seen.Add($it.Text)) { [void]$uniq.Add($it) } }
   return ,$uniq
+}
+function Norm-Key([string]$k) {
+  if ($null -eq $k) { return "" }
+  $t = $k.Trim()
+  $t = $t.Replace([char]0x2026, "...")
+  return $t
 }
 
 # =============================================================== main
@@ -507,12 +515,19 @@ try {
 Log ("  arabic entries : " + $pairsRaw)
 if ($pairsRaw -lt 100) { Log "[X] could not download the arabic file (internet?)"; Finish "STOPPED"; exit 1 }
 
+$pairsNorm = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+foreach ($k in $pairs.Keys) {
+  $nk = Norm-Key $k
+  if ($nk -and (-not $pairsNorm.ContainsKey($nk))) { $pairsNorm[$nk] = $pairs[$k] }
+}
+$enTextSet = New-Object 'System.Collections.Generic.HashSet[string]'
+foreach ($e in $uniqEn) { [void]$enTextSet.Add($e.Text) }
 $found = 0
-foreach ($e in $uniqEn) { if ($pairs.ContainsKey($e)) { $found++ } }
+foreach ($e in $uniqEn) { if ($pairs.ContainsKey($e.Text)) { $found++ } }
 Log ("  english texts with a translation : " + $found + " of " + $pairsRaw)
 $miss = 0
 $missList = New-Object System.Collections.ArrayList
-foreach ($k in $pairs.Keys) { if (-not $uniqEn.Contains($k)) { $miss++; if ($missList.Count -lt 8) { [void]$missList.Add($k) } } }
+foreach ($k in $pairs.Keys) { if ((-not $enTextSet.Contains($k)) -and (-not $enTextSet.Contains($k.TrimEnd()))) { $miss++; if ($missList.Count -lt 8) { [void]$missList.Add($k) } } }
 Log ("  translations whose english text was not found : " + $miss)
 foreach ($m in $missList) { Log ("      ? " + $m) }
 if ($found -lt 100) { Log "[X] the english list does not match - stopping"; Finish "STOPPED"; exit 1 }
@@ -522,42 +537,96 @@ Log "pairing english <-> german ..."
 $mapDe = New-Object 'System.Collections.Generic.Dictionary[string,string]'
 $enN = $uniqEn.Count
 $deN = $uniqDe.Count
-$i = 0
-$j = 0
 $anchors = 0
 $skipped = 0
 $digitOk = 0
 $digitBad = 0
 $samples = New-Object System.Collections.ArrayList
 $badSamples = New-Object System.Collections.ArrayList
-while ($i -lt $enN -and $j -lt $deN) {
-  $e = $uniqEn[$i]
-  $d = $uniqDe[$j]
-  $isPair = $pairs.ContainsKey($e)
-  if ($e -ceq $d) {
-    $anchors++
-    if ($isPair) { if (-not $mapDe.ContainsKey($d)) { $mapDe[$d] = $pairs[$e] } }
-    $i++; $j++
-    continue
-  }
-  if (($i + 1 -lt $enN) -and ($uniqEn[$i+1] -ceq $d) -and (-not $pairs.ContainsKey($d))) { $i++; $skipped++; continue }
-  if (($j + 1 -lt $deN) -and ($e -ceq $uniqDe[$j+1]) -and (-not $pairs.ContainsKey($e))) { $j++; $skipped++; continue }
-  if ($isPair) {
-    if (-not $mapDe.ContainsKey($d)) { $mapDe[$d] = $pairs[$e] }
-    if ($samples.Count -lt 6) { [void]$samples.Add($e + "   ->   " + $d) }
-    $digE = -join ([regex]::Matches($e, "\d") | ForEach-Object { $_.Value })
-    $digD = -join ([regex]::Matches($d, "\d") | ForEach-Object { $_.Value })
-    if ($digE -eq $digD) { $digitOk++ } else { $digitBad++; if ($badSamples.Count -lt 5) { [void]$badSamples.Add($e + "   ->   " + $d) } }
-  }
-  $i++; $j++
+
+function Get-PairText([string]$en) {
+  if ($pairs.ContainsKey($en)) { return $pairs[$en] }
+  $nk = Norm-Key $en
+  if ($pairsNorm.ContainsKey($nk)) { return $pairsNorm[$nk] }
+  return ""
 }
-Log ("  identical spots (alignment anchors) : " + $anchors)
-Log ("  german texts ready to be arabic     : " + $mapDe.Count)
-Log ("  pairs whose numbers match           : " + $digitOk + " ok / " + $digitBad + " different")
+
+# --- 4a. exact pairing by the entry id that sits right before every text -----
+$enById = New-Object 'System.Collections.Generic.Dictionary[string,int]'
+$dupeIds = 0
+for ($k = 0; $k -lt $enN; $k++) {
+  $key = [string]$uniqEn[$k].Id
+  if ($enById.ContainsKey($key)) { $dupeIds++ } else { $enById[$key] = $k }
+}
+$idHits = 0
+foreach ($d in $uniqDe) {
+  $key = [string]$d.Id
+  if ($d.Id -ne 0 -and $enById.ContainsKey($key)) {
+    $en = $uniqEn[$enById[$key]]
+    $ar = Get-PairText $en.Text
+    if ($ar) {
+      if (-not $mapDe.ContainsKey($d.Text)) { $mapDe[$d.Text] = $ar }
+      $idHits++
+      $digE = -join ([regex]::Matches($en.Text, "\d") | ForEach-Object { $_.Value })
+      $digD = -join ([regex]::Matches($d.Text, "\d") | ForEach-Object { $_.Value })
+      if ($digE -eq $digD) { $digitOk++ } else {
+        $digitBad++
+        if ($badSamples.Count -lt 5) { [void]$badSamples.Add($en.Text + "   ->   " + $d.Text) }
+      }
+      if ($samples.Count -lt 6) { [void]$samples.Add($en.Text + "   ->   " + $d.Text) }
+    }
+  }
+}
+Log ("  german entries matched to english by id : " + $idHits + " of " + $deN + "   (repeated ids: " + $dupeIds + ")")
+Log ("  german texts ready to be arabic         : " + $mapDe.Count)
+$idGood = ($idHits -ge [int]($deN * 0.8))
+
+if (-not $idGood) {
+  # --- 4b. fallback: walk both lists together (identical texts are anchors) --
+  Log "  id pairing not reliable - using the order instead"
+  $mapDe = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+  $digitOk = 0
+  $digitBad = 0
+  $samples = New-Object System.Collections.ArrayList
+  $badSamples = New-Object System.Collections.ArrayList
+  $i = 0
+  $j = 0
+  while ($i -lt $enN -and $j -lt $deN) {
+    $e = $uniqEn[$i].Text
+    $d = $uniqDe[$j].Text
+    $same = ($e -ceq $d)
+    if ($same) {
+      $anchors++
+      $ar = Get-PairText $e
+      if ($ar) { if (-not $mapDe.ContainsKey($d)) { $mapDe[$d] = $ar } }
+      $i++; $j++
+      continue
+    }
+    if (($i + 1 -lt $enN) -and ($uniqEn[$i+1].Text -ceq $d) -and (-not (Get-PairText $d))) { $i++; $skipped++; continue }
+    if (($j + 1 -lt $deN) -and ($e -ceq $uniqDe[$j+1].Text) -and (-not (Get-PairText $e))) { $j++; $skipped++; continue }
+    $ar = Get-PairText $e
+    if ($ar) {
+      if (-not $mapDe.ContainsKey($d)) { $mapDe[$d] = $ar }
+      if ($samples.Count -lt 6) { [void]$samples.Add($e + "   ->   " + $d) }
+      $digE = -join ([regex]::Matches($e, "\d") | ForEach-Object { $_.Value })
+      $digD = -join ([regex]::Matches($d, "\d") | ForEach-Object { $_.Value })
+      if ($digE -eq $digD) { $digitOk++ } else {
+        $digitBad++
+        if ($badSamples.Count -lt 5) { [void]$badSamples.Add($e + "   ->   " + $d) }
+      }
+    }
+    $i++; $j++
+  }
+  Log ("  identical spots (alignment anchors) : " + $anchors)
+  Log ("  german texts ready to be arabic     : " + $mapDe.Count)
+}
+
+Log ("  pairs whose numbers match   : " + $digitOk + " ok / " + $digitBad + " different")
 foreach ($sm in $samples) { Log ("      sample: " + $sm) }
 foreach ($bs in $badSamples) { Log ("      check : " + $bs) }
-if ($anchors -lt 20 -or $mapDe.Count -lt 250) { Log "[X] alignment looks wrong - stopping"; Finish "STOPPED"; exit 1 }
-$badLimit = [int]($digitOk / 3) + 5
+if ($anchors -lt 20 -and -not $idGood) { Log "[X] alignment looks wrong - stopping"; Finish "STOPPED"; exit 1 }
+if ($mapDe.Count -lt 250) { Log "[X] alignment looks wrong - stopping"; Finish "STOPPED"; exit 1 }
+$badLimit = [int]($digitOk / 10) + 6
 if ($digitBad -gt $badLimit) { Log "[X] english and german lists are not in the same order - stopping"; Finish "STOPPED"; exit 1 }
 
 Log ""
