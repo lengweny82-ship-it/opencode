@@ -1,23 +1,20 @@
 param([string]$Target, [switch]$Restore)
 
 # =====================================================================
-#  dd-build-ar-bundle.ps1   (v2)
+#  dd-install-ar-bundle.ps1   (v1)
 #
-#  Double Dealers - puts the arabic translation into the GERMAN slot,
-#  so the game itself shows arabic without any mod.
+#  Double Dealers - installs the arabic version of the GERMAN language
+#  file, so the game itself shows arabic without any mod.
 #
 #  all automatic:
-#    1. finds the game + the localization bundles
-#    2. unpacks the english and the german bundle (unity LZ4 format)
-#    3. lists every text inside both
-#    4. pairs them (english <-> german) and downloads the arabic file
-#       (letters shaped + ordered for an engine without arabic support)
-#    5. writes an arabic copy of the GERMAN bundle (same file name)
-#    6. reads the new file back to be sure it is valid
-#    7. saves a backup of the original and installs the new file
+#    1. finds the game + the german localization file
+#    2. downloads the ready arabic text file (made by the helper)
+#    3. rebuilds the game file around it (same structure, checked)
+#    4. reads the new file back to be sure it is valid
+#    5. saves a backup of the original and installs the new file
 #
 #  run again with  -Restore  to put the original german file back.
-#  Output + report -> Desktop\dd-ar-build\
+#  Output + report -> Desktop\dd-ar-install\
 # =====================================================================
 
 $ErrorActionPreference = "Continue"
