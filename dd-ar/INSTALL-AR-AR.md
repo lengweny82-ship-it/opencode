@@ -1,18 +1,32 @@
 # تعريب Double Dealers — الخطوة الحالية
 
 > ## 🔴 الخطوة اللي فاضلة دلوقتي بالظبط
-> 1. **اقفل اللعبة**
-> 2. اضغط **Win + R** والصق السطر ده:
+>
+> ### أولاً: اقفل اللعبة
+>
+> ### ثانياً: اضغط **Win + R** والصق السطر ده (١٩٧ حرف — تحت الحد الأقصى ٢٦٠):
 >
 > ```
-> powershell -ep bypass -NoExit -c "$f=Join-Path $env:TEMP 'dd16.ps1'; iwr 'https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog4.ps1' -OutFile $f -UseBasicParsing; if ((Get-Item $f).Length -lt 2000) { Write-Host 'download problem - try again' -ForegroundColor Red } else { & $f }"
+> powershell -ep bypass -NoExit -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog4.ps1 -OutFile $env:TEMP\dd16.ps1; & $env:TEMP\dd16.ps1"
 > ```
 >
-> 3. النافذة **مش هتقفل لوحدها** (السطر ده بيمنعها). لو ظهر أي كلام أحمر → **خد سكرين شوت**.
-> 4. في الآخر هيطلع **لينكات** → ابعتها لي.
-> 5. بعدها: افتح اللعبة → Settings → Language → **Deutsch**.
+> ### ثالثاً
+> - النافذة **مش هتقفل لوحدها** — لو ظهر أي كلام أحمر → **سكرين شوت**
+> - في الآخر هيطلع **لينكات** → ابعتها لي في الشات
+> - بعدها: افتح اللعبة → Settings → Language → **Deutsch**
 >
-> *(لو عايز ترجّع كل حاجة في أي وقت: شغّل نفس السطر وبعد كلمة FINISHED اكتب:  & $f -Restore)*
+> **لو السطر مارضيش يشتغل** — جرب على خطوتين (كل واحد لوحده في Win+R):
+> ```
+> powershell -ep bypass -NoExit -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog4.ps1 -OutFile $env:TEMP\dd16.ps1"
+> ```
+> ```
+> powershell -ep bypass -NoExit -c "& $env:TEMP\dd16.ps1"
+> ```
+>
+> **للرجوع (في أي وقت):** نفس السطر الأول، وبعدين:
+> ```
+> powershell -ep bypass -NoExit -c "& $env:TEMP\dd16.ps1 -Restore"
+> ```
 
 ---
 
