@@ -14,6 +14,17 @@
 | `ar-starter-display-ready.txt` | **نفس الترجمة بس متوصّلة ومعكوسة** — استخدمها لو اللعبة بتطلع العربي مقطّع/مقلوب |
 | [glossary-ar.csv](glossary-ar.csv) | 80+ مصطلح مترجم بترتيب أبجدي |
 
+
+## 🇸🇦 الترجمة العربية (جاهزة!)
+| الملف | إيه ده |
+|-------|--------|
+| [translation/_AutoTranslations.ar.txt](translation/_AutoTranslations.ar.txt) | **ملف التعريب الكامل** — 533 نص عربي جاهز للاستخدام |
+| [translation/_AutoTranslations.display-ready.ar.txt](translation/_AutoTranslations.display-ready.ar.txt) | نفس الترجمة بحروف موصولة ومعكوسة (لو اللعبة بتطلع العربي مقطّع/مقلوب) |
+| [translation/pairs.txt](translation/pairs.txt) | المصدر: النص الإنجليزي + الترجمة العربية (قابل للتعديل) |
+| [translation/build.py](translation/build.py) | يبني الملفات من pairs.txt |
+| [windows/install-translation.ps1](windows/install-translation.ps1) | **تثبيت أوتوماتيكي** للترجمة + ضبط اللغة على العربية |
+| [windows/dump-strings.ps1](windows/dump-strings.ps1) | يستخرج نصوص اللعبة من ملفات UnityFS المضغوطة (LZ4) |
+
 ## أدوات
 | الملف | إيه ده |
 |-------|--------|
