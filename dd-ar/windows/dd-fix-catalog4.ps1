@@ -172,8 +172,17 @@ if ($posSize -lt 0) {
   exit 1
 }
 $posCrc = $posSize - 4
+$want = New-Object 'System.Collections.Generic.List[byte]'
+for ($k = 0; $k -lt 4; $k++) { $want.Add([byte](($OLD_CRC -shr (8*$k)) -band 255)) }
+for ($k = 0; $k -lt 4; $k++) { $want.Add([byte](($OLD_SIZE -shr (8*$k)) -band 255)) }
+$give = New-Object 'System.Collections.Generic.List[byte]'
+for ($k = 0; $k -lt 4; $k++) { $give.Add([byte](($NEW_CRC -shr (8*$k)) -band 255)) }
+for ($k = 0; $k -lt 4; $k++) { $give.Add([byte](($NEW_SIZE -shr (8*$k)) -band 255)) }
+$EXPECT_DIFF = 0
+for ($k = 0; $k -lt 8; $k++) { if ($want[$k] -ne $give[$k]) { $EXPECT_DIFF++ } }
 Log ""
 Log ("   FOUND : fingerprint at byte " + $posCrc + "   size at byte " + $posSize)
+Log ("   bytes that will change : " + $EXPECT_DIFF + "   (the other ones are already the same value)")
 Log ("   entry now : fingerprint " + (Hex32 (U32 $before $posCrc)) + "   size " + (U32 $before $posSize))
 Log "   bytes there:"
 Log (Hex-Dump $before ($posCrc - 32) 80)
@@ -219,8 +228,8 @@ $diff = 0
 if ($after.Length -eq $before.Length) {
   for ($i = 0; $i -lt $after.Length; $i++) { if ($after[$i] -ne $before[$i]) { $diff++ } }
 }
-Log ("   bytes changed : " + $diff + "   (must be 8)")
-if (($diff -ne 8) -or ((U32 $after $posCrc) -ne $NEW_CRC) -or ((U32 $after $posSize) -ne $NEW_SIZE)) {
+Log ("   bytes changed : " + $diff + "   (expected " + $EXPECT_DIFF + ")")
+if (($diff -ne $EXPECT_DIFF) -or ((U32 $after $posCrc) -ne $NEW_CRC) -or ((U32 $after $posSize) -ne $NEW_SIZE)) {
   Log "[!] something is not as expected - putting the original back"
   try { Copy-Item -Force $catbak $cat } catch { }
   Finish "STOPPED - the original catalog was put back"
