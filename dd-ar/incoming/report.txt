@@ -1,10 +1,13 @@
-https://litter.catbox.moe/vq9v8e.txt code=200 size=51073
-USED https://litter.catbox.moe/vq9v8e.txt
-sha256 09c9661c8007b15b95b72d59155ac5a53f5c1f352db98643099aec7dba7d184e
-DDX5
+https://litter.catbox.moe/80limu.txt code=200 size=43519
+USED https://litter.catbox.moe/80limu.txt
+sha256 046b934a3c91f45759d9083c4365c60980ee675352a1b43d50e11afff1c1ebf6
+DDX6
 FILE sharedassets0.assets
 SIZE 38165872
-DATAOFF 2352
-OBJTABLE 328 76
-OBJ 0 1 0 2352 2281
-OBJ 1 2 1 4640 1764
+ATLAS start 2897568 size 4194444 header 140 W 2048 H 2048 FMT 1
+NAME Nunito-ExtraBold SDF Atlas
+FIELDS at +36
+ITEM HEADER
+MODE GZIP
+RAW 160
+SHA ca
