@@ -36,7 +36,7 @@ function Read-NullString([byte[]]$b, [ref]$p) {
 }
 
 # --------------------------------------------------------------- printable table
-$PRINT = New-Object bool[] 256
+$PRINT = [bool[]]::new(256)
 for ($x = 0; $x -lt 256; $x++) {
   $PRINT[$x] = (($x -ge 32 -and $x -ne 127) -or $x -ge 128)
 }
@@ -52,7 +52,7 @@ function Decompress-LZ4([byte[]]$src, [int]$expected) {
         $declared = [BitConverter]::ToInt32($src, 0)
         $start = 4
       }
-      $outB = New-Object byte[] $expected
+      $outB = [byte[]]::new($expected)
       $op = 0
       $i = $start
       $n = $src.Length
@@ -91,6 +91,63 @@ function Decompress-LZ4([byte[]]$src, [int]$expected) {
     }
   }
   throw ("LZ4 failed: " + $script:lastLz4Error)
+}
+
+
+# LZ4 decompressor that does not need the final size (grows while reading)
+function Decompress-LZ4Auto([byte[]]$src, [int]$off, [int]$cnt) {
+  foreach ($usePrefix in @($true, $false)) {
+    $i = $off
+    $end = $off + $cnt
+    $declared = -1
+    if ($usePrefix) {
+      if (($end - $i) -lt 4) { continue }
+      $declared = [BitConverter]::ToInt32($src, $i)
+      $i += 4
+      if ($declared -le 0 -or $declared -gt 200000000) { continue }
+    }
+    $outB = New-Object 'System.Collections.Generic.List[byte]'
+    if ($declared -gt 0) { $outB.Capacity = $declared }
+    try {
+      while ($i -lt $end) {
+        $token = [int]$src[$i]; $i++
+        $lit = $token -shr 4
+        if ($lit -eq 15) {
+          while ($true) { $b = [int]$src[$i]; $i++; $lit += $b; if ($b -ne 255) { break } }
+        }
+        if ($lit -gt 0) {
+          if (($i + $lit) -gt $end) { throw "literal past end" }
+          for ($k = 0; $k -lt $lit; $k++) { [void]$outB.Add($src[$i + $k]) }
+          $i += $lit
+        }
+        if ($i -ge $end) { break }
+        $offset = [int]$src[$i] + ([int]$src[$i+1] -shl 8); $i += 2
+        if ($offset -le 0 -or $offset -gt $outB.Count) { throw "bad match offset" }
+        $mlen = $token -band 0x0F
+        if ($mlen -eq 15) {
+          while ($true) { $b = [int]$src[$i]; $i++; $mlen += $b; if ($b -ne 255) { break } }
+        }
+        $mlen += 4
+        $from = $outB.Count - $offset
+        for ($k = 0; $k -lt $mlen; $k++) { [void]$outB.Add($outB[$from + $k]) }
+      }
+      if ($declared -gt 0 -and $outB.Count -ne $declared) { throw "declared mismatch" }
+      if ($outB.Count -gt 20) { return $outB.ToArray() }
+    } catch {
+      if ($outB.Count -gt 20 -and -not $usePrefix) { return $outB.ToArray() }
+      $script:lastLz4Error = $_.Exception.Message
+    }
+  }
+  return $null
+}
+
+function Confirm-SerializedFile([byte[]]$cand) {
+  if ($null -eq $cand -or $cand.Length -lt 20) { return $false }
+  $fileSize = Read-BE32 $cand 4
+  $sfVer = Read-BE32 $cand 8
+  if ($fileSize -ne $cand.Length) { return $false }
+  if ($sfVer -lt 5 -or $sfVer -gt 40) { return $false }
+  return $true
 }
 
 function Decompress-Block([byte[]]$src, [int]$expected, [int]$comp) {
@@ -169,13 +226,18 @@ if ($padStart) { $dataStart = [int](([Math]::Ceiling($dataStart / 16.0)) * 16) }
 $bip = $dataStart
 if ($atEnd) { $bip = $bytes.Length - $cbiSize }
 
-$biRaw = New-Object byte[] $cbiSize
+$biRaw = [byte[]]::new($cbiSize)
 [Array]::Copy($bytes, $bip, $biRaw, 0, $cbiSize)
 
 $blocksInfo = $null
 try {
-  $blocksInfo = Decompress-Block $biRaw $ubiSize $comp
-  Log "    block table: OK"
+  if ($cbiSize -eq $ubiSize) {
+    $blocksInfo = $biRaw
+    Log "    block table: stored uncompressed"
+  } else {
+    $blocksInfo = Decompress-Block $biRaw $ubiSize $comp
+    Log "    block table: decompressed"
+  }
 } catch {
   Log ("[X] block table failed: " + $_.Exception.Message)
   Save-Report; Read-Host "Enter"; exit 1
@@ -205,18 +267,26 @@ function Parse-Blocks([byte[]]$bi, [int]$entryMode, [int]$version) {
   return $blocks
 }
 
+# Where the block data starts:
+#   blocks-info at the end   -> right after the (aligned) header
+#   blocks-info at the front -> right AFTER the blocks-info
+$dataPos = $dataStart
+if (-not $atEnd) { $dataPos = $bip + $cbiSize }
+
 $data = $null
 foreach ($mode in @(10, 6)) {
   try {
     $blocks = Parse-Blocks $blocksInfo $mode $ver
     $totalC = 0
     foreach ($b in $blocks) { $totalC += $b[1] }
-    if ($totalC -gt ($bytes.Length - $dataStart + 64)) { throw "sizes exceed file" }
-    $cursor = $dataStart
+    if ($totalC -gt ($bytes.Length - $dataPos + 64)) { throw "sizes exceed file" }
+    $cursor = $dataPos
     $buf = New-Object 'System.Collections.Generic.List[byte]'
     foreach ($b in $blocks) {
       if (($cursor + $b[1]) -gt $bytes.Length) { throw "read past end" }
-      $chunk = New-Object byte[] $b[1]
+      $chunkSize = [int]$b[1]
+      if ($chunkSize -lt 1) { throw ("bad chunk size " + $chunkSize) }
+      $chunk = [byte[]]::new($chunkSize)
       [Array]::Copy($bytes, $cursor, $chunk, 0, $b[1])
       $cursor += $b[1]
       $dec = Decompress-Block $chunk $b[0] $comp
@@ -238,7 +308,21 @@ foreach ($mode in @(10, 6)) {
   }
 }
 
-if ($null -eq $data) { Log "[X] Could not unpack asset data."; Save-Report; Read-Host "Enter"; exit 1 }
+if ($null -eq $data) {
+  Log ""
+  Log "    fallback: trying the whole remaining data as one block ..."
+  $rest = $bytes.Length - $dataPos
+  $cand = Decompress-LZ4Auto $bytes $dataPos $rest
+  if (Confirm-SerializedFile $cand) {
+    $data = $cand
+    Log ("    fallback OK - unpacked " + $data.Length + " bytes")
+  } else {
+    Log "[X] Could not unpack asset data."
+    Save-Report
+    Read-Host "Enter"
+    exit 1
+  }
+}
 
 # --------------------------------------------------------------- strings
 $strings = New-Object System.Collections.ArrayList
@@ -273,8 +357,10 @@ for ($i = 0; $i -lt $n; $i++) {
 if ($sb.Length -ge 3) { $t = $sb.ToString(); if ($seen2.Add($t)) { [void]$runs.Add($t) } }
 
 $utf8 = New-Object System.Text.UTF8Encoding($false)
-[System.IO.File]::WriteAllLines((Join-Path $out "01-strings.txt"), $strings.ToArray(), $utf8)
-[System.IO.File]::WriteAllLines((Join-Path $out "02-runs.txt"), $runs.ToArray(), $utf8)
+$f1 = Join-Path $out "01-strings.txt"
+$f2 = Join-Path $out "02-runs.txt"
+[System.IO.File]::WriteAllText($f1, ($strings -join [Environment]::NewLine), $utf8)
+[System.IO.File]::WriteAllText($f2, ($runs -join [Environment]::NewLine), $utf8)
 
 Log ""
 Log "=========================================================="
@@ -282,15 +368,44 @@ Log ("  strings found : " + $strings.Count)
 Log ("  runs found    : " + $runs.Count)
 Log "=========================================================="
 Log ""
-Log "DONE. Now: open the Desktop folder  dd-strings2  and upload"
-Log "these two files to https://catbox.moe :"
-Log "       01-strings.txt"
-Log "       02-runs.txt"
-Log "Then paste the two links in the chat."
+Log "DONE - files written. Uploading them automatically now ..."
 Log ""
 Log ("Saved in: " + $out)
 
+# ---- upload the result automatically (optional) ----
+$links = New-Object System.Collections.ArrayList
+foreach ($f in @($f1, $f2)) {
+  $link = ""
+  try {
+    $curl = Join-Path $env:SystemRoot "System32\curl.exe"
+    if (-not (Test-Path $curl)) { $curl = "curl.exe" }
+    $res = & $curl -s -m 90 -F "reqtype=fileupload" -F ("fileToUpload=@" + $f) "https://catbox.moe/user/api.php" 2>$null
+    if ($res -and ($res -match "^https?://")) { $link = $res.Trim() }
+  } catch { }
+  if (-not $link) {
+    try {
+      $res2 = Invoke-RestMethod -Uri "https://catbox.moe/user/api.php" -Method Post -Body @{ reqtype = "fileupload"; fileToUpload = (Get-Item $f) } -TimeoutSec 90
+      if ($res2 -and ($res2 -match "^https?://")) { $link = $res2.Trim() }
+    } catch { }
+  }
+  if ($link) { [void]$links.Add($link) } else { [void]$links.Add("(upload failed for " + (Split-Path $f -Leaf) + ")") }
+}
+
+Log ""
+Log "=========================================================="
+Log "  AUTO-UPLOAD RESULT (copy these links into the chat):"
+Log "=========================================================="
+foreach ($l in $links) { Log ("   " + $l) }
+Log ""
+Log "If a link says 'upload failed', just upload the two files"
+Log "manually to https://catbox.moe and send the links."
+Log ""
+
 Save-Report
+try {
+  $note = ($links -join [Environment]::NewLine)
+  Set-Content -Path (Join-Path $out "03-LINKS-TO-SEND.txt") -Value $note -Encoding UTF8
+} catch { }
 try { Start-Process explorer.exe -ArgumentList $out } catch { }
 Write-Host ""
 Write-Host "FINISHED - folder dd-strings2 opened on your Desktop" -ForegroundColor Green
