@@ -604,12 +604,23 @@ if (-not $idGood) {
     }
     if (($i + 1 -lt $enN) -and ($uniqEn[$i+1].Text -ceq $d) -and (-not (Get-PairText $d))) { $i++; $skipped++; continue }
     if (($j + 1 -lt $deN) -and ($e -ceq $uniqDe[$j+1].Text) -and (-not (Get-PairText $e))) { $j++; $skipped++; continue }
+    $digE = -join ([regex]::Matches($e, "\d") | ForEach-Object { $_.Value })
+    $digD = -join ([regex]::Matches($d, "\d") | ForEach-Object { $_.Value })
+    # the numbers are the same in every language - use them to fix a shift
+    if ($digE -ne $digD) {
+      if ($j + 1 -lt $deN) {
+        $digN = -join ([regex]::Matches($uniqDe[$j+1].Text, "\d") | ForEach-Object { $_.Value })
+        if ($digN -eq $digE) { $j++; $skipped++; continue }
+      }
+      if ($i + 1 -lt $enN) {
+        $digN = -join ([regex]::Matches($uniqEn[$i+1].Text, "\d") | ForEach-Object { $_.Value })
+        if ($digN -eq $digD) { $i++; $skipped++; continue }
+      }
+    }
     $ar = Get-PairText $e
     if ($ar) {
       if (-not $mapDe.ContainsKey($d)) { $mapDe[$d] = $ar }
       if ($samples.Count -lt 6) { [void]$samples.Add($e + "   ->   " + $d) }
-      $digE = -join ([regex]::Matches($e, "\d") | ForEach-Object { $_.Value })
-      $digD = -join ([regex]::Matches($d, "\d") | ForEach-Object { $_.Value })
       if ($digE -eq $digD) { $digitOk++ } else {
         $digitBad++
         if ($badSamples.Count -lt 5) { [void]$badSamples.Add($e + "   ->   " + $d) }
