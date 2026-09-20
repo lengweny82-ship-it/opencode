@@ -124,8 +124,8 @@ function Read-CStr([byte[]]$b, [ref]$pp) {
 function Find-Str([byte[]]$b, [string]$s, [int]$from, [int]$to) {
   if ($null -eq $s -or $s.Length -lt 2) { return -1 }
   $needle = [System.Text.Encoding]::ASCII.GetBytes($s)
-  $end = [Math]::Min($b.Length, $to) - $needle.Length
-  for ($i = [Math]::Max(0, $from); $i -le $end; $i++) {
+  $stopAt = [Math]::Min($b.Length, $to) - $needle.Length
+  for ($i = [Math]::Max(0, $from); $i -le $stopAt; $i++) {
     if ($b[$i] -ne $needle[0]) { continue }
     $ok = $true
     for ($k = 1; $k -lt $needle.Length; $k++) { if ($b[$i+$k] -ne $needle[$k]) { $ok = $false; break } }
