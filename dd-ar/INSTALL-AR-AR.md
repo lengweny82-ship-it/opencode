@@ -47,14 +47,16 @@ powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw
 لو أي خطوة فيها شك → **مش بيكتب أي حاجة** وبيقف ويقول السبب.
 
 ## لو اللعبة قالت "No translation found"
-دي معناها إن اللعبة بترفض تحمّل الملف لأن **بصمة** الملف في ملف الفهرسة (`catalog.bin`) مش مطابقة.
-الحل: سطر بسيط بيصحّح البصمة (البصمة = CRC32 للمحتوى المفكوك جوه الملف — اتأكدنا منها):
+دي معناها إن اللعبة بترفض تحمّل الملف لأن **البصمة** اللي في ملف الفهرسة (`catalog.bin`) مش
+مطابقة. البصمة = CRC32 للمحتوى المفكوك جوه الملف (اتأكدنا منها بالأرقام).
+
+السطر ده بيمسح الغلط — وبيخلي نافذة الأوامر تفضل مفتوحة عشان نشوف أي رسالة:
 
 ```
-powershell -ep bypass -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog3.ps1 -OutFile $env:TEMP\dd15.ps1; & $env:TEMP\dd15.ps1"
+powershell -ep bypass -NoExit -c "$f=Join-Path $env:TEMP 'dd16.ps1'; iwr 'https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-fix-catalog4.ps1' -OutFile $f -UseBasicParsing; if ((Get-Item $f).Length -lt 2000) { Write-Host 'download problem - try again' -ForegroundColor Red } else { & $f }"
 ```
 
-وبيرجّع الأصل بسطر `dd-fix-catalog3.ps1 -Restore`.
+للرجوع: نفس السطر + `-Restore` في آخر السكربت (يعني: `& $f -Restore`).
 
 ## لو حصلت مشكلة
 - ابعتلي اسكرين شوت للشاشة
