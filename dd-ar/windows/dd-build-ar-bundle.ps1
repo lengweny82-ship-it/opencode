@@ -306,16 +306,34 @@ function Write-As([byte[]]$b, [int]$p, [long]$v, [bool]$be, [int]$size) {
   }
 }
 
-function Unpack-File([byte[]]$bytes, [string]$label, [System.Text.StringBuilder]$dbg) {
-  $r = [pscustomobject]@{
-    Ok = $false; Why = ""; Data = $null; Table = $null; Blocks = $null
-    Mode = 10; Be = $true; AtEnd = $false; Pad = $false; Flags = 0
-    HeaderEnd = 0; SizeOff = 0; CbiOff = 0; UbiOff = 0; FlagsOff = 0; Ver = 0
-    HasHash = $true
+function Make-Result($data, $table, $blocks, $mode, $be, $atEnd, $pad, $flags, $headerEnd, $sizeOff, $cbiOff, $ubiOff, $flagsOff, $ver, $hasHash, $why) {
+  # one single object, all values given at once (the safe way - see report)
+  $o = [pscustomobject]@{
+    Ok = $true
+    Why = $why
+    Data = $data
+    Table = $table
+    Blocks = $blocks
+    Mode = $mode
+    Be = $be
+    AtEnd = $atEnd
+    Pad = $pad
+    Flags = $flags
+    HeaderEnd = $headerEnd
+    SizeOff = $sizeOff
+    CbiOff = $cbiOff
+    UbiOff = $ubiOff
+    FlagsOff = $flagsOff
+    Ver = $ver
+    HasHash = $hasHash
   }
+  return $o
+}
+
+function Unpack-File([byte[]]$bytes, [string]$label, [System.Text.StringBuilder]$dbg) {
   $p = 0
   $sig = Read-NullString $bytes ([ref]$p)
-  if ($sig -ne "UnityFS") { $r.Why = "not a UnityFS bundle"; return $r }
+  if ($sig -ne "UnityFS") { return (Make-Result $null $null $null 10 $true $false $false 0 0 0 0 0 0 0 $true "not a UnityFS bundle") }
   $ver = [int](Read-BE32 $bytes $p); $p += 4
   $uv = Read-NullString $bytes ([ref]$p)
   $ur = Read-NullString $bytes ([ref]$p)
@@ -348,24 +366,8 @@ function Unpack-File([byte[]]$bytes, [string]$label, [System.Text.StringBuilder]
             if ($null -ne $x -and $null -ne $x.Data -and $x.Data.Length -gt 400) {
               [void]$dbg.AppendLine("  [$tag] decoded " + $x.Data.Length + " bytes | payload=" + $x.Kind + " v" + $x.Version + " ascii=" + $x.Ratio + "% words=" + $x.Hits + "/12")
               if ($x.SizeOK -or ($x.Data.Length -eq $x.TotalU) -or ($x.Hits -ge 3)) {
-                $r.Ok = $true
-                $r.Data = $x.Data
-                $r.Table = $x.Table
-                $r.Blocks = $x.Blocks
-                $r.Mode = $mode
-                $r.Be = $be
-                $r.HasHash = $hash
-                $r.AtEnd = $atEnd
-                $r.Pad = $pad
-                $r.Flags = $flags
-                $r.HeaderEnd = $headerEnd
-                $r.SizeOff = $sizeOff
-                $r.CbiOff = $cbiOff
-                $r.UbiOff = $ubiOff
-                $r.FlagsOff = $flagsOff
-                $r.Ver = $ver
                 [void]$dbg.AppendLine("  [$tag] ACCEPTED")
-                return $r
+                return (Make-Result $x.Data $x.Table $x.Blocks $mode $be $atEnd $pad $flags $headerEnd $sizeOff $cbiOff $ubiOff $flagsOff $ver $hash "")
               }
             } else {
               [void]$dbg.AppendLine("  [$tag] decoded but too small")
@@ -377,8 +379,7 @@ function Unpack-File([byte[]]$bytes, [string]$label, [System.Text.StringBuilder]
       }
     }
   }
-  $r.Why = "could not unpack"
-  return $r
+  return (Make-Result $null $null $null 10 $true $false $false 0 0 0 0 0 0 $ver $true "could not unpack")
 }
 
 function Extract-All([byte[]]$data) {
@@ -457,13 +458,13 @@ Log ""
 Log "unpacking both bundles ..."
 $pDe = Unpack-File $bDe "german" $dbg
 $pEn = Unpack-File $bEn "english" $dbg
-if ((-not $pDe.Ok) -or ($pDe.Data -isnot [byte[]]) -or ($pDe.Data.Length -lt 400)) {
+if (($pDe.Data -isnot [byte[]]) -or ($pDe.Data.Length -lt 400)) {
   Log "[X] could not unpack the german bundle. details:"
   Log $dbg.ToString()
   Finish "STOPPED"
   exit 1
 }
-if ((-not $pEn.Ok) -or ($pEn.Data -isnot [byte[]]) -or ($pEn.Data.Length -lt 400)) {
+if (($pEn.Data -isnot [byte[]]) -or ($pEn.Data.Length -lt 400)) {
   Log "[X] could not unpack the english bundle. details:"
   Log $dbg.ToString()
   Finish "STOPPED"
@@ -628,7 +629,7 @@ Log "checking the new file ..."
 $c2 = [System.IO.File]::ReadAllBytes($newPath)
 $dbg2 = New-Object System.Text.StringBuilder
 $chk = Unpack-File $c2 "newfile" $dbg2
-if ((-not $chk.Ok) -or ($chk.Data -isnot [byte[]]) -or ($chk.Data.Length -lt 400)) {
+if (($chk.Data -isnot [byte[]]) -or ($chk.Data.Length -lt 400)) {
   Log "[X] the new file cannot be read back - not installed"
   Log $dbg2.ToString()
   Finish "STOPPED"
