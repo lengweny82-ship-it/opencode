@@ -1,0 +1,12 @@
+{
+ "name": "arabic-german-payload",
+ "payload_raw_size": 65272,
+ "payload_sha256": "bbb2368356ab53abe82af28aee54134b4a9409f9a325d75c3e7191977e0cebec",
+ "payload_sha16": "bbb2368356ab53ab",
+ "gz_size": 19374,
+ "b64_chars": 25832,
+ "original_payload_sha16": "31b35a7d0e6fa5a1",
+ "original_payload_size": 49716,
+ "arabic_entries": 535,
+ "note": "payload = Unity Localization StringTableCollection_de serialized file, grown strings, file_size/byte_size patched"
+}
