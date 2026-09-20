@@ -219,11 +219,11 @@ try {
   $objects = New-Object System.Collections.ArrayList
   for ($i = 0; $i -lt $objCount; $i++) {
     while (($p % 4) -ne 0) { $p++ }
-    $pid = LE64 $bytes $p; $p += 8
+    $objPid = LE64 $bytes $p; $p += 8
     $bsRel = LE64 $bytes $p; $p += 8
     $bsz = LE32 $bytes $p; $p += 4
     $tid = LE32 $bytes $p; $p += 4
-    [void]$objects.Add([pscustomobject]@{ PathId = $pid; RelStart = $bsRel; ByteStart = $bsRel + $dataOff; Size = $bsz; TypeId = $tid })
+    [void]$objects.Add([pscustomobject]@{ PathId = $objPid; RelStart = $bsRel; ByteStart = $bsRel + $dataOff; Size = $bsz; TypeId = $tid })
   }
   $objTableEnd = $p
   Log ("object table ends at " + $objTableEnd)
