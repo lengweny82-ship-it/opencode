@@ -109,8 +109,9 @@ function Grab([byte[]]$b, [int]$off, [int]$len) {
 }
 function NameIn([byte[]]$b, [int]$limit) {
   for ($q = 0; ($q + 6) -lt $limit; $q += 2) {
-    $len = [int](LE32 $b $q)
-    if ($len -lt 3 -or $len -gt 48) { continue }
+    $lv = LE32 $b $q
+    if ($lv -lt 3 -or $lv -gt 48) { continue }
+    $len = [int]$lv
     if (($q + 4 + $len) -ge $b.Length) { continue }
     $s = New-Object System.Text.StringBuilder
     $good = $true
