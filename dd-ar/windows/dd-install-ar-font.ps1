@@ -91,25 +91,91 @@ function AsLatin1([byte[]]$b) {
 }
 
 # ------------------------------------------------------------------ find the game
-function Find-GameDataDir([string]$dir) {
-  if ($dir) {
-    $p = Join-Path $dir "Double Dealers Demo_Data"
-    if (Test-Path (Join-Path $p "sharedassets0.assets")) { return (Get-Item $p).FullName }
+#  every steam folder the machine knows about
+function Get-SteamLibraryRoots {
+  $libs = New-Object System.Collections.ArrayList
+  foreach ($k in @("HKCU:\Software\Valve\Steam", "HKLM:\SOFTWARE\WOW6432Node\Valve\Steam")) {
+    try {
+      $p = Get-ItemProperty -Path $k -ErrorAction SilentlyContinue
+      if ($p) {
+        if ($p.SteamPath)    { [void]$libs.Add($p.SteamPath) }
+        if ($p.InstallPath)  { [void]$libs.Add($p.InstallPath) }
+      }
+    } catch { }
+  }
+  $extra = New-Object System.Collections.ArrayList
+  foreach ($root in $libs) {
+    try {
+      $vdf = Join-Path $root "steamapps\libraryfolders.vdf"
+      if (Test-Path $vdf) {
+        $txt = Get-Content -Path $vdf -Raw -ErrorAction SilentlyContinue
+        foreach ($m in [regex]::Matches([string]$txt, '"path"\s*"([^"]+)"')) {
+          [void]$extra.Add($m.Groups[1].Value.Replace('\\', '\'))
+        }
+      }
+    } catch { }
+  }
+  foreach ($e in $extra) { [void]$libs.Add($e) }
+  return $libs
+}
+
+function Get-CommonDirs {
+  $list = New-Object System.Collections.ArrayList
+  foreach ($lib in (Get-SteamLibraryRoots)) {
+    if ($lib) { [void]$list.Add((Join-Path $lib "steamapps\common")) }
   }
   $letters = @("C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
   $subs = @(":\SteamLibrary","\SteamLibrary2","\SteamLibrary3","\Steam","\Games\Steam","\Games\SteamLibrary","\Program Files (x86)\Steam","\Program Files\Steam")
-  foreach ($d in $letters) {
-    foreach ($s in $subs) {
-      $base = $d + $s + "\steamapps\common"
-      if (Test-Path $base) {
-        $guess = Join-Path $base "Double Dealers Demo\Double Dealers Demo_Data"
-        if (Test-Path (Join-Path $guess "sharedassets0.assets")) { return (Get-Item $guess).FullName }
-        $hits = Get-ChildItem -Path $base -Directory -Recurse -ErrorAction SilentlyContinue |
-                Where-Object { $_.Name -eq "Double Dealers Demo_Data" }
-        foreach ($h in $hits) {
-          if (Test-Path (Join-Path $h.FullName "sharedassets0.assets")) { return $h.FullName }
+  foreach ($d in $letters) { foreach ($s in $subs) { [void]$list.Add($d + $s + "\steamapps\common") } }
+  return $list
+}
+
+function Resolve-Manual([string]$p) {
+  if (-not $p) { return "" }
+  $p = $p.Trim()
+  $p = $p.Trim('"')
+  if (-not (Test-Path $p)) { return "" }
+  if (Test-Path (Join-Path $p "sharedassets0.assets")) { return (Get-Item $p).FullName }
+  $d = Join-Path $p "Double Dealers Demo_Data"
+  if (Test-Path (Join-Path $d "sharedassets0.assets")) { return (Get-Item $d).FullName }
+  foreach ($x in (Get-ChildItem -Path $p -Directory -ErrorAction SilentlyContinue)) {
+    if ($x.Name -like "*_Data" -and (Test-Path (Join-Path $x.FullName "sharedassets0.assets"))) { return $x.FullName }
+  }
+  return ""
+}
+
+function Find-GameDataDir([string]$dir) {
+  $cands = New-Object System.Collections.ArrayList
+  if ($dir) {
+    [void]$cands.Add($dir)
+    [void]$cands.Add((Join-Path $dir "Double Dealers Demo"))
+  }
+  foreach ($c in (Get-CommonDirs)) { [void]$cands.Add($c) }
+  $leaf = "localization-string-tables-german(de)_assets_all.bundle"
+  $seen = @{}
+  foreach ($c in $cands) {
+    $key = ([string]$c).ToLower()
+    if ($seen[$key]) { continue }
+    $seen[$key] = 1
+    if (-not (Test-Path $c)) { continue }
+    # 1) the folder right there
+    $here = Join-Path $c "sharedassets0.assets"
+    if (Test-Path $here) { return (Get-Item $c).FullName }
+    # 2) the game folder by name
+    $games = Get-ChildItem -Path $c -Directory -ErrorAction SilentlyContinue
+    foreach ($gm in $games) {
+      if ($gm.Name -like "*Double*Dealer*") {
+        $subs2 = Get-ChildItem -Path $gm.FullName -Directory -ErrorAction SilentlyContinue
+        foreach ($x in $subs2) {
+          if ($x.Name -like "*_Data" -and (Test-Path (Join-Path $x.FullName "sharedassets0.assets"))) { return $x.FullName }
         }
       }
+    }
+    # 3) the proven way : find the language file, then three folders up
+    $hits = Get-ChildItem -Path $c -Filter $leaf -Recurse -File -ErrorAction SilentlyContinue
+    if ($hits -and $hits.Count -gt 0) {
+      $data = [System.IO.Path]::GetFullPath((Join-Path (Split-Path $hits[0].FullName -Parent) "..\..\.."))
+      if (Test-Path (Join-Path $data "sharedassets0.assets")) { return $data }
     }
   }
   return ""
@@ -131,12 +197,38 @@ Log ""
 
 # ------------------------------------------------------------------ step 1
 Log "1) looking for the game ..."
+foreach ($lib in (Get-SteamLibraryRoots)) { Log ("   steam folder : " + $lib) }
 $dataDir = Find-GameDataDir $Target
 if (-not $dataDir) {
   Log "[X] the game folder was not found."
-  Log "    start the game once (so steam knows it), then run this again."
-  Finish "STOPPED"
-  exit 1
+  Log "    folders looked at :"
+  $shown = 0
+  foreach ($c in (Get-CommonDirs)) {
+    if ($shown -ge 80) { break }
+    if (Test-Path $c) {
+      Log ("      " + $c)
+      foreach ($g in (Get-ChildItem -Path $c -Directory -ErrorAction SilentlyContinue)) {
+        if ($shown -ge 80) { break }
+        Log ("         - " + $g.Name)
+        $shown++
+      }
+    }
+  }
+  Log ""
+  Log "   you can paste the path instead :"
+  Log "     steam -> right click the game -> Manage -> Browse local files"
+  Log "     then copy the path from the window that opens"
+  Log ""
+  $manual = Read-Host "   paste it here and press Enter (or just Enter to stop)"
+  if ($manual) {
+    $dataDir = Resolve-Manual $manual
+    if ($dataDir) { Log ("   found it : " + $dataDir) }
+  }
+  if (-not $dataDir) {
+    Log "[X] the game folder was not found - stopping (nothing was changed)."
+    Finish "STOPPED"
+    exit 1
+  }
 }
 $file = Join-Path $dataDir "sharedassets0.assets"
 $bak  = Join-Path $dataDir "sharedassets0.assets.original"
