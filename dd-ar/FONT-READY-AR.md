@@ -20,7 +20,7 @@
 **٢) اضغط `Win + R`** → الزق السطر ده → `Enter`:
 
 ```
-powershell -ep bypass -NoExit -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-install-ar-font.ps1 -OutFile $env:TEMP\dd31.ps1; & $env:TEMP\dd31.ps1"
+powershell -ep bypass -NoExit -c "iwr 'https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-install-ar-font.ps1?v=2' -OutFile $env:TEMP\dd33.ps1; & $env:TEMP\dd33.ps1"
 ```
 
 **٣) هتفتح شاشة سودة** بتمشي لوحدها:
@@ -58,12 +58,16 @@ FINISHED
 ## لو حصلت مشكلة
 
 **لو ظهرت أي رسالة فيها `[X]`:** الملف مش بيتغير أصلاً (السكربت بيتوقف قبل أي كتابة)،
-وابعتلي رابط التقرير وأنا هصلّحه.
+وابعتلي رابط التقرير وأنا هصلّحه. السكربت بيعرض كل الفولدرات اللي بيدوّر فيها،
+ولو لسه مش لاقي اللعبة هيسألك تلزق المسار بنفسك:
+
+- من Steam: كليك يمين على اللعبة ← `Manage` ← `Browse local files`
+- انسخ المسار من الشريط اللي فوق في النافذة اللي فتحت، والصقه في الشاشة السودة واضغط `Enter`
 
 **لو عايز ترجّع كل حاجة زي ما كانت** (الخط + النصوص):
 
 ```
-powershell -ep bypass -NoExit -c "iwr https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-install-ar-font.ps1 -OutFile $env:TEMP\dd32.ps1; & $env:TEMP\dd32.ps1 -Restore"
+powershell -ep bypass -NoExit -c "iwr 'https://github.com/lengweny82-ship-it/opencode/raw/arena/01a0bf68-opencode/dd-ar/windows/dd-install-ar-font.ps1?v=2' -OutFile $env:TEMP\dd34.ps1; & $env:TEMP\dd34.ps1 -Restore"
 ```
 
 **ملفات النسخة الاحتياطية** (جوه فولدر اللعبة):
