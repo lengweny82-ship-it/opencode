@@ -154,9 +154,9 @@ if ($bytes.Length -ne 38165872) { Write-Host "[X] unexpected file size - stoppin
 # name, at, offset, size, (lenOffset, nameOffset)
 $specs = @(
   @("HEAD", 0,             0,       98304, 0, 0),
-  @("FONT66", 0, 37042448, 418752, 24, 28),
-  @("FONT68", 0, 37542800, 370832, 24, 28),
-  @("FONT69", 0, 37913632, 251608, 24, 28),
+  @("FONT66", 0, 37042448, 418752, 28, 32),
+  @("FONT68", 0, 37542800, 370832, 28, 32),
+  @("FONT69", 0, 37913632, 251608, 28, 32),
   @("AT12", 0,    799200, 262288,  0,  4),
   @("AT29", 0,   7879552, 262284,  0,  4),
   @("AT32", 0,   8666416, 262284,  0,  4)
@@ -178,7 +178,11 @@ foreach ($s in $specs) {
   if ($nm -eq "AT12") { $want = "NotoSansJP-ExtraBold SDF Atlas" }
   if ($nm -eq "AT29") { $want = "NotoSansSC-Medium SDF Atlas" }
   if ($nm -eq "AT32") { $want = "NotoSansKR-Medium SDF Atlas" }
-  if ($nm -ne "HEAD" -and $t2 -ne $want) {
+  $badName = $false
+  if ($nm -eq "HEAD") { $badName = $false }
+  elseif ($nm -like "AT*") { if (-not $t2.StartsWith($want)) { $badName = $true } }
+  elseif ($t2 -ne $want) { $badName = $true }
+  if ($badName) {
     Write-Host ("     [!] expected '" + $want + "' - the game file looks different, stopping") -ForegroundColor Red
     Read-Host "Press Enter to close"
     exit 1
