@@ -23,15 +23,15 @@ BAND_TEXT = "#CED5DF"
 # A4 in points
 PW, PH = 595.28, 841.89
 MARGIN = 54.0          # 19 mm
-BAND_H = 108.0
+BAND_H = 88.0
 
 CSS = """
-@font-face { font-family: Cairo;   src: url(Cairo_400Regular.ttf); }
-@font-face { font-family: CairoB;  src: url(Cairo_700Bold.ttf); }
-@font-face { font-family: CairoSB; src: url(Cairo_600SemiBold.ttf); }
-@font-face { font-family: AmiriB;  src: url(Amiri_700Bold.ttf); }
-@font-face { font-family: PlayfairB; src: url(PlayfairDisplay_700Bold.ttf); }
-@font-face { font-family: PlayfairSB; src: url(PlayfairDisplay_600SemiBold.ttf); }
+@font-face { font-family: Cairo;   src: url(fonts/Cairo_400Regular.ttf); }
+@font-face { font-family: CairoB;  src: url(fonts/Cairo_700Bold.ttf); }
+@font-face { font-family: CairoSB; src: url(fonts/Cairo_600SemiBold.ttf); }
+@font-face { font-family: AmiriB;  src: url(fonts/Amiri_700Bold.ttf); }
+@font-face { font-family: PlayfairB; src: url(fonts/PlayfairDisplay_700Bold.ttf); }
+@font-face { font-family: PlayfairSB; src: url(fonts/PlayfairDisplay_600SemiBold.ttf); }
 * { margin: 0; padding: 0; }
 body { color: %(ink)s; font-size: 10.5pt; }
 table { border-collapse: collapse; }
@@ -129,20 +129,39 @@ def courses_block(ar, items, font):
 
 
 def header_band(ar, c):
+    """Navy band: photo on one side, name/title/phone on the reading-start side."""
     name_font = "CairoB" if ar else "PlayfairB"
     title_font = "CairoB" if ar else "CairoSB"
-    title = c["title"] if ar else c["title"]
     contact = f'{c["phone_label"]}: {c["phone"]}'
     title_style = "" if ar else "letter-spacing:1.6pt;"
+    align = "right" if ar else "left"
+    pad_side = "padding-right" if ar else "padding-left"
 
-    body_font = "Cairo" if ar else "Cairo"
+    photo_size = 68
+    text_cell = f'''
+      <td style="background-color:{NAVY}; vertical-align:middle;">
+        <div style="text-align:{align}; {pad_side}:30px;">
+          <div style="font-family:{name_font}; font-size:{'22' if ar else '24'}pt;
+                      color:#FFFFFF; line-height:1.3;">{c['name']}</div>
+          <div style="font-family:{title_font}; font-size:{'10.6' if ar else '9.2'}pt;
+                      color:{GOLD_LIGHT}; margin-top:2px; {title_style}">{c["title"]}</div>
+          <div style="font-family:Cairo; font-size:9.2pt; color:{BAND_TEXT};
+                      margin-top:6px;">{contact}</div>
+        </div>
+      </td>'''
+    photo_cell = f'''
+      <td style="background-color:{NAVY}; width:{photo_size + 46}px; text-align:center;">
+        <div style="text-align:center; padding-top:10px;">
+          <img src="assets/photo_circle_pdf.jpg" style="width:{photo_size}px; height:{photo_size}px;">
+        </div>
+      </td>'''
+
+    cells = photo_cell + text_cell if ar else text_cell + photo_cell
     return f"""
-    <div style="background-color:{NAVY}; height:{BAND_H - 3.6}px; padding:0 {MARGIN}px; direction:{'rtl' if ar else 'ltr'};">
-      <div style="padding-top:20px; font-family:{name_font}; font-size:{'24' if ar else '26'}pt; color:#FFFFFF;
-                  line-height:1.25;">{c['name']}</div>
-      <div style="font-family:{title_font}; font-size:{'11' if ar else '9.4'}pt; color:{GOLD_LIGHT};
-                  {title_style} margin-top:2px;">{title}</div>
-      <div style="font-family:{body_font}; font-size:9.3pt; color:{BAND_TEXT}; margin-top:7px;">{contact}</div>
+    <div style="background-color:{NAVY}; height:{BAND_H - 3.6}px;">
+      <table style="width:100%; border-collapse:collapse;">
+        <tr>{cells}</tr>
+      </table>
     </div>
     <div style="height:2.4px; background-color:{GOLD};"></div>
     <div style="height:1.2px; background-color:{NAVY}; margin-top:1.2px;"></div>
@@ -197,7 +216,7 @@ def footer_story(lang):
 
 def build(lang, path):
     c = CONTENT[lang]
-    archive = pymupdf.Archive(FONTS)
+    archive = pymupdf.Archive(HERE)
     story = pymupdf.Story(html=html_page(lang), user_css=CSS, archive=archive)
     foot = pymupdf.Story(html=footer_story(lang), user_css=CSS, archive=archive)
 

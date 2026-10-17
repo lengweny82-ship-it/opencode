@@ -13,6 +13,7 @@ from content import CONTENT
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "CV")
+PHOTO = os.path.join(HERE, "assets", "photo_circle_docx.png")
 
 NAVY = "102440"
 GOLD = "A28040"
@@ -275,6 +276,10 @@ def build(lang, path):
     body_font = AR_FONT if ar else EN_FONT
     align_start = WD_ALIGN_PARAGRAPH.RIGHT if ar else WD_ALIGN_PARAGRAPH.LEFT
 
+    photo_path = PHOTO
+    if not os.path.exists(photo_path):
+        raise SystemExit(f"missing photo: {photo_path}")
+
     doc = Document()
 
     sec = doc.sections[0]
@@ -297,26 +302,35 @@ def build(lang, path):
     normal.paragraph_format.space_after = Pt(0)
 
     # ---------------- header band ----------------
-    band = doc.add_table(rows=1, cols=1)
-    table_no_borders(band)
-    table_fixed(band, [text_w])
-    table_center(band)
-    cell = band.cell(0, 0)
-    set_cell_shading(cell, NAVY)
-    set_cell_margins(cell, top=250, bottom=210, left=300, right=300)
-    set_cell_borders(cell, GOLD, sz=18, sides=("bottom",))
+    photo_w = 2.3          # cm (circular portrait)
+    photo_cell_w = photo_w + 0.9
+    text_cell_w = text_w - photo_cell_w
 
-    p = cell.paragraphs[0]
+    band = doc.add_table(rows=1, cols=2)
+    table_no_borders(band)
+    table_fixed(band, [text_cell_w, photo_cell_w])
+    table_center(band)
+    if ar:
+        table_bidi(band)
+
+    # logical order: text cell first, photo second -> mirrors correctly in RTL
+    text_cell = band.cell(0, 0)
+    set_cell_shading(text_cell, NAVY)
+    set_cell_margins(text_cell, top=250, bottom=210, left=300, right=300)
+    set_cell_borders(text_cell, GOLD, sz=18, sides=("bottom",))
+    set_cell_valign(text_cell, "center")
+
+    p = text_cell.paragraphs[0]
     if ar:
         set_bidi(p)
     p.alignment = align_start
     space(p, before=0, after=2, line=1.0)
     if ar:
-        add_run(p, c["name"], 24, WHITE, bold=True, font=AR_FONT, cs_font=AR_FONT, rtl=True)
+        add_run(p, c["name"], 22, WHITE, bold=True, font=AR_FONT, cs_font=AR_FONT, rtl=True)
     else:
         add_run(p, c["name"], 22, WHITE, bold=True, font=EN_DISPLAY, cs_font=EN_DISPLAY)
 
-    p = cell.add_paragraph()
+    p = text_cell.add_paragraph()
     if ar:
         set_bidi(p)
     p.alignment = align_start
@@ -327,13 +341,25 @@ def build(lang, path):
     else:
         add_run(p, c["title"], 9, GOLD_LIGHT, bold=True, font=EN_FONT, spacing=1.4, caps=True)
 
-    p = cell.add_paragraph()
+    p = text_cell.add_paragraph()
     if ar:
         set_bidi(p)
     p.alignment = align_start
     space(p, before=0, after=0, line=1.0)
     add_run(p, f'{c["phone_label"]}: {c["phone"]}', 9.5, BAND_TEXT,
             font=body_font, cs_font=AR_FONT, rtl=ar)
+
+    # photo cell
+    photo_cell = band.cell(0, 1)
+    set_cell_shading(photo_cell, NAVY)
+    set_cell_margins(photo_cell, top=150, bottom=150, left=140, right=140)
+    set_cell_borders(photo_cell, GOLD, sz=18, sides=("bottom",))
+    set_cell_valign(photo_cell, "center")
+    p = photo_cell.paragraphs[0]
+    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    space(p, before=0, after=0, line=1.0)
+    run = p.add_run()
+    run.add_picture(photo_path, width=Cm(photo_w))
 
     spacer = doc.add_paragraph()
     space(spacer, before=0, after=0, line=1.0)
