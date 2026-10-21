@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01_whale_cloud_garden_7000x7000.png",
+    "bytes": 8288305,
+    "sha256": "35d8782f7162147596731b3e3ed613b2baaf25b9d2834abf4657b4e0ebf4dcd8"
+  },
+  {
+    "file": "02_cosmic_koi_orbit_7000x7000.png",
+    "bytes": 16619144,
+    "sha256": "2c7f94dab0ed18ad539a5b8b8dac56df104b5f7b57ea4b02d65cf32357a19f00"
+  },
+  {
+    "file": "03_tiger_paper_jungle_7000x7000.png",
+    "bytes": 16904214,
+    "sha256": "ddec92884addd3d39ba7a336859e226c25101e2d8a191bb70745892b2afdc559"
+  },
+  {
+    "file": "04_moon_teapot_ocean_7000x7000.png",
+    "bytes": 12099471,
+    "sha256": "02f0660b012d7a55245ec3cf5a8abdf7d5209b6123eff4fe4f36d8e540c391eb"
+  },
+  {
+    "file": "05_fox_starry_tail_7000x7000.png",
+    "bytes": 14708263,
+    "sha256": "ac4c1f3283f1fa5d2e09dd3a64e4b2b8f2e6e91485f15663ed7f36c8473c81d5"
+  },
+  {
+    "file": "06_desert_hourglass_7000x7000.png",
+    "bytes": 9203698,
+    "sha256": "ac6393e4e7290d0d4a31587e6f079491d861e723245cdec6fc9a134fb056b276"
+  },
+  {
+    "file": "07_city_back_turtle_7000x7000.png",
+    "bytes": 12156114,
+    "sha256": "84c564f4f8d0aa9eb92f36c52ccea998d5a5239f66dcabf38f8660039c2f1d05"
+  },
+  {
+    "file": "08_octopus_vinyl_7000x7000.png",
+    "bytes": 11982188,
+    "sha256": "68e5b9af92ea83fd62040bcab5015e4c5e41554a8ae7544ea45ad2e34fd857c1"
+  },
+  {
+    "file": "09_mountain_butterfly_7000x7000.png",
+    "bytes": 9586671,
+    "sha256": "9b373fd67dc86be035a11ea95e6b31b3776d98a8155b778976632361128ff059"
+  },
+  {
+    "file": "10_bear_floating_island_7000x7000.png",
+    "bytes": 15365241,
+    "sha256": "f307f1e21e25c5353d0b668dc64273b19968cbeb4da1f6e9ff4d79f41798148f"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "file": "01_whale_cloud_garden.png",
+    "internal_white_pixels_removed": 1031,
+    "source": "01_whale_repaired.png"
+  },
+  {
+    "file": "02_cosmic_koi_orbit.png",
+    "internal_white_pixels_removed": 8140,
+    "source": "02_cosmic_koi_orbit.png"
+  },
+  {
+    "file": "03_tiger_paper_jungle.png",
+    "internal_white_pixels_removed": 13088,
+    "source": "03_tiger_paper_jungle.png"
+  },
+  {
+    "file": "04_moon_teapot_ocean.png",
+    "internal_white_pixels_removed": 10988,
+    "source": "04_moon_teapot_ocean.png"
+  },
+  {
+    "file": "05_fox_starry_tail.png",
+    "internal_white_pixels_removed": 798,
+    "source": "05_fox_starry_tail.png"
+  },
+  {
+    "file": "06_desert_hourglass.png",
+    "internal_white_pixels_removed": 54391,
+    "source": "06_desert_hourglass.png"
+  },
+  {
+    "file": "07_city_back_turtle.png",
+    "internal_white_pixels_removed": 3506,
+    "source": "07_city_back_turtle.png"
+  },
+  {
+    "file": "08_octopus_vinyl.png",
+    "internal_white_pixels_removed": 2398,
+    "source": "08_octopus_vinyl.png"
+  },
+  {
+    "file": "09_mountain_butterfly.png",
+    "status": "unchanged as requested"
+  },
+  {
+    "file": "10_bear_floating_island.png",
+    "internal_white_pixels_removed": 7884,
+    "source": "10_bear_floating_island.png"
+  }
+]
