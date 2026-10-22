@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01_elephant_hanging_garden_7000x7000.png",
+    "bytes": 14067340,
+    "sha256": "6c2682d31cfd0a1e5870386b8e65911d29c87c2f0a1ac5d0eb42d91dfaf732ed"
+  },
+  {
+    "file": "02_jellyfish_galaxy_7000x7000.png",
+    "bytes": 14340090,
+    "sha256": "535287944e52a84d3db70afeff6963da910e13b0ef1a9069ccf472e8d522f328"
+  },
+  {
+    "file": "03_owl_library_wings_7000x7000.png",
+    "bytes": 15435179,
+    "sha256": "66c0aabf1be8d5e5bf21e9a2b13f5b783d58a36289ad0124db1b9f6256cd568e"
+  },
+  {
+    "file": "04_lightbulb_island_7000x7000.png",
+    "bytes": 8441517,
+    "sha256": "7eef52a102c7179eaeaf121ad720c7fb452a94168e5e815ccf884084daedb0d6"
+  },
+  {
+    "file": "05_doorway_ocean_7000x7000.png",
+    "bytes": 10570224,
+    "sha256": "ec1706b2613df7fe562f2403145e03756e0ebd638488010c7c238e2778df04b7"
+  },
+  {
+    "file": "06_snail_observatory_7000x7000.png",
+    "bytes": 12139004,
+    "sha256": "fe8d7ae4d5a02e27b00004f38a364b1ddb08a275ae4b498e8fedbf4275cb1675"
+  },
+  {
+    "file": "07_peacock_sunrise_7000x7000.png",
+    "bytes": 25183776,
+    "sha256": "8b3c56636a9aabb71c00899776803a8d6f78b3bbd558c957e3b7837aa4cf3180"
+  },
+  {
+    "file": "08_hummingbird_glass_garden_7000x7000.png",
+    "bytes": 13182319,
+    "sha256": "f2f3c9f7f9519f4e704683e75498b66cd8813e86aa27ba4ca60ba2788152f923"
+  },
+  {
+    "file": "09_manta_star_map_7000x7000.png",
+    "bytes": 14807909,
+    "sha256": "c3c9e47b20445886114c780e394b5b76c70f54da2e52ef567d127b18615930f7"
+  },
+  {
+    "file": "10_hare_wildflower_moon_7000x7000.png",
+    "bytes": 15339830,
+    "sha256": "5ee74ed6057cd4b54d1184830fa64efefe17042aa3a52278721b1f2e7c9094d8"
+  }
+]

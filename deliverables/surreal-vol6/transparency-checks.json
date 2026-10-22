@@ -1,0 +1,102 @@
+[
+  {
+    "file": "01_elephant_hanging_garden.png",
+    "interior_background_pixels_removed": 420,
+    "bounding_box": [
+      85,
+      100,
+      960,
+      921
+    ]
+  },
+  {
+    "file": "02_jellyfish_galaxy.png",
+    "interior_background_pixels_removed": 56278,
+    "bounding_box": [
+      177,
+      110,
+      852,
+      914
+    ]
+  },
+  {
+    "file": "03_owl_library_wings.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      49,
+      132,
+      976,
+      912
+    ]
+  },
+  {
+    "file": "04_lightbulb_island.png",
+    "interior_background_pixels_removed": 68980,
+    "bounding_box": [
+      273,
+      102,
+      751,
+      922
+    ]
+  },
+  {
+    "file": "05_doorway_ocean.png",
+    "interior_background_pixels_removed": 19398,
+    "bounding_box": [
+      226,
+      52,
+      817,
+      975
+    ]
+  },
+  {
+    "file": "06_snail_observatory.png",
+    "interior_background_pixels_removed": 2958,
+    "bounding_box": [
+      116,
+      125,
+      928,
+      898
+    ]
+  },
+  {
+    "file": "07_peacock_sunrise.png",
+    "interior_background_pixels_removed": 4260,
+    "bounding_box": [
+      57,
+      70,
+      968,
+      955
+    ]
+  },
+  {
+    "file": "08_hummingbird_glass_garden.png",
+    "interior_background_pixels_removed": 3084,
+    "bounding_box": [
+      83,
+      101,
+      940,
+      925
+    ]
+  },
+  {
+    "file": "09_manta_star_map.png",
+    "interior_background_pixels_removed": 934,
+    "bounding_box": [
+      130,
+      166,
+      881,
+      857
+    ]
+  },
+  {
+    "file": "10_hare_wildflower_moon.png",
+    "interior_background_pixels_removed": 2055,
+    "bounding_box": [
+      184,
+      110,
+      850,
+      908
+    ]
+  }
+]
