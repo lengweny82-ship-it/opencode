@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01_reindeer_winter_antlers_7000x7000.png",
+    "bytes": 21065843,
+    "sha256": "29413179e1513130a0ed3c69583ea16d78886efa62ed8464d2cc45dce16ba77d"
+  },
+  {
+    "file": "02_polar_bear_christmas_village_7000x7000.png",
+    "bytes": 9438656,
+    "sha256": "2701bcd699edb1e4fa1041089fbe5224a71363acad1c81a5ad3ee5258ac447ca"
+  },
+  {
+    "file": "03_fox_christmas_wreath_7000x7000.png",
+    "bytes": 19783709,
+    "sha256": "2172ae0b36a4801f6e2891ed9e4ac2395ceb4ae87e78add259087f90e682a10d"
+  },
+  {
+    "file": "04_gingerbread_cocoa_cottage_7000x7000.png",
+    "bytes": 10244919,
+    "sha256": "246d255718272fcede03d41e06437f7714ebcf47eae1e9cda70517948873a828"
+  },
+  {
+    "file": "05_penguin_skating_stars_7000x7000.png",
+    "bytes": 7472286,
+    "sha256": "fde28a4eda4c6957add1e2636cfebe6ef7dcb7ccc67a0c2ae2571a9c2368167c"
+  },
+  {
+    "file": "06_owl_christmas_ornament_7000x7000.png",
+    "bytes": 21506982,
+    "sha256": "76882216f66c1deb81927742db93f9794a807b62f5564c89277d0744e27bc566"
+  },
+  {
+    "file": "07_cat_tangled_christmas_lights_7000x7000.png",
+    "bytes": 14337981,
+    "sha256": "684ec70f8c24e91dc7e383f7b2b8356473e24802582537205021cb6a4cf4d3e4"
+  },
+  {
+    "file": "08_turtle_christmas_tree_7000x7000.png",
+    "bytes": 20438686,
+    "sha256": "e567c9e04b07a58d4bbd1e9422c4affba164f509bbfa28d265634cb4ec97ebe4"
+  },
+  {
+    "file": "09_rocket_christmas_snowglobe_7000x7000.png",
+    "bytes": 10840157,
+    "sha256": "f78ca1208556491e27f2b339ddaa101e43b2d1a04bdf0d268cbe3dd387e32fc9"
+  },
+  {
+    "file": "10_rabbit_christmas_stocking_7000x7000.png",
+    "bytes": 12847001,
+    "sha256": "a85b872b8188585907ae188c6ff453bf9aabd98aaa0ce5275e0ec2359888d6a9"
+  }
+]

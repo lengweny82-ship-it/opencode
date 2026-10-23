@@ -1,0 +1,102 @@
+[
+  {
+    "file": "01_reindeer_winter_antlers.png",
+    "interior_background_pixels_removed": 535,
+    "bounding_box": [
+      169,
+      140,
+      855,
+      900
+    ]
+  },
+  {
+    "file": "02_polar_bear_christmas_village.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      58,
+      167,
+      968,
+      857
+    ]
+  },
+  {
+    "file": "03_fox_christmas_wreath.png",
+    "interior_background_pixels_removed": 394,
+    "bounding_box": [
+      51,
+      67,
+      972,
+      953
+    ]
+  },
+  {
+    "file": "04_gingerbread_cocoa_cottage.png",
+    "interior_background_pixels_removed": 15941,
+    "bounding_box": [
+      205,
+      88,
+      918,
+      936
+    ]
+  },
+  {
+    "file": "05_penguin_skating_stars.png",
+    "interior_background_pixels_removed": 2076,
+    "bounding_box": [
+      152,
+      171,
+      855,
+      853
+    ]
+  },
+  {
+    "file": "06_owl_christmas_ornament.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      89,
+      122,
+      935,
+      940
+    ]
+  },
+  {
+    "file": "07_cat_tangled_christmas_lights.png",
+    "interior_background_pixels_removed": 19307,
+    "bounding_box": [
+      93,
+      74,
+      935,
+      947
+    ]
+  },
+  {
+    "file": "08_turtle_christmas_tree.png",
+    "interior_background_pixels_removed": 221956,
+    "bounding_box": [
+      125,
+      123,
+      900,
+      896
+    ]
+  },
+  {
+    "file": "09_rocket_christmas_snowglobe.png",
+    "interior_background_pixels_removed": 64512,
+    "bounding_box": [
+      217,
+      76,
+      806,
+      964
+    ]
+  },
+  {
+    "file": "10_rabbit_christmas_stocking.png",
+    "interior_background_pixels_removed": 823,
+    "bounding_box": [
+      166,
+      78,
+      874,
+      959
+    ]
+  }
+]
