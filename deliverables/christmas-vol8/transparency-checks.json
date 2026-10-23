@@ -1,0 +1,102 @@
+[
+  {
+    "file": "01_red_panda_winter_bauble.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      110,
+      92,
+      907,
+      925
+    ]
+  },
+  {
+    "file": "02_hedgehog_gift_sled.png",
+    "interior_background_pixels_removed": 4216,
+    "bounding_box": [
+      90,
+      185,
+      947,
+      806
+    ]
+  },
+  {
+    "file": "03_capybara_cozy_teacup.png",
+    "interior_background_pixels_removed": 10187,
+    "bounding_box": [
+      163,
+      90,
+      890,
+      916
+    ]
+  },
+  {
+    "file": "04_squirrel_acorn_presents.png",
+    "interior_background_pixels_removed": 3130,
+    "bounding_box": [
+      136,
+      91,
+      893,
+      927
+    ]
+  },
+  {
+    "file": "05_badger_christmas_lantern.png",
+    "interior_background_pixels_removed": 21466,
+    "bounding_box": [
+      104,
+      79,
+      932,
+      946
+    ]
+  },
+  {
+    "file": "06_narwhal_christmas_garland.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      116,
+      210,
+      908,
+      800
+    ]
+  },
+  {
+    "file": "07_dachshund_christmas_delivery.png",
+    "interior_background_pixels_removed": 375,
+    "bounding_box": [
+      51,
+      295,
+      973,
+      802
+    ]
+  },
+  {
+    "file": "08_robin_snowy_ornament.png",
+    "interior_background_pixels_removed": 7324,
+    "bounding_box": [
+      158,
+      94,
+      882,
+      933
+    ]
+  },
+  {
+    "file": "09_teapot_christmas_garden.png",
+    "interior_background_pixels_removed": 13225,
+    "bounding_box": [
+      101,
+      73,
+      925,
+      937
+    ]
+  },
+  {
+    "file": "10_open_book_christmas_village.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      84,
+      93,
+      941,
+      930
+    ]
+  }
+]

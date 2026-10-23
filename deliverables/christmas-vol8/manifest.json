@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01_red_panda_winter_bauble_7000x7000.png",
+    "bytes": 13407832,
+    "sha256": "d1d3069a68cdfbd9fd0de7f90ab83e88052ae1cf43bc2958f3a432f4d427b638"
+  },
+  {
+    "file": "02_hedgehog_gift_sled_7000x7000.png",
+    "bytes": 10719285,
+    "sha256": "33ff4745c0536fffd58da35324a1e094dd40cf703483ad753ad1085a99335236"
+  },
+  {
+    "file": "03_capybara_cozy_teacup_7000x7000.png",
+    "bytes": 12834161,
+    "sha256": "3757a240127879e58ba6eb0ef16832191dc1b4cafd368c42dee2a142f61bf086"
+  },
+  {
+    "file": "04_squirrel_acorn_presents_7000x7000.png",
+    "bytes": 15274585,
+    "sha256": "3e965e6977a494aaf1bd6afa38c07c61876489028b63652f4ff32cb12251c675"
+  },
+  {
+    "file": "05_badger_christmas_lantern_7000x7000.png",
+    "bytes": 16049460,
+    "sha256": "9f4b31290cd334b2077e0cbbfe192232bb1b6a09b1de4576c28f37cbf1a849ed"
+  },
+  {
+    "file": "06_narwhal_christmas_garland_7000x7000.png",
+    "bytes": 11082807,
+    "sha256": "a3fe94ac620bf7596f57fc5417b3287a53c4d52747e4946228ecaac7c8e5d1ac"
+  },
+  {
+    "file": "07_dachshund_christmas_delivery_7000x7000.png",
+    "bytes": 7376979,
+    "sha256": "6ac6785dd21daee6ae5ee7cee03e637653492585f5ab3f64d01d36f2ca053822"
+  },
+  {
+    "file": "08_robin_snowy_ornament_7000x7000.png",
+    "bytes": 14470244,
+    "sha256": "d22263fd7937a063feaac9e2944816746bb8a491f83baf9a201c541fb83e6890"
+  },
+  {
+    "file": "09_teapot_christmas_garden_7000x7000.png",
+    "bytes": 12040262,
+    "sha256": "0211fcf332da4df18cc82a90ed9c59d5f5e10c37d6568e19f706c6ab61aa1029"
+  },
+  {
+    "file": "10_open_book_christmas_village_7000x7000.png",
+    "bytes": 8572522,
+    "sha256": "64f182803badbe00f6f176fcfbd33ff6109793cdd42c0633de9b1049725267eb"
+  }
+]
