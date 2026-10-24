@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01_headphones_sound_staircase_7000x7000.png",
+    "bytes": 10129518,
+    "sha256": "572a34ef63eb1fc1d248c97488bd2d7d33d7fda3a110f9338307dc52f3ba0e93"
+  },
+  {
+    "file": "02_espresso_infinite_handle_7000x7000.png",
+    "bytes": 9953289,
+    "sha256": "6f754f0a7ca1b60c289a7a7b0cb40bbbdc057fd1c5144ab881ef7b355a7f3f6d"
+  },
+  {
+    "file": "03_book_impossible_library_7000x7000.png",
+    "bytes": 7534561,
+    "sha256": "c976e5e71f9058d1b1e0cd3e79c22e0729147ad872996de82a29ab8f6b9b20b7"
+  },
+  {
+    "file": "04_cassette_piano_ribbon_7000x7000.png",
+    "bytes": 10749125,
+    "sha256": "1f31c41ce284cfbe329cdd51657f27249fee6d75b48c1d23b530012725682eb9"
+  },
+  {
+    "file": "05_gramophone_geometric_music_7000x7000.png",
+    "bytes": 8830014,
+    "sha256": "181a19ea39f8f7632a1409738d507ab16cf9acfc83df3b0dd22b5e1e0fb86ff9"
+  },
+  {
+    "file": "06_chess_rook_endless_steps_7000x7000.png",
+    "bytes": 7062967,
+    "sha256": "50c303228d9cba8abdac4601805961e511825939aa5ee9a48c5d4d2eae9befbf"
+  },
+  {
+    "file": "07_scissors_patchwork_ribbon_7000x7000.png",
+    "bytes": 10875305,
+    "sha256": "9b76bcebbc484c79ada906e0abe2e928608b096e9c2b727a7058e58942b8f609"
+  },
+  {
+    "file": "08_roller_skate_book_stack_7000x7000.png",
+    "bytes": 6862534,
+    "sha256": "97544f3a5f8a0224a973887bb0f6a71f02979f9cb3cd56ff6935fe6b065ac164"
+  },
+  {
+    "file": "09_hourglass_tumbling_dice_7000x7000.png",
+    "bytes": 7988480,
+    "sha256": "1d323eaebd2bdc71aecf9878d55157b089e68ce395019f4d0ec07c14c79ee6dc"
+  },
+  {
+    "file": "10_theatre_masks_folded_stage_7000x7000.png",
+    "bytes": 9784677,
+    "sha256": "be10bf3c7db97f54faf3aca453c5401fb612d8586df3fc8eabf90b27dfdbc6a8"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "file": "01_headphones_sound_staircase.png",
+    "interior_background_pixels_removed": 323779,
+    "bounding_box": [
+      83,
+      89,
+      951,
+      920
+    ]
+  },
+  {
+    "file": "02_espresso_infinite_handle.png",
+    "interior_background_pixels_removed": 41194,
+    "bounding_box": [
+      120,
+      128,
+      921,
+      892
+    ]
+  },
+  {
+    "file": "03_book_impossible_library.png",
+    "interior_background_pixels_removed": 13860,
+    "bounding_box": [
+      71,
+      144,
+      955,
+      929
+    ]
+  },
+  {
+    "file": "04_cassette_piano_ribbon.png",
+    "interior_background_pixels_removed": 129298,
+    "bounding_box": [
+      81,
+      77,
+      945,
+      947
+    ]
+  },
+  {
+    "file": "05_gramophone_geometric_music.png",
+    "interior_background_pixels_removed": 8024,
+    "bounding_box": [
+      476,
+      50,
+      1003,
+      720
+    ]
+  },
+  {
+    "file": "06_chess_rook_endless_steps.png",
+    "interior_background_pixels_removed": 4097,
+    "bounding_box": [
+      115,
+      101,
+      907,
+      940
+    ]
+  },
+  {
+    "file": "07_scissors_patchwork_ribbon.png",
+    "interior_background_pixels_removed": 87579,
+    "bounding_box": [
+      125,
+      115,
+      900,
+      908
+    ]
+  },
+  {
+    "file": "08_roller_skate_book_stack.png",
+    "interior_background_pixels_removed": 397,
+    "bounding_box": [
+      111,
+      161,
+      830,
+      888
+    ]
+  },
+  {
+    "file": "09_hourglass_tumbling_dice.png",
+    "interior_background_pixels_removed": 105187,
+    "bounding_box": [
+      274,
+      113,
+      750,
+      946
+    ]
+  },
+  {
+    "file": "10_theatre_masks_folded_stage.png",
+    "interior_background_pixels_removed": 20066,
+    "bounding_box": [
+      139,
+      136,
+      891,
+      894
+    ]
+  }
+]
