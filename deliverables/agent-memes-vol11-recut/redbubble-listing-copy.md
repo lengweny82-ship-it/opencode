@@ -1,0 +1,187 @@
+# سيج الأصلية بقص جديد + سايفر بحواف مكتملة
+
+دي النسخة النهائية البديلة للصور 03 و06. سيج من الصورة الأصلية الأولى نفسها، من غير إعادة توليد أو تغيير للوش أو الكوباية الكبيرة أو الوضعية؛ التعديل في قناع القص والشفافية. سايفر تعديل بالذكاء الاصطناعي مبني على رسمته الأولى لاستكمال القبعة والذراعين وكادر نصف جسم، وليس نسخة مطابقة بكسل ببكسل. باقي الثمانية لم يتغيروا.
+
+فان آرت غير رسمي لشخصيات Valorant. الملفات لا تمنح تصريح بيع أو ضمانًا ضد مطالبات الحقوق؛ راجع الحقوق وسياسة المنصة قبل النشر.
+
+PNG شفاف 7000×7000 مكبر بطريقة Lanczos من أصل 1408×768 بعد القص والملاءمة بدون تمطيط، وليس تفاصيل أصلية بدقة 7000.
+
+## 03_sage_coffee_before_healing
+
+### English
+
+**Title**
+```text
+Sage Needs Coffee Before the Healing
+```
+
+**Main Tag**
+```text
+Sage coffee meme
+```
+
+**Supporting Tags**
+```text
+giant mug, sleepy eyes, jade orbs, long ponytail, teal tunic, coffee steam, seated pose, tired expression, black leggings, Valorant fan art, chibi, gaming humor, cartoon illustration, unofficial fan art
+```
+
+**Description**
+```text
+The team can wait one sip. Sage has a mug nearly as big as she is, and even the floating orb looks ready for a nap. A quiet tribute to the person who looks after everyone else before remembering their own caffeine.
+```
+
+### Deutsch
+
+**Title**
+```text
+Sage braucht vor dem Heilen Kaffee
+```
+
+**Main Tag**
+```text
+Sage Kaffee Meme
+```
+
+**Supporting Tags**
+```text
+riesige Tasse, schläfrige Augen, Jadekugeln, langer Pferdeschwanz, türkise Tunika, Kaffeedampf, sitzende Pose, müder Ausdruck, schwarze Leggings, Valorant Fankunst, Chibi, Gaming Humor, Cartoon Illustration, inoffizielle Fankunst
+```
+
+**Description**
+```text
+Das Team kann einen Schluck lang warten. Sages Tasse ist fast so groß wie sie selbst, und sogar die schwebende Kugel braucht offenbar ein Nickerchen. Für alle, die sich erst um andere und dann um den eigenen Kaffee kümmern.
+```
+
+### Français
+
+**Title**
+```text
+Sage prend son café avant de soigner
+```
+
+**Main Tag**
+```text
+mème Sage et son café
+```
+
+**Supporting Tags**
+```text
+tasse géante, yeux endormis, orbes de jade, longue queue de cheval, tunique turquoise, vapeur de café, pose assise, expression fatiguée, legging noir, fan art Valorant, chibi, humour gaming, illustration cartoon, fan art non officiel
+```
+
+**Description**
+```text
+L’équipe peut bien attendre une gorgée. Sage serre une tasse presque aussi grande qu’elle, et même son orbe semble prêt pour la sieste. Pour ceux qui prennent soin des autres avant de penser à leur propre café.
+```
+
+### Español
+
+**Title**
+```text
+Sage necesita café antes de curar
+```
+
+**Main Tag**
+```text
+meme de Sage y su café
+```
+
+**Supporting Tags**
+```text
+taza gigante, ojos soñolientos, orbes de jade, coleta larga, túnica turquesa, vapor de café, pose sentada, expresión cansada, mallas negras, fan art de Valorant, chibi, humor gamer, ilustración cartoon, fan art no oficial
+```
+
+**Description**
+```text
+El equipo puede esperar un sorbo. Sage abraza una taza casi tan grande como ella y hasta su orbe parece necesitar una siesta. Para quienes cuidan de todo el mundo antes de acordarse de su propio café.
+```
+
+## 06_cypher_camera_selfie
+
+### English
+
+**Title**
+```text
+Cypher Is Checking His Selfie Setup
+```
+
+**Main Tag**
+```text
+Cypher selfie meme
+```
+
+**Supporting Tags**
+```text
+waist up portrait, tiny camera, broad brim hat, ivory coat, cyan eyes, dark mask, brown harness, raised hands, selfie setup, Valorant fan art, chibi, gaming humor, cartoon illustration, unofficial fan art
+```
+
+**Description**
+```text
+The camera is ready. The hat needs one last adjustment. Cypher checks his little selfie setup with the concentration usually reserved for watching everyone else. A close-up joke with the entire hat and both arms finally in the picture.
+```
+
+### Deutsch
+
+**Title**
+```text
+Cypher prüft die Kamera vor dem Selfie
+```
+
+**Main Tag**
+```text
+Cypher Selfie Meme
+```
+
+**Supporting Tags**
+```text
+Halbkörperporträt, kleine Kamera, breitkrempiger Hut, elfenbeinfarbener Mantel, cyanfarbene Augen, dunkle Maske, brauner Gurt, gehobene Hände, Selfie Vorbereitung, Valorant Fankunst, Chibi, Gaming Humor, Cartoon Illustration, inoffizielle Fankunst
+```
+
+**Description**
+```text
+Die Kamera ist bereit. Der Hut braucht noch eine letzte Korrektur. Cypher prüft seine kleine Selfieausrüstung mit der Konzentration, mit der er sonst alle anderen beobachtet. Ein Nahaufnahme-Witz, bei dem endlich der ganze Hut und beide Arme ins Bild passen.
+```
+
+### Français
+
+**Title**
+```text
+Cypher prépare son prochain selfie de près
+```
+
+**Main Tag**
+```text
+mème Cypher et son selfie
+```
+
+**Supporting Tags**
+```text
+portrait en buste, petite caméra, chapeau à large bord, manteau ivoire, yeux cyan, masque sombre, harnais brun, mains levées, préparation du selfie, fan art Valorant, chibi, humour gaming, illustration cartoon, fan art non officiel
+```
+
+**Description**
+```text
+La caméra est prête. Le chapeau demande un dernier ajustement. Cypher prépare son petit selfie avec la concentration qu’il réserve habituellement à la surveillance des autres. Une blague en gros plan où le chapeau entier et les deux bras entrent enfin dans le cadre.
+```
+
+### Español
+
+**Title**
+```text
+Cypher prepara la cámara para el selfie
+```
+
+**Main Tag**
+```text
+meme de Cypher y su selfie
+```
+
+**Supporting Tags**
+```text
+retrato de medio cuerpo, cámara pequeña, sombrero de ala ancha, abrigo marfil, ojos cian, máscara oscura, arnés marrón, manos levantadas, preparación del selfie, fan art de Valorant, chibi, humor gamer, ilustración cartoon, fan art no oficial
+```
+
+**Description**
+```text
+La cámara está lista. Al sombrero le falta un último ajuste. Cypher prepara su pequeño selfie con la concentración que suele dedicar a vigilar a los demás. Una broma en primer plano donde por fin caben el sombrero entero y los dos brazos.
+```

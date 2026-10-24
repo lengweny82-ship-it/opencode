@@ -1,0 +1,22 @@
+[
+  {
+    "file": "03_sage_coffee_before_healing.png",
+    "interior_background_pixels_removed": 6439,
+    "bounding_box": [
+      278,
+      54,
+      1133,
+      728
+    ]
+  },
+  {
+    "file": "06_cypher_camera_selfie.png",
+    "interior_background_pixels_removed": 10956,
+    "bounding_box": [
+      279,
+      7,
+      1199,
+      764
+    ]
+  }
+]
