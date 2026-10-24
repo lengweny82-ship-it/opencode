@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01_copper_shield_guard_7000x7000.png",
+    "bytes": 7892283,
+    "sha256": "9908364f67e8eccf098a1094f6fc36ecc59a6875ebabe20ef893f2997a58026e"
+  },
+  {
+    "file": "02_burgundy_rig_engineer_7000x7000.png",
+    "bytes": 9881870,
+    "sha256": "32e1e959c5e75b9eba9ddd86a7a705155d1757c4962e7ea26d2a3240f6f1dcd9"
+  },
+  {
+    "file": "03_olive_route_navigator_7000x7000.png",
+    "bytes": 6297005,
+    "sha256": "883f145eadc678e33fcadcfa91b6545c8ae6f11a492fcc27a02286fe9fd384c6"
+  },
+  {
+    "file": "04_teal_field_rescue_7000x7000.png",
+    "bytes": 9472197,
+    "sha256": "c6894f5c889724a44c59a996162089ef4a2f97fe5bd6345656f6ee0facda5b31"
+  },
+  {
+    "file": "05_slate_signal_operator_7000x7000.png",
+    "bytes": 5394582,
+    "sha256": "45f62788526b536223131c1233eca2a95f8501f82df1d187f8e5f3fb43e2c48d"
+  },
+  {
+    "file": "06_violet_cube_specialist_7000x7000.png",
+    "bytes": 6051182,
+    "sha256": "3c4011da97ed2a2742d7d5dee21bd2d2a16405709900dfcfd7211ebeceb45771"
+  },
+  {
+    "file": "07_coral_circuit_sprinter_7000x7000.png",
+    "bytes": 10340376,
+    "sha256": "55bf2b9a4a1b234f91434b5f91ae96ada32d1efc4d9d3f196d4395a403b87792"
+  },
+  {
+    "file": "08_amber_exosuit_mechanic_7000x7000.png",
+    "bytes": 12236519,
+    "sha256": "52af9d0e7227cefd65809263f3c841d967df04aeadb08c80fe0ff7640dd40b0b"
+  },
+  {
+    "file": "09_ivory_disc_guard_7000x7000.png",
+    "bytes": 8407055,
+    "sha256": "fd92b6740c4593e545d391a26200490cfc7a81fb994364a457589657e2639c3e"
+  },
+  {
+    "file": "10_gold_console_controller_7000x7000.png",
+    "bytes": 10419155,
+    "sha256": "3b749ee7fe7321a617eec1bcf8d93eac4d4bd89f9bff668f0921e435460ce54e"
+  }
+]

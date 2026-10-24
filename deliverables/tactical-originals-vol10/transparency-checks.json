@@ -1,0 +1,102 @@
+[
+  {
+    "file": "01_copper_shield_guard.png",
+    "interior_background_pixels_removed": 689,
+    "bounding_box": [
+      128,
+      49,
+      916,
+      990
+    ]
+  },
+  {
+    "file": "02_burgundy_rig_engineer.png",
+    "interior_background_pixels_removed": 4042,
+    "bounding_box": [
+      147,
+      37,
+      958,
+      971
+    ]
+  },
+  {
+    "file": "03_olive_route_navigator.png",
+    "interior_background_pixels_removed": 1059,
+    "bounding_box": [
+      301,
+      78,
+      844,
+      1003
+    ]
+  },
+  {
+    "file": "04_teal_field_rescue.png",
+    "interior_background_pixels_removed": 7069,
+    "bounding_box": [
+      110,
+      53,
+      989,
+      975
+    ]
+  },
+  {
+    "file": "05_slate_signal_operator.png",
+    "interior_background_pixels_removed": 752,
+    "bounding_box": [
+      228,
+      44,
+      731,
+      987
+    ]
+  },
+  {
+    "file": "06_violet_cube_specialist.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      177,
+      56,
+      881,
+      983
+    ]
+  },
+  {
+    "file": "07_coral_circuit_sprinter.png",
+    "interior_background_pixels_removed": 15855,
+    "bounding_box": [
+      25,
+      76,
+      874,
+      966
+    ]
+  },
+  {
+    "file": "08_amber_exosuit_mechanic.png",
+    "interior_background_pixels_removed": 9976,
+    "bounding_box": [
+      58,
+      70,
+      934,
+      977
+    ]
+  },
+  {
+    "file": "09_ivory_disc_guard.png",
+    "interior_background_pixels_removed": 0,
+    "bounding_box": [
+      104,
+      76,
+      894,
+      1001
+    ]
+  },
+  {
+    "file": "10_gold_console_controller.png",
+    "interior_background_pixels_removed": 10231,
+    "bounding_box": [
+      129,
+      92,
+      986,
+      946
+    ]
+  }
+]
