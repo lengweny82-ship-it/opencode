@@ -1,0 +1,231 @@
+[
+  {
+    "file": "01_neon_tangled_charger.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "selected_background_components": [
+      16,
+      18,
+      22,
+      23,
+      27,
+      29
+    ],
+    "internal_background_pixels_removed": 4500,
+    "bounding_box": [
+      413,
+      55,
+      995,
+      716
+    ]
+  },
+  {
+    "file": "02_viper_kitchen_smoke.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "selected_background_components": [
+      5,
+      7,
+      8
+    ],
+    "internal_background_pixels_removed": 3123,
+    "bounding_box": [
+      309,
+      34,
+      1092,
+      747
+    ]
+  },
+  {
+    "file": "03_yoru_stubborn_hair.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      510,
+      768
+    ],
+    "selected_background_components": [
+      12
+    ],
+    "internal_background_pixels_removed": 1544,
+    "bounding_box": [
+      61,
+      56,
+      468,
+      736
+    ]
+  },
+  {
+    "file": "04_chamber_lint_emergency.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      556,
+      54,
+      989,
+      719
+    ]
+  },
+  {
+    "file": "05_skye_hawk_hat.png",
+    "source_dimensions": [
+      1024,
+      1024
+    ],
+    "working_dimensions": [
+      1024,
+      1024
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      319,
+      58,
+      665,
+      972
+    ]
+  },
+  {
+    "file": "06_breach_tiny_teacup.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "selected_background_components": [
+      60,
+      115,
+      116,
+      117
+    ],
+    "internal_background_pixels_removed": 1232,
+    "bounding_box": [
+      466,
+      54,
+      942,
+      727
+    ]
+  },
+  {
+    "file": "07_fade_alarm_clock.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      810,
+      768
+    ],
+    "selected_background_components": [
+      100,
+      101,
+      105
+    ],
+    "internal_background_pixels_removed": 2229,
+    "bounding_box": [
+      203,
+      59,
+      778,
+      723
+    ]
+  },
+  {
+    "file": "08_gekko_snack_thief.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      391,
+      64,
+      1017,
+      706
+    ]
+  },
+  {
+    "file": "09_deadlock_tangled_headphones.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      630,
+      768
+    ],
+    "selected_background_components": [
+      90,
+      106,
+      112,
+      119,
+      124,
+      133,
+      139,
+      144,
+      171,
+      175,
+      184,
+      190,
+      192,
+      196,
+      204,
+      209
+    ],
+    "internal_background_pixels_removed": 9748,
+    "bounding_box": [
+      153,
+      52,
+      588,
+      735
+    ]
+  },
+  {
+    "file": "10_harbor_spilled_tea.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      439,
+      52,
+      882,
+      732
+    ]
+  }
+]

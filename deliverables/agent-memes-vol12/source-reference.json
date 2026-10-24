@@ -1,0 +1,97 @@
+[
+  {
+    "file": "01_neon_tangled_charger.png",
+    "raw_sha256": "55fb0954213bed67e8defcbc2e4334534c3d538307c285788d614e23b9a91613",
+    "cutout_sha256": "ec284a2671bf77a52582f3d2a5209cdb602c00fe0a53a885bbf2dc8a01bb1736",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/01_neon_tangled_charger.png",
+    "cutout_reference": "source-reference/cutouts/01_neon_tangled_charger.png"
+  },
+  {
+    "file": "02_viper_kitchen_smoke.png",
+    "raw_sha256": "549f4a705e359591df07407b47c517e8c869fcd03a4637c5cc69ed32226e37c1",
+    "cutout_sha256": "a93e65f09e8390a0c7f455082bb61eac184722fdbe4f1d9927ffd6584bacaa8a",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/02_viper_kitchen_smoke.png",
+    "cutout_reference": "source-reference/cutouts/02_viper_kitchen_smoke.png"
+  },
+  {
+    "file": "03_yoru_stubborn_hair.png",
+    "raw_sha256": "526c2d24de75f9d4862c96044696747853389057fd28e6ac502005deb02f5a10",
+    "cutout_sha256": "b54b98de313079bc2f7026bba71d3919d5d9ccd271cd03fe1fa49b29f8589ea1",
+    "selected_crop": [
+      0,
+      0,
+      510,
+      768
+    ],
+    "raw_reference": "source-reference/raw/03_yoru_stubborn_hair.png",
+    "cutout_reference": "source-reference/cutouts/03_yoru_stubborn_hair.png"
+  },
+  {
+    "file": "04_chamber_lint_emergency.png",
+    "raw_sha256": "574a9646f8c52eeb125cd3d7a6644e785e6bd1ac934a2683053838cf8a41dcae",
+    "cutout_sha256": "1e9bffe4956167e7629727d30b4b990e19d467fa67f102cf5123693684b46fa7",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/04_chamber_lint_emergency.png",
+    "cutout_reference": "source-reference/cutouts/04_chamber_lint_emergency.png"
+  },
+  {
+    "file": "05_skye_hawk_hat.png",
+    "raw_sha256": "e2c105faddb0cf9c1c41b30e08fc0601d446f89a0ffe53542580b629b4f7edc3",
+    "cutout_sha256": "5163d352369207b9103e11c14200a0dd61bb6a9aa0e5167ed9cc463f651016ae",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/05_skye_hawk_hat.png",
+    "cutout_reference": "source-reference/cutouts/05_skye_hawk_hat.png"
+  },
+  {
+    "file": "06_breach_tiny_teacup.png",
+    "raw_sha256": "48b9c5ba0b8f213e56f26eaa938f680d9b299e7b69e759f971987f4514e3cad3",
+    "cutout_sha256": "df106be180796145bb1502aa7336c9044ba313c09b5c0a4984bb89ef481c7d6e",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/06_breach_tiny_teacup.png",
+    "cutout_reference": "source-reference/cutouts/06_breach_tiny_teacup.png"
+  },
+  {
+    "file": "07_fade_alarm_clock.png",
+    "raw_sha256": "a4e35350802476760a0dc5ff973eb0caf74facaab5f733ad4b337be8bbe8b3a4",
+    "cutout_sha256": "0335800927842aa3d10ce46525283243ac0b5d3455d064f7dcfbc40725a832b3",
+    "selected_crop": [
+      0,
+      0,
+      810,
+      768
+    ],
+    "raw_reference": "source-reference/raw/07_fade_alarm_clock.png",
+    "cutout_reference": "source-reference/cutouts/07_fade_alarm_clock.png"
+  },
+  {
+    "file": "08_gekko_snack_thief.png",
+    "raw_sha256": "132633c5c39796be9b460cac34378a246b57eb1b8710c6cf6b1cc59fb9a6dd31",
+    "cutout_sha256": "a63518b9384a515a6b5028395ca3b0198fb6ba878cc0d9b865dc48a06c17b160",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/08_gekko_snack_thief.png",
+    "cutout_reference": "source-reference/cutouts/08_gekko_snack_thief.png"
+  },
+  {
+    "file": "09_deadlock_tangled_headphones.png",
+    "raw_sha256": "eb5c810190a69a261b6c3ba099ccfba1405e03c57bcca096843928ac59ce6f1c",
+    "cutout_sha256": "4c536ae9f76670706edf2e84b41ef9149b00caa96c5f2ca8a20737ba28b410d7",
+    "selected_crop": [
+      0,
+      0,
+      630,
+      768
+    ],
+    "raw_reference": "source-reference/raw/09_deadlock_tangled_headphones.png",
+    "cutout_reference": "source-reference/cutouts/09_deadlock_tangled_headphones.png"
+  },
+  {
+    "file": "10_harbor_spilled_tea.png",
+    "raw_sha256": "574dbdd50e01e820bd9e910b93460bfcbec585768492cac4ba4e4f2bf36dc4ea",
+    "cutout_sha256": "b5d35baba255adea760ef1a8cb778771c95d09564164c486c60e830627037376",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/10_harbor_spilled_tea.png",
+    "cutout_reference": "source-reference/cutouts/10_harbor_spilled_tea.png"
+  }
+]
