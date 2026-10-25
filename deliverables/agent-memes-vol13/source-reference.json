@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01_astra_cosmic_laundry.png",
+    "raw_sha256": "2a9b30301218fa952c8fa3595f1fb74e0539da4f89842c09a04402d94e9e7a0f",
+    "cutout_sha256": "c490a0662393f7969b21d90cc13790f2741d77a8a009320bc0ff740166857b7e",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/01_astra_cosmic_laundry.png",
+    "cutout_reference": "source-reference/cutouts/01_astra_cosmic_laundry.png"
+  },
+  {
+    "file": "02_kayo_puzzle_problem.png",
+    "raw_sha256": "964ececb0114a1252b961a5861c8fb739138aee2fc5fff25da1bdec87e8cbe7e",
+    "cutout_sha256": "69ea3262f4be3742ede2671c07a2a13f878a79171ad1020f07a4a96c0618c57c",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/02_kayo_puzzle_problem.png",
+    "cutout_reference": "source-reference/cutouts/02_kayo_puzzle_problem.png"
+  },
+  {
+    "file": "03_clove_bubblegum_break.png",
+    "raw_sha256": "e232fa384c31363cf98b72e3f9545ae39b9f20673823b0f468966753a8a0a91e",
+    "cutout_sha256": "d7a748e32270f79e4f7e9f3d00241adb77d07fec044c5fe748774dbe15b24d5c",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/03_clove_bubblegum_break.png",
+    "cutout_reference": "source-reference/cutouts/03_clove_bubblegum_break.png"
+  },
+  {
+    "file": "04_iso_cookie_dilemma.png",
+    "raw_sha256": "5bac1a6f6064059de50c07e58dca5fde95401bd190e96c04ee9799d4cc30722c",
+    "cutout_sha256": "08bde38069cf10ad2d96bced08b744ed6902fd7be995a49447e8b7ce0b3ce179",
+    "selected_crop": [
+      0,
+      0,
+      705,
+      768
+    ],
+    "raw_reference": "source-reference/raw/04_iso_cookie_dilemma.png",
+    "cutout_reference": "source-reference/cutouts/04_iso_cookie_dilemma.png"
+  },
+  {
+    "file": "05_jett_umbrella_fail.png",
+    "raw_sha256": "d01aaa631fd703b7bdb3ce8fe87ab728267d487cab7a327455be5134f1ede7ce",
+    "cutout_sha256": "af11ecc3958e5e0fdde2af448c79fca0908d81a1e9cb61f56305030ceac85553",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/05_jett_umbrella_fail.png",
+    "cutout_reference": "source-reference/cutouts/05_jett_umbrella_fail.png"
+  },
+  {
+    "file": "06_killjoy_sticky_note_overload.png",
+    "raw_sha256": "6e53e2cbae62b4a82a0a81e10d27ae268c17534e06dfe1dabda6d34fe3472c1b",
+    "cutout_sha256": "b9cf2583983b0e34676f4f1088b829073be5239056e5275bf5c338dc647e28c2",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/06_killjoy_sticky_note_overload.png",
+    "cutout_reference": "source-reference/cutouts/06_killjoy_sticky_note_overload.png"
+  },
+  {
+    "file": "07_sage_orb_balance.png",
+    "raw_sha256": "430923d37a4dc3d19d551096b937ca57156e674e30076edaf810fc81730ec7b1",
+    "cutout_sha256": "7b1930bdeb1dfba8d1cb6af5ea55edc555c030f6ed70ed74804c354428773946",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/07_sage_orb_balance.png",
+    "cutout_reference": "source-reference/cutouts/07_sage_orb_balance.png"
+  },
+  {
+    "file": "08_cypher_key_confusion.png",
+    "raw_sha256": "1fc8760269029914c7d3a54dce23236d81883a9f1bd7d2189f8cfc21496205da",
+    "cutout_sha256": "ee859441813f6fdb7319581196ef49c41562ea31f2435b9b5b7e28d15af9ae76",
+    "selected_crop": [
+      0,
+      0,
+      480,
+      768
+    ],
+    "raw_reference": "source-reference/raw/08_cypher_key_confusion.png",
+    "cutout_reference": "source-reference/cutouts/08_cypher_key_confusion.png"
+  },
+  {
+    "file": "09_omen_soft_heart.png",
+    "raw_sha256": "0675739621936eac3c957d93eff9af7a6ef75a1e708bb4e130fbad2c17060ae5",
+    "cutout_sha256": "323c211ebcd1496a0c8b81f87a0dc30d539a727c05409e58cdcfbeffaafc9cab",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/09_omen_soft_heart.png",
+    "cutout_reference": "source-reference/cutouts/09_omen_soft_heart.png"
+  },
+  {
+    "file": "10_raze_popcorn_problem.png",
+    "raw_sha256": "2bf6661f2ae99d7c3d58d341196604af3898fee9e804af468e70f2eb6b66c3e2",
+    "cutout_sha256": "70ee46e78998f224fb7a7af670b9249c266df7af78db3ea44d35ec2c8de9ce71",
+    "selected_crop": null,
+    "raw_reference": "source-reference/raw/10_raze_popcorn_problem.png",
+    "cutout_reference": "source-reference/cutouts/10_raze_popcorn_problem.png"
+  }
+]

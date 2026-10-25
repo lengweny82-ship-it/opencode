@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01_astra_cosmic_laundry_7000x7000.png",
+    "bytes": 5954238,
+    "sha256": "f83233562a9357248b6218ef04379c414d4f8b74d34a783f83056461e87f7c6f",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "02_kayo_puzzle_problem_7000x7000.png",
+    "bytes": 6573445,
+    "sha256": "2d2d576755b43cbc459e5548b0aa71cf776d4b0aa99b9c9d4fab7b89a0c1d539",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "03_clove_bubblegum_break_7000x7000.png",
+    "bytes": 4675390,
+    "sha256": "c3a4dddda3c4d1af14cfce8b7a038115efb9e3303d76e914b6049d0c538617b8",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "04_iso_cookie_dilemma_7000x7000.png",
+    "bytes": 5988248,
+    "sha256": "8175a5417b2a889ab138f888c162a5455cbfd3d03a2eff954f138087971922d2",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "05_jett_umbrella_fail_7000x7000.png",
+    "bytes": 6054696,
+    "sha256": "795fc3fd60b309a9d80751e55b870f2111bc433beab0d0a7a99e94f5324dce86",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "06_killjoy_sticky_note_overload_7000x7000.png",
+    "bytes": 4799095,
+    "sha256": "04511daf036516d5099c9a79eb20400d3edb0d538a21502b06d0359af0c22fc2",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "07_sage_orb_balance_7000x7000.png",
+    "bytes": 7086612,
+    "sha256": "293dea137b19fca8f6a85a84f814f8f76d9f5a233ca51aad02f944d61efdb835",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "08_cypher_key_confusion_7000x7000.png",
+    "bytes": 4796705,
+    "sha256": "3a43177e1ed78c8de269b92dd779f89c32d1148e3956b202e3a4abbbdadec522",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "09_omen_soft_heart_7000x7000.png",
+    "bytes": 4549053,
+    "sha256": "d7f724a72bede058265a3c70d040be701fcc01330aef0174013b60015381eee3",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "10_raze_popcorn_problem_7000x7000.png",
+    "bytes": 4551201,
+    "sha256": "cc36a25f62e153dd44eee6461e688f8bc258b6222bd1e22df91b0fb1631ce99c",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  }
+]
