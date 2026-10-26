@@ -1,0 +1,209 @@
+[
+  {
+    "file": "01_waylay_gift_wrap_tangle.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      136,
+      137,
+      139,
+      141,
+      149,
+      151,
+      155,
+      156
+    ],
+    "internal_background_pixels_removed": 6249,
+    "bounding_box": [
+      473,
+      64,
+      935,
+      707
+    ]
+  },
+  {
+    "file": "02_clove_noodle_problem.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      715,
+      768
+    ],
+    "background_components": [
+      4
+    ],
+    "internal_background_pixels_removed": 377,
+    "bounding_box": [
+      152,
+      64,
+      672,
+      728
+    ]
+  },
+  {
+    "file": "03_astra_cosmic_dusting.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      443,
+      40,
+      972,
+      732
+    ]
+  },
+  {
+    "file": "04_kayo_magnet_problem.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      352,
+      25,
+      1056,
+      744
+    ]
+  },
+  {
+    "file": "05_iso_sticker_backing.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      500,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      160,
+      53,
+      467,
+      724
+    ]
+  },
+  {
+    "file": "06_neon_waiting_game.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      11
+    ],
+    "internal_background_pixels_removed": 84,
+    "bounding_box": [
+      428,
+      44,
+      934,
+      716
+    ]
+  },
+  {
+    "file": "07_chamber_dishwashing_duty.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      510,
+      44,
+      898,
+      728
+    ]
+  },
+  {
+    "file": "08_sova_drone_dress_code.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      730,
+      768
+    ],
+    "background_components": [
+      71
+    ],
+    "internal_background_pixels_removed": 232,
+    "bounding_box": [
+      111,
+      39,
+      717,
+      739
+    ]
+  },
+  {
+    "file": "09_reyna_brain_freeze.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      421,
+      43,
+      951,
+      729
+    ]
+  },
+  {
+    "file": "10_brimstone_packing_problem.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      9
+    ],
+    "internal_background_pixels_removed": 123,
+    "bounding_box": [
+      400,
+      50,
+      1009,
+      721
+    ]
+  }
+]

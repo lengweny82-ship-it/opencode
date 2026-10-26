@@ -1,0 +1,143 @@
+[
+  {
+    "design": "01_waylay_gift_wrap_tangle",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "3d9b5082d2d14d9123713f6aa3089e8f91aa08ef465708c9c5ee372ed904a62f",
+    "native": "sources/native/01_waylay_gift_wrap_tangle.png",
+    "cutout": "sources/cutout/01_waylay_gift_wrap_tangle.png",
+    "cutout_sha256": "ef7eebf5e9a60e1203408094ce4c59070a2ec4db0f5cf69094229c5985c6827c"
+  },
+  {
+    "design": "02_clove_noodle_problem",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": [
+      0,
+      0,
+      715,
+      768
+    ],
+    "native_sha256": "fbe2aa0f6d3fe73a8ed39607caf7a3653ce4c3aa25b1935c07be527878b760d2",
+    "native": "sources/native/02_clove_noodle_problem.png",
+    "cutout": "sources/cutout/02_clove_noodle_problem.png",
+    "cutout_sha256": "44248b2fbb47fdb46e603ab0998d1683a0093ca7d19d7a5d9fb9398e05fa60c2",
+    "working-crop": "sources/working-crop/02_clove_noodle_problem.png",
+    "working-crop_sha256": "00625143cfafa8308384224beac5917dcd42436c195cecd52bab0ec013da382a"
+  },
+  {
+    "design": "03_astra_cosmic_dusting",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "cf8b012236c01f702753303bf0614da9f9728bbe2eeff09a4db7c04a5b645094",
+    "native": "sources/native/03_astra_cosmic_dusting.png",
+    "cutout": "sources/cutout/03_astra_cosmic_dusting.png",
+    "cutout_sha256": "ad42ef94fbeca88d07417a7fa2ccd67db25e83e7e62ce62178cfd56f3d2633fb"
+  },
+  {
+    "design": "04_kayo_magnet_problem",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "d094fb986ec2b7df214713a1f1c274e4b5fb1c9234a4b81a82dd0f9a820bdb0d",
+    "native": "sources/native/04_kayo_magnet_problem.png",
+    "cutout": "sources/cutout/04_kayo_magnet_problem.png",
+    "cutout_sha256": "7d3f134e6c380f89a1f101d78b2f8bbe97a87874bc04a1cb663b35f9a1cafa1a"
+  },
+  {
+    "design": "05_iso_sticker_backing",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": [
+      0,
+      0,
+      500,
+      768
+    ],
+    "native_sha256": "482875b67ad40f1b55662fb1acfca48c3c7498970b222ae3a4dd291be32ded1e",
+    "native": "sources/native/05_iso_sticker_backing.png",
+    "cutout": "sources/cutout/05_iso_sticker_backing.png",
+    "cutout_sha256": "e2255300f05fed2dfcfbd05b089455ab3f97de58c7ac26a7007ff1ff0594f25e",
+    "working-crop": "sources/working-crop/05_iso_sticker_backing.png",
+    "working-crop_sha256": "6a892aff0dfec0b3faf7414420efc0f5d13d5a8ca732d19471fdceed0e43579f"
+  },
+  {
+    "design": "06_neon_waiting_game",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "17ac8edca5fc792ad7392be3ca04d9ff7fa3f7e2615dcd9ef5c286b1ecd45784",
+    "native": "sources/native/06_neon_waiting_game.png",
+    "cutout": "sources/cutout/06_neon_waiting_game.png",
+    "cutout_sha256": "e1f04d82d8cb1045a64c5e163a42ef88299c0db5abdf03d37731da51c6015bb3"
+  },
+  {
+    "design": "07_chamber_dishwashing_duty",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "48d596e23dc0fa870d3d60b660cfd3e5511b3e1778f603a9f7156459291b7099",
+    "native": "sources/native/07_chamber_dishwashing_duty.png",
+    "cutout": "sources/cutout/07_chamber_dishwashing_duty.png",
+    "cutout_sha256": "956027eb3892950af7c743a26e03975ce3d188da42ed3eb59a6d007a8bbdbed2"
+  },
+  {
+    "design": "08_sova_drone_dress_code",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": [
+      0,
+      0,
+      730,
+      768
+    ],
+    "native_sha256": "a26046a84256006a3147d89167fd1113e282f2f7c2d6bd2519f6bfacbee1f925",
+    "native": "sources/native/08_sova_drone_dress_code.png",
+    "cutout": "sources/cutout/08_sova_drone_dress_code.png",
+    "cutout_sha256": "819431d1cae67ecbae319ed9a8745fede3873a3b2847af3d78386ec98c640dab",
+    "working-crop": "sources/working-crop/08_sova_drone_dress_code.png",
+    "working-crop_sha256": "22f19f31ad406c900fa43457504d85750b7dda7c20b20bb6e001f4dca581873d"
+  },
+  {
+    "design": "09_reyna_brain_freeze",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "2f7b0456a29a0ab5db29a7f9237a89e876eba38a6ed05c366f67bcad0cbf4307",
+    "native": "sources/native/09_reyna_brain_freeze.png",
+    "cutout": "sources/cutout/09_reyna_brain_freeze.png",
+    "cutout_sha256": "cd0522448b57cc015cdaa7cea8f5a0ebca6ae9716de20ed78988d18a298a36e1"
+  },
+  {
+    "design": "10_brimstone_packing_problem",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "f5f97c1ae7903e3ab309022c40d1b7bc9731ef1b5863d2efa51e1f3da2a776f5",
+    "native": "sources/native/10_brimstone_packing_problem.png",
+    "cutout": "sources/cutout/10_brimstone_packing_problem.png",
+    "cutout_sha256": "105c5b2427c91bdf863de8157259b2d0ae838a3d45e0d7e3d32588c4d2233239"
+  }
+]

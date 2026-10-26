@@ -1,0 +1,212 @@
+[
+  {
+    "file": "01_waylay_gift_wrap_tangle_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1146,
+      237,
+      5847,
+      6763
+    ],
+    "transparent_pixels": 29684971,
+    "partial_alpha_pixels": 1856192,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "02_clove_noodle_problem_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      941,
+      237,
+      6059,
+      6763
+    ],
+    "transparent_pixels": 27185018,
+    "partial_alpha_pixels": 1419911,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "03_astra_cosmic_dusting_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1002,
+      237,
+      5996,
+      6763
+    ],
+    "transparent_pixels": 31889591,
+    "partial_alpha_pixels": 1498585,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "04_kayo_magnet_problem_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      305,
+      237,
+      6695,
+      6763
+    ],
+    "transparent_pixels": 27354680,
+    "partial_alpha_pixels": 1141963,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "05_iso_sticker_backing_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1994,
+      237,
+      5000,
+      6763
+    ],
+    "transparent_pixels": 34760861,
+    "partial_alpha_pixels": 804142,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "06_neon_waiting_game_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1037,
+      237,
+      5957,
+      6763
+    ],
+    "transparent_pixels": 31676851,
+    "partial_alpha_pixels": 1674941,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "07_chamber_dishwashing_duty_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1638,
+      237,
+      5355,
+      6763
+    ],
+    "transparent_pixels": 35423748,
+    "partial_alpha_pixels": 1158797,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "08_sova_drone_dress_code_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      674,
+      237,
+      6326,
+      6763
+    ],
+    "transparent_pixels": 29900296,
+    "partial_alpha_pixels": 1349665,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "09_reyna_brain_freeze_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      975,
+      237,
+      6025,
+      6763
+    ],
+    "transparent_pixels": 29047661,
+    "partial_alpha_pixels": 1300408,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "10_brimstone_packing_problem_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      538,
+      237,
+      6462,
+      6763
+    ],
+    "transparent_pixels": 24933241,
+    "partial_alpha_pixels": 1038446,
+    "corner_alpha_zero": true
+  }
+]
