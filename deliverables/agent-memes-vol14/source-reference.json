@@ -1,0 +1,117 @@
+[
+  {
+    "file": "01_vyse_balloon_trouble.png",
+    "raw_sha256": "ab29b1d39bd51df4a7038bc76732bd3131d398f1e29b50daaebf752119baba2f",
+    "cutout_sha256": "f9ef8375ce33eabecd702ab423974a5a40c3f466c9b790688cd4c464b7ac62c6",
+    "working_sha256": "a55e240289035c6449a7756aee30959c42f408aa7a7816a43cc7e7860870b40c",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/01_vyse_balloon_trouble.png",
+    "cutout_reference": "source-reference/cutouts/01_vyse_balloon_trouble.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "02_vyse_cactus_caution.png",
+    "raw_sha256": "b0cb4971d49be26229f0a43b5264f0efcdfce0a09b36edc1e6d757b5164e605c",
+    "cutout_sha256": "c7db83998803ebc8821e8713c942b6a334aecafd89ee04318b43314a179e88eb",
+    "working_sha256": "670f35221dc9c976deb480af785403801f6533298dd4ba715bcc62cf6dab6aa9",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/02_vyse_cactus_caution.png",
+    "cutout_reference": "source-reference/cutouts/02_vyse_cactus_caution.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "03_tejo_remote_confusion.png",
+    "raw_sha256": "a5e76cb23f7d05b0493214448c55a8abef08f912e92f8d4b41443d44e4e91422",
+    "cutout_sha256": "f786173ec8b6e95e8636a8d10ca8cafd5617efff42591d1117bd82dd11317593",
+    "working_sha256": "ffe85694e1836f5eb9c4411264e342e20f54021df230f438f5f6e53fa2bac0ab",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/03_tejo_remote_confusion.png",
+    "cutout_reference": "source-reference/cutouts/03_tejo_remote_confusion.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "04_tejo_paper_plane_problem.png",
+    "raw_sha256": "7e2b98d72d230b5f1c185aa041e8f0842b9822299fdd61c31e743e2fc60f3fb1",
+    "cutout_sha256": "53be8b968dfe72252122051cfa13be1911e319663dea170b44935cb7fd4afb23",
+    "working_sha256": "83c4f9bbd97155e33a13cf7b15e6bfbbea89916d2513d6946f4f9b24ad2ed0ff",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/04_tejo_paper_plane_problem.png",
+    "cutout_reference": "source-reference/cutouts/04_tejo_paper_plane_problem.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "05_waylay_too_bright.png",
+    "raw_sha256": "89c9374b50657e7bbd56fb5730422223a4fb4e754d5b2d243461410f27ee5932",
+    "cutout_sha256": "fed4263a1171953153e6f04ef84141469a197a3fb39783c03190b4da0ac305ce",
+    "working_sha256": "ef3f9bafacf0ae3036b2db7f8516219bd6fd47b85aba3ca91cfe13ac560ddf7a",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/05_waylay_too_bright.png",
+    "cutout_reference": "source-reference/cutouts/05_waylay_too_bright.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "06_waylay_shoelace_delay.png",
+    "raw_sha256": "fdcadd9af3ba2bfc47123705be0c773a03da887ef85d1877c1c50dbffc9f81df",
+    "cutout_sha256": "4178d5d8ba1e05d9b99b90d56f7ddea4775fd940bc6d18c0644cbceb859eb00a",
+    "working_sha256": "e0ca5d183f507a1d848c560fb42412d18c5438bd523203bd99714d1a69016f5f",
+    "selected_crop": null,
+    "local_retouch": true,
+    "raw_reference": "source-reference/raw/06_waylay_shoelace_delay.png",
+    "cutout_reference": "source-reference/cutouts/06_waylay_shoelace_delay.png",
+    "retouched_working_reference": "source-reference/working/06_waylay_shoelace_delay.png"
+  },
+  {
+    "file": "07_veto_stubborn_jar.png",
+    "raw_sha256": "da0c9332194970d1f0b8bf44a074e5996070c65fbacfb9f8b8a3db39884ccb1f",
+    "cutout_sha256": "277bdc39652d97504c1fb27c60acc3bd009614a8953d9685a15df83e2d474d11",
+    "working_sha256": "8b5e3105bc884ca7253b34c2a8c82bd186260c4291ee4d34cb8e4e7d3d409a90",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/07_veto_stubborn_jar.png",
+    "cutout_reference": "source-reference/cutouts/07_veto_stubborn_jar.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "08_veto_mitten_mismatch.png",
+    "raw_sha256": "a2a4cad43a767fbaeb9bb7cbfc1986b13afe4ef254e082f780a4c2a34295c1a9",
+    "cutout_sha256": "a49235785d67ce0e9207afced4ffb9158b8cbcddd9c498861a355ea9d4c64850",
+    "working_sha256": "a452b8173ad02fef40580ad6f4cf903b67724107801ae44592f35b469b9d0218",
+    "selected_crop": [
+      0,
+      0,
+      785,
+      816
+    ],
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/08_veto_mitten_mismatch.png",
+    "cutout_reference": "source-reference/cutouts/08_veto_mitten_mismatch.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "09_miks_triangle_solo.png",
+    "raw_sha256": "3921f55464e3d000ecb068855564c1bf71362da6a38458c54917eb70e5f384b0",
+    "cutout_sha256": "e29b49701fe2b045582c40851c050ca03fad20d541d11818c50d9fc952b3f75c",
+    "working_sha256": "dc2cbaa796e70bd92668900204462c94fe1a779e9889e5a2a0e6c37165970db7",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/09_miks_triangle_solo.png",
+    "cutout_reference": "source-reference/cutouts/09_miks_triangle_solo.png",
+    "retouched_working_reference": null
+  },
+  {
+    "file": "10_miks_missing_earbud.png",
+    "raw_sha256": "4128feb4b23f7f977ff8508e57cb8dc1e0436b55ec565584e07ab1bdc2f7a76c",
+    "cutout_sha256": "1eb6a710be970c6d5df4fb38f36745893bd998d3c6a5ed117511fc441e72e3bd",
+    "working_sha256": "ecc803b461e1496a33af28e7f00182b8e8c5a5e71571bb1ffacc1b8dbeea0f26",
+    "selected_crop": null,
+    "local_retouch": false,
+    "raw_reference": "source-reference/raw/10_miks_missing_earbud.png",
+    "cutout_reference": "source-reference/cutouts/10_miks_missing_earbud.png",
+    "retouched_working_reference": null
+  }
+]

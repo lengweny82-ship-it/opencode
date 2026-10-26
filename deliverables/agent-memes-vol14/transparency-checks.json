@@ -1,0 +1,205 @@
+[
+  {
+    "file": "01_vyse_balloon_trouble.png",
+    "source_dimensions": [
+      1440,
+      720
+    ],
+    "working_dimensions": [
+      1440,
+      720
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      525,
+      42,
+      909,
+      686
+    ]
+  },
+  {
+    "file": "02_vyse_cactus_caution.png",
+    "source_dimensions": [
+      1440,
+      720
+    ],
+    "working_dimensions": [
+      1440,
+      720
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      397,
+      18,
+      1088,
+      705
+    ]
+  },
+  {
+    "file": "03_tejo_remote_confusion.png",
+    "source_dimensions": [
+      1024,
+      1024
+    ],
+    "working_dimensions": [
+      1024,
+      1024
+    ],
+    "selected_background_components": [
+      8
+    ],
+    "internal_background_pixels_removed": 196,
+    "bounding_box": [
+      177,
+      27,
+      856,
+      1007
+    ]
+  },
+  {
+    "file": "04_tejo_paper_plane_problem.png",
+    "source_dimensions": [
+      1365,
+      768
+    ],
+    "working_dimensions": [
+      1365,
+      768
+    ],
+    "selected_background_components": [
+      10
+    ],
+    "internal_background_pixels_removed": 868,
+    "bounding_box": [
+      393,
+      26,
+      990,
+      745
+    ]
+  },
+  {
+    "file": "05_waylay_too_bright.png",
+    "source_dimensions": [
+      1075,
+      976
+    ],
+    "working_dimensions": [
+      1075,
+      976
+    ],
+    "selected_background_components": [
+      60
+    ],
+    "internal_background_pixels_removed": 1255,
+    "bounding_box": [
+      212,
+      36,
+      857,
+      940
+    ]
+  },
+  {
+    "file": "06_waylay_shoelace_delay.png",
+    "source_dimensions": [
+      1075,
+      976
+    ],
+    "working_dimensions": [
+      1075,
+      976
+    ],
+    "selected_background_components": [
+      70,
+      71,
+      72
+    ],
+    "internal_background_pixels_removed": 5229,
+    "bounding_box": [
+      101,
+      58,
+      810,
+      923
+    ]
+  },
+  {
+    "file": "07_veto_stubborn_jar.png",
+    "source_dimensions": [
+      1293,
+      816
+    ],
+    "working_dimensions": [
+      1293,
+      816
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      367,
+      40,
+      929,
+      777
+    ]
+  },
+  {
+    "file": "08_veto_mitten_mismatch.png",
+    "source_dimensions": [
+      1293,
+      816
+    ],
+    "working_dimensions": [
+      785,
+      816
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      85,
+      34,
+      764,
+      793
+    ]
+  },
+  {
+    "file": "09_miks_triangle_solo.png",
+    "source_dimensions": [
+      1366,
+      768
+    ],
+    "working_dimensions": [
+      1366,
+      768
+    ],
+    "selected_background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      472,
+      12,
+      926,
+      758
+    ]
+  },
+  {
+    "file": "10_miks_missing_earbud.png",
+    "source_dimensions": [
+      1366,
+      768
+    ],
+    "working_dimensions": [
+      1366,
+      768
+    ],
+    "selected_background_components": [
+      43,
+      79
+    ],
+    "internal_background_pixels_removed": 1992,
+    "bounding_box": [
+      473,
+      32,
+      894,
+      746
+    ]
+  }
+]

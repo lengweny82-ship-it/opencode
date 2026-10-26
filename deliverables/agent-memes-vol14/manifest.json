@@ -1,0 +1,92 @@
+[
+  {
+    "file": "01_vyse_balloon_trouble_7000x7000.png",
+    "bytes": 6036491,
+    "sha256": "cb471005571c0fafbfd108c4290149583217b630755a7e060c5830a583166535",
+    "source_dimensions": [
+      1440,
+      720
+    ]
+  },
+  {
+    "file": "02_vyse_cactus_caution_7000x7000.png",
+    "bytes": 8157651,
+    "sha256": "ad2e8932f82411936c60dd754b3e14958d771d011db59147bbf8fbfa971b967b",
+    "source_dimensions": [
+      1440,
+      720
+    ]
+  },
+  {
+    "file": "03_tejo_remote_confusion_7000x7000.png",
+    "bytes": 6129659,
+    "sha256": "8b18679a00e5d552d720784ab9198097246e554e385df7373766676aaf840c62",
+    "source_dimensions": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "file": "04_tejo_paper_plane_problem_7000x7000.png",
+    "bytes": 6703457,
+    "sha256": "6a1fcad1f7f19b9f3b6efd902a8772635de46d709a73c3d4d5f86ff2f67a762b",
+    "source_dimensions": [
+      1365,
+      768
+    ]
+  },
+  {
+    "file": "05_waylay_too_bright_7000x7000.png",
+    "bytes": 6042862,
+    "sha256": "1e84f5533e885fd86bc418aebdb922e56febfde32e9cc57b3952c9c46e507d35",
+    "source_dimensions": [
+      1075,
+      976
+    ]
+  },
+  {
+    "file": "06_waylay_shoelace_delay_7000x7000.png",
+    "bytes": 5722338,
+    "sha256": "d5d5e71c9d8bdf39c7a2e5fd96a99d3ad33028853ece33a2ada3221f56e6a323",
+    "source_dimensions": [
+      1075,
+      976
+    ]
+  },
+  {
+    "file": "07_veto_stubborn_jar_7000x7000.png",
+    "bytes": 5351513,
+    "sha256": "e93b1db17687c2d7fcba5f454bfe8ae3d72cbaa10dd07d3a0d1d4ee716f809ff",
+    "source_dimensions": [
+      1293,
+      816
+    ]
+  },
+  {
+    "file": "08_veto_mitten_mismatch_7000x7000.png",
+    "bytes": 6121964,
+    "sha256": "12847481b0147d63b1a936a810f90a4367d3c1100020f628d20784a2ba400a60",
+    "source_dimensions": [
+      1293,
+      816
+    ]
+  },
+  {
+    "file": "09_miks_triangle_solo_7000x7000.png",
+    "bytes": 5261283,
+    "sha256": "60bfe93615f108f90ede6a439064e7cd0244401da8501831bf3c6ba55e9b9586",
+    "source_dimensions": [
+      1366,
+      768
+    ]
+  },
+  {
+    "file": "10_miks_missing_earbud_7000x7000.png",
+    "bytes": 5702903,
+    "sha256": "67e254d9160d7fa4c6fdd62c2fe111282a6bcbd61b737824e649005c702941e8",
+    "source_dimensions": [
+      1366,
+      768
+    ]
+  }
+]

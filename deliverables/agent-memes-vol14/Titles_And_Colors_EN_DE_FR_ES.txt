@@ -1,0 +1,189 @@
+# العناوين والألوان مجمعة — مجموعة الميمز Vol.14
+
+١٠ تصاميم؛ العناوين بالأربع لغات مع لون اللبس وكود HEX. الألوان مرجع شاشة وليست ضمانًا لدرجة القماش.
+
+| رقم | التصميم | العنوان الإنجليزي | لون اللبس | HEX |
+|---|---|---|---|---|
+| 01 | فايس والبالونة اللي نامت | Vyse Has a Small Problem With Balloons | حجري عاجي | #E6DDCF |
+| 02 | فايس والصبارة الصغيرة | Vyse Is Taking Gardening Very Seriously | رمادي لافندر فاتح | #DEDCE7 |
+| 03 | تيجو والريموت المحير | Tejo Has Questions About the Remote | أزرق بترولي | #314853 |
+| 04 | تيجو والطيارة الورق | Tejo Meets the Complicated Art of Paper | أزرق رمادي غامق | #334953 |
+| 05 | وايلاي والنور الزيادة | Waylay Needs Shades for Her Own Light | حجري فاتح | #DDDCD4 |
+| 06 | وايلاي ورباط الجزمة | Waylay Has Been Delayed by a Shoelace | كريمي حجري | #E2DCD0 |
+| 07 | فيتو وغطا برطمان المخلل | Veto Has Met a Very Stubborn Lid | عاجي رملي | #E5DED0 |
+| 08 | فيتو والقفاز الصغير | Veto Ordered the Wrong Size Mitten | بيج عاجي | #E9E1D3 |
+| 09 | ميكس وصولو المثلث | Miks Is Preparing a Very Serious Solo | كريمي دافي | #E7DFD0 |
+| 10 | ميكس والسماعة المختفية | Miks Is Looking Everywhere Except His Hood | عاجي رمادي | #E3DDCD |
+
+## 01 — فايس والبالونة اللي نامت
+
+لون اللبس: حجري عاجي — #E6DDCF
+
+English
+Vyse Has a Small Problem With Balloons
+
+Deutsch
+Vyse hat ein kleines Problem mit Luftballons
+
+Français
+Vyse rencontre un petit problème de ballon
+
+Español
+Vyse tiene un pequeño problema con los globos
+
+
+## 02 — فايس والصبارة الصغيرة
+
+لون اللبس: رمادي لافندر فاتح — #DEDCE7
+
+English
+Vyse Is Taking Gardening Very Seriously
+
+Deutsch
+Vyse nimmt die Gartenarbeit wirklich sehr ernst
+
+Français
+Vyse prend le jardinage beaucoup trop au sérieux
+
+Español
+Vyse se toma el jardín muy en serio
+
+
+## 03 — تيجو والريموت المحير
+
+لون اللبس: أزرق بترولي — #314853
+
+English
+Tejo Has Questions About the Remote
+
+Deutsch
+Tejo hat Fragen zu dieser kleinen Fernbedienung
+
+Français
+Tejo a quelques questions sur cette télécommande
+
+Español
+Tejo tiene preguntas sobre este mando
+
+
+## 04 — تيجو والطيارة الورق
+
+لون اللبس: أزرق رمادي غامق — #334953
+
+English
+Tejo Meets the Complicated Art of Paper
+
+Deutsch
+Tejo entdeckt die komplizierte Kunst des Papierfaltens
+
+Français
+Tejo découvre la science compliquée du papier
+
+Español
+Tejo descubre el complicado arte del papel
+
+
+## 05 — وايلاي والنور الزيادة
+
+لون اللبس: حجري فاتح — #DDDCD4
+
+English
+Waylay Needs Shades for Her Own Light
+
+Deutsch
+Waylay braucht eine Sonnenbrille fürs eigene Licht
+
+Français
+Waylay se protège de sa propre lumière
+
+Español
+Waylay necesita gafas para su propia luz
+
+
+## 06 — وايلاي ورباط الجزمة
+
+لون اللبس: كريمي حجري — #E2DCD0
+
+English
+Waylay Has Been Delayed by a Shoelace
+
+Deutsch
+Waylay wird von einem Schnürsenkel aufgehalten
+
+Français
+Waylay est retardée par un simple lacet
+
+Español
+Waylay se retrasa por un simple cordón
+
+
+## 07 — فيتو وغطا برطمان المخلل
+
+لون اللبس: عاجي رملي — #E5DED0
+
+English
+Veto Has Met a Very Stubborn Lid
+
+Deutsch
+Veto trifft auf einen sehr eigensinnigen Deckel
+
+Français
+Veto rencontre un couvercle vraiment très têtu
+
+Español
+Veto encuentra una tapa demasiado testaruda
+
+
+## 08 — فيتو والقفاز الصغير
+
+لون اللبس: بيج عاجي — #E9E1D3
+
+English
+Veto Ordered the Wrong Size Mitten
+
+Deutsch
+Veto hat die falsche Handschuhgröße bestellt
+
+Français
+Veto a commandé la mauvaise taille de moufle
+
+Español
+Veto pidió la talla equivocada de manopla
+
+
+## 09 — ميكس وصولو المثلث
+
+لون اللبس: كريمي دافي — #E7DFD0
+
+English
+Miks Is Preparing a Very Serious Solo
+
+Deutsch
+Miks bereitet ein sehr ernstes Solo vor
+
+Français
+Miks prépare un solo vraiment très sérieux
+
+Español
+Miks prepara un solo de lo más serio
+
+
+## 10 — ميكس والسماعة المختفية
+
+لون اللبس: عاجي رمادي — #E3DDCD
+
+English
+Miks Is Looking Everywhere Except His Hood
+
+Deutsch
+Miks sucht überall außer auf seiner Kapuze
+
+Français
+Miks cherche partout sauf sur sa capuche
+
+Español
+Miks busca por todas partes menos arriba
+
+---
+
+فان آرت غير رسمي؛ ملفات البيانات ليست تصريحًا للبيع التجاري.
