@@ -1,0 +1,212 @@
+[
+  {
+    "file": "01_jett_fitted_sheet_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1542,
+      237,
+      5458,
+      6763
+    ],
+    "transparent_pixels": 32985459,
+    "partial_alpha_pixels": 1012771,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "02_sage_plant_rescue_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      257,
+      237,
+      6735,
+      6763
+    ],
+    "transparent_pixels": 26394976,
+    "partial_alpha_pixels": 2597944,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "03_omen_lint_roller_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1166,
+      237,
+      5834,
+      6763
+    ],
+    "transparent_pixels": 31854392,
+    "partial_alpha_pixels": 1179308,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "04_raze_flatpack_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      544,
+      6763,
+      6456
+    ],
+    "transparent_pixels": 30587964,
+    "partial_alpha_pixels": 1494106,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "05_killjoy_usb_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1365,
+      237,
+      5629,
+      6763
+    ],
+    "transparent_pixels": 28951119,
+    "partial_alpha_pixels": 867576,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "06_cypher_magnifying_glass_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      531,
+      237,
+      6469,
+      6763
+    ],
+    "transparent_pixels": 25748447,
+    "partial_alpha_pixels": 1205298,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "07_phoenix_burnt_toast_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1344,
+      237,
+      5649,
+      6763
+    ],
+    "transparent_pixels": 35246151,
+    "partial_alpha_pixels": 1069366,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "08_gekko_wingman_puzzle_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      353,
+      237,
+      6647,
+      6763
+    ],
+    "transparent_pixels": 24160949,
+    "partial_alpha_pixels": 1449955,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "09_yoru_bubble_wrap_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      1987,
+      237,
+      5013,
+      6763
+    ],
+    "transparent_pixels": 36803616,
+    "partial_alpha_pixels": 919458,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "10_fade_alarm_clock_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      674,
+      237,
+      6326,
+      6763
+    ],
+    "transparent_pixels": 27924434,
+    "partial_alpha_pixels": 1142639,
+    "corner_alpha_zero": true
+  }
+]

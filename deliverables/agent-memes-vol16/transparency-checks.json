@@ -1,0 +1,215 @@
+[
+  {
+    "file": "01_jett_fitted_sheet.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      450,
+      768
+    ],
+    "background_components": [
+      288,
+      291,
+      292
+    ],
+    "internal_background_pixels_removed": 1135,
+    "bounding_box": [
+      9,
+      31,
+      437,
+      747
+    ]
+  },
+  {
+    "file": "02_sage_plant_rescue.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      14,
+      182
+    ],
+    "internal_background_pixels_removed": 1095,
+    "bounding_box": [
+      324,
+      56,
+      960,
+      697
+    ]
+  },
+  {
+    "file": "03_omen_lint_roller.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      20
+    ],
+    "internal_background_pixels_removed": 629,
+    "bounding_box": [
+      450,
+      34,
+      955,
+      742
+    ]
+  },
+  {
+    "file": "04_raze_flatpack.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      48
+    ],
+    "internal_background_pixels_removed": 2633,
+    "bounding_box": [
+      397,
+      22,
+      1207,
+      755
+    ]
+  },
+  {
+    "file": "05_killjoy_usb.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      62
+    ],
+    "internal_background_pixels_removed": 267,
+    "bounding_box": [
+      483,
+      46,
+      934,
+      738
+    ]
+  },
+  {
+    "file": "06_cypher_magnifying_glass.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      91,
+      92,
+      95,
+      97
+    ],
+    "internal_background_pixels_removed": 735,
+    "bounding_box": [
+      363,
+      18,
+      1034,
+      756
+    ]
+  },
+  {
+    "file": "07_phoenix_burnt_toast.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      462,
+      39,
+      919,
+      734
+    ]
+  },
+  {
+    "file": "08_gekko_wingman_puzzle.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      12,
+      14
+    ],
+    "internal_background_pixels_removed": 573,
+    "bounding_box": [
+      446,
+      71,
+      1062,
+      710
+    ]
+  },
+  {
+    "file": "09_yoru_bubble_wrap.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [],
+    "internal_background_pixels_removed": 0,
+    "bounding_box": [
+      540,
+      28,
+      868,
+      740
+    ]
+  },
+  {
+    "file": "10_fade_alarm_clock.png",
+    "source_dimensions": [
+      1408,
+      768
+    ],
+    "working_dimensions": [
+      1408,
+      768
+    ],
+    "background_components": [
+      299
+    ],
+    "internal_background_pixels_removed": 1863,
+    "bounding_box": [
+      445,
+      40,
+      1059,
+      750
+    ]
+  }
+]

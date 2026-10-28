@@ -1,0 +1,3286 @@
+{
+  "total_tags": 600,
+  "maximum_words": 2,
+  "validation": [
+    {
+      "design": "01_jett_fitted_sheet",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Jett meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "fitted sheet",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tangled laundry",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "bed making",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "peach fabric",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "white hair",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "cyan hood",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "grumpy face",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "folding fail",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "domestic chaos",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "01_jett_fitted_sheet",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Jett Meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Spannbettlaken",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "Wäschechaos",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "Bettenmachen",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "pfirsichfarbener Stoff",
+          "words": 2,
+          "characters": 22
+        },
+        {
+          "tag": "weißes Haar",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "türkise Kapuze",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "genervter Blick",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Faltpanne",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "Haushaltsfrust",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "01_jett_fitted_sheet",
+      "language": "Français",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "mème Jett",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "drap-housse",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "linge emmêlé",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "literie",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "tissu pêche",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "cheveux blancs",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "capuche turquoise",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "air agacé",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "pliage raté",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "ménage",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "01_jett_fitted_sheet",
+      "language": "Español",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "meme Jett",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "sábana ajustable",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "ropa enredada",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "hacer camas",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "tela salmón",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "pelo blanco",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "capucha turquesa",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cara molesta",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "doblado imposible",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "caos doméstico",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "02_sage_plant_rescue",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Sage meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "plant rescue",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "drooping leaves",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "terracotta pot",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "healing orb",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "black ponytail",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "teal robe",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "worried face",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "houseplant",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "plant parent",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "02_sage_plant_rescue",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Sage Meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Pflanzenrettung",
+          "words": 1,
+          "characters": 15
+        },
+        {
+          "tag": "hängende Blätter",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Terrakottatopf",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "Heilkugel",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "schwarzer Pferdeschwanz",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "türkisfarbenes Gewand",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "besorgter Blick",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Zimmerpflanze",
+          "words": 1,
+          "characters": 13
+        },
+        {
+          "tag": "Pflanzenliebe",
+          "words": 1,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "02_sage_plant_rescue",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Sage",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "sauvetage végétal",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "feuilles tombantes",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "pot brun",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "orbe guérisseur",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "cheveux attachés",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "tenue turquoise",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "air inquiet",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "plante verte",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "amour végétal",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "02_sage_plant_rescue",
+      "language": "Español",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "meme Sage",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "rescate vegetal",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "hojas caídas",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "maceta terracota",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "orbe curativo",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "coleta negra",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "túnica turquesa",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "cara preocupada",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "planta interior",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "amor vegetal",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "03_omen_lint_roller",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Omen meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "lint roller",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "lavender fluff",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "dark cloak",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "purple armor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cyan eyes",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "hooded figure",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "cleaning day",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "fabric care",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "quiet frustration",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "03_omen_lint_roller",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Omen Meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Fusselrolle",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "lavendelfarbene Fusseln",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "dunkler Umhang",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "lila Rüstung",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cyanfarbene Augen",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Kapuzenfigur",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "Putztag",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Stoffpflege",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "stiller Frust",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "03_omen_lint_roller",
+      "language": "Français",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "mème Omen",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "rouleau adhésif",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "peluches lavande",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cape sombre",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "armure violette",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "yeux cyan",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "silhouette encapuchonnée",
+          "words": 2,
+          "characters": 24
+        },
+        {
+          "tag": "nettoyage",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "entretien textile",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "frustration silencieuse",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "03_omen_lint_roller",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "meme Omen",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "rodillo adhesivo",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "pelusas lavanda",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "capa oscura",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "armadura violeta",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "ojos cian",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "figura encapuchada",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "limpieza",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "cuidado textil",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "frustración silenciosa",
+          "words": 2,
+          "characters": 22
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "04_raze_flatpack",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Raze meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "flatpack furniture",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "hex key",
+          "words": 2,
+          "characters": 7
+        },
+        {
+          "tag": "loose leg",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "wooden stool",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "orange cap",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "headphones",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "olive trousers",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "puzzled face",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "assembly fail",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "04_raze_flatpack",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Raze Meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Möbelbausatz",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "Inbusschlüssel",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "loses Stuhlbein",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Holzhocker",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "orange Kappe",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Kopfhörer",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "olivgrüne Hose",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "ratloser Blick",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Aufbaupanne",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "04_raze_flatpack",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Raze",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "meuble démonté",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "clé hexagonale",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "pied détaché",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tabouret",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "casquette orange",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "casque audio",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "pantalon olive",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "air perplexe",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "montage raté",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "04_raze_flatpack",
+      "language": "Español",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "meme Raze",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "mueble desmontado",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "llave hexagonal",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "pata suelta",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "taburete",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "gorra naranja",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "auriculares",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "pantalón oliva",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "cara desconcertada",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "montaje fallido",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "05_killjoy_usb",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Killjoy meme",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "USB plug",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "purple hub",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "green beanie",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "round glasses",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "yellow jacket",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "crossed legs",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tiny connector",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "puzzled face",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tech trouble",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "05_killjoy_usb",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Killjoy Meme",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "USB Stecker",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "lila Hub",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "grüne Mütze",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "runde Brille",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "gelbe Jacke",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "Schneidersitz",
+          "words": 1,
+          "characters": 13
+        },
+        {
+          "tag": "kleiner Anschluss",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "ratloser Blick",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Technikfrust",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "05_killjoy_usb",
+      "language": "Français",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "mème Killjoy",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "prise USB",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "hub violet",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "bonnet vert",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "lunettes rondes",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "veste jaune",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "jambes croisées",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "petit connecteur",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "air perplexe",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "souci technique",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "05_killjoy_usb",
+      "language": "Español",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "meme Killjoy",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "conector USB",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "concentrador violeta",
+          "words": 2,
+          "characters": 20
+        },
+        {
+          "tag": "gorro verde",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "gafas redondas",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "chaqueta amarilla",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "piernas cruzadas",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "conexión pequeña",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cara desconcertada",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "problema técnico",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_magnifying_glass",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Cypher meme",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "magnifying glass",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "purple button",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tiny clue",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "cream hat",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "blue goggles",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "masked detective",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "beige coat",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "crouching pose",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "serious inspection",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_magnifying_glass",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Cypher Meme",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "Lupe",
+          "words": 1,
+          "characters": 4
+        },
+        {
+          "tag": "lila Knopf",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "winzige Spur",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cremefarbener Hut",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "blaue Brille",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "maskierter Detektiv",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "beiger Mantel",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "geduckte Pose",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "ernste Untersuchung",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_magnifying_glass",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Cypher",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "loupe",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "bouton violet",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "indice minuscule",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "chapeau crème",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "lunettes bleues",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "détective masqué",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "manteau beige",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "pose accroupie",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "inspection sérieuse",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_magnifying_glass",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "meme Cypher",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "lupa",
+          "words": 1,
+          "characters": 4
+        },
+        {
+          "tag": "botón violeta",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "pista diminuta",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "sombrero crema",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "gafas azules",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "detective enmascarado",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "abrigo beige",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "postura agachada",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "inspección seria",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_burnt_toast",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Phoenix meme",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "burnt toast",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "mint plate",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "butter knife",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tiny smoke",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "white jacket",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "orange curls",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "embarrassed face",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "breakfast fail",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "kitchen mishap",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_burnt_toast",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Phoenix Meme",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "verbrannter Toast",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "mintgrüner Teller",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Buttermesser",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "kleiner Rauch",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "weiße Jacke",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "orange Locken",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "verlegener Blick",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Frühstückspanne",
+          "words": 1,
+          "characters": 15
+        },
+        {
+          "tag": "Küchenchaos",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_burnt_toast",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Phoenix",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "toast brûlé",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "assiette menthe",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "couteau",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "petite fumée",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "veste blanche",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "boucles orange",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "air gêné",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "petit déjeuner",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "accident culinaire",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_burnt_toast",
+      "language": "Español",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "meme Phoenix",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tostadas quemadas",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "plato menta",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "cuchillo",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "humo tenue",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "chaqueta blanca",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "rizos naranja",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "cara avergonzada",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "desayuno fallido",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "desastre culinario",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "08_gekko_wingman_puzzle",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Gekko meme",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Wingman",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "puzzle pieces",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "mismatched shapes",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "teal piece",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "pink piece",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "green hair",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "purple vest",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "teamwork trouble",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "confused face",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "08_gekko_wingman_puzzle",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Gekko Meme",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Wingman",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Puzzleteile",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "unpassende Formen",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "türkises Teil",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "rosa Teil",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "grünes Haar",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "lila Weste",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Teamwork Panne",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "verwirrter Blick",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "08_gekko_wingman_puzzle",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Gekko",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Wingman",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "pièces dépareillées",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "formes incompatibles",
+          "words": 2,
+          "characters": 20
+        },
+        {
+          "tag": "pièce turquoise",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "pièce rose",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "cheveux verts",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "gilet violet",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "équipe perplexe",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "air confus",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "08_gekko_wingman_puzzle",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "meme Gekko",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Wingman",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "piezas",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "formas incompatibles",
+          "words": 2,
+          "characters": 20
+        },
+        {
+          "tag": "pieza turquesa",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "pieza rosa",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "pelo verde",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "chaleco violeta",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "equipo desconcertado",
+          "words": 2,
+          "characters": 20
+        },
+        {
+          "tag": "cara confusa",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "09_yoru_bubble_wrap",
+      "language": "English",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Yoru meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "bubble wrap",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "tiny pop",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "blue jacket",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "spiky hair",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "orange trim",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "focused face",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "satisfying hobby",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "packing break",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "blue sneakers",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "09_yoru_bubble_wrap",
+      "language": "Deutsch",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "Yoru Meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Luftpolsterfolie",
+          "words": 1,
+          "characters": 16
+        },
+        {
+          "tag": "kleines Ploppen",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "blaue Jacke",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "stacheliges Haar",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "orange Besätze",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "konzentrierter Blick",
+          "words": 2,
+          "characters": 20
+        },
+        {
+          "tag": "befriedigendes Hobby",
+          "words": 2,
+          "characters": 20
+        },
+        {
+          "tag": "Verpackungspause",
+          "words": 1,
+          "characters": 16
+        },
+        {
+          "tag": "blaue Sneaker",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "09_yoru_bubble_wrap",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Yoru",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "papier bulle",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "petit éclatement",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "veste bleue",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "cheveux hérissés",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "bordure orange",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "air concentré",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "plaisir simple",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "pause emballage",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "baskets bleues",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "09_yoru_bubble_wrap",
+      "language": "Español",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "meme Yoru",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "plástico burbujas",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "pequeño estallido",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "chaqueta azul",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "pelo puntiagudo",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "ribetes naranja",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "cara concentrada",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "placer sencillo",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "pausa embalaje",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "zapatillas azules",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "10_fade_alarm_clock",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Fade meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "alarm clock",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "mint green",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "sleepy face",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "white forelock",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "black hair",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "teal accents",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "lavender cushion",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "tired eyes",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "morning mood",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "10_fade_alarm_clock",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Fade Meme",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Wecker",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "Mintgrün",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "schläfriger Blick",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "weiße Stirnsträhne",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "schwarzes Haar",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "türkise Akzente",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "lavendelfarbenes Kissen",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "müde Augen",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Morgenstimmung",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "10_fade_alarm_clock",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "mème Fade",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "réveil",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "vert menthe",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "air endormi",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "mèche blanche",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "cheveux noirs",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "touches turquoise",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "coussin lavande",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "yeux fatigués",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "humeur matinale",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "10_fade_alarm_clock",
+      "language": "Español",
+      "title_words": 6,
+      "tags": [
+        {
+          "tag": "meme Fade",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "despertador",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "verde menta",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "cara somnolienta",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "mechón blanco",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "pelo negro",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "detalles turquesa",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "cojín lavanda",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "ojos cansados",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "humor matinal",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    }
+  ]
+}

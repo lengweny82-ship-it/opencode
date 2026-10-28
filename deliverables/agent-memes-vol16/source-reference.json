@@ -1,0 +1,129 @@
+[
+  {
+    "design": "01_jett_fitted_sheet",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": [
+      480,
+      0,
+      930,
+      768
+    ],
+    "native_sha256": "56101731116e829680efde06c8964423c021aa7213565a2b3e6149f92003527a",
+    "native": "sources/native/01_jett_fitted_sheet.png",
+    "cutout": "sources/cutout/01_jett_fitted_sheet.png",
+    "cutout_sha256": "483bbdd85061ac71c742afb075084368a647dca69f9311bbf107b376ea2a81c7",
+    "working-crop": "sources/working-crop/01_jett_fitted_sheet.png",
+    "working-crop_sha256": "164dd252b06df5836022302d1bb3b7acaa61f1f2a01b6244cf3d31f9c0016ee1"
+  },
+  {
+    "design": "02_sage_plant_rescue",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "ed5f3a1711121997cf1ab57ed01725585d81f562800d3a3011da9972f1caef45",
+    "native": "sources/native/02_sage_plant_rescue.png",
+    "cutout": "sources/cutout/02_sage_plant_rescue.png",
+    "cutout_sha256": "82984cce9ba672177f03bfa4adbd8f41c10822d0cb14d2cb11d7b438903e8af8"
+  },
+  {
+    "design": "03_omen_lint_roller",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "4ee8f05eb94857fbf28813d0579d59cec3109be848006ae1788086ba00b0193a",
+    "native": "sources/native/03_omen_lint_roller.png",
+    "cutout": "sources/cutout/03_omen_lint_roller.png",
+    "cutout_sha256": "8fbb848b45d7f50aa961940033105206efc3c46436d8c8c791abdaddc46214e8"
+  },
+  {
+    "design": "04_raze_flatpack",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "0b62117d016920cb77950762bc93912ade94f008b37cd1145041087378413bcd",
+    "native": "sources/native/04_raze_flatpack.png",
+    "cutout": "sources/cutout/04_raze_flatpack.png",
+    "cutout_sha256": "4300842070be091ab5cf16436f44c691a6802a856059f2035ed631f5e7797b24"
+  },
+  {
+    "design": "05_killjoy_usb",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "c9696c1363c9fd6c6e0f63945580ad07b0023f03987912dbfecddd40b9d1af81",
+    "native": "sources/native/05_killjoy_usb.png",
+    "cutout": "sources/cutout/05_killjoy_usb.png",
+    "cutout_sha256": "ed542166d37a9bdb93edad5be914eb998476b98d7b22e4986e64572f355d8543"
+  },
+  {
+    "design": "06_cypher_magnifying_glass",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "e8fa43eb093766bccfa482f5e57d48ef558b12cb1cffcb3892bca8f5c7b60089",
+    "native": "sources/native/06_cypher_magnifying_glass.png",
+    "cutout": "sources/cutout/06_cypher_magnifying_glass.png",
+    "cutout_sha256": "55b77d9d11eaf9b18b91769bd0e9cfa3d4a824c0bcec222bd907fdb09c18e713"
+  },
+  {
+    "design": "07_phoenix_burnt_toast",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "718e6eb40bf8e7bad31831c4c0feb8684aeaa1852b714b6dbb7b21fd2d5f8e7b",
+    "native": "sources/native/07_phoenix_burnt_toast.png",
+    "cutout": "sources/cutout/07_phoenix_burnt_toast.png",
+    "cutout_sha256": "27dc5a63b49f75214507d17f7bd544c0a0fba5da9a195ba4b4cf8f820dfba461"
+  },
+  {
+    "design": "08_gekko_wingman_puzzle",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "f628232775f754698c75b1412dde47849d5a27b250e719dcbef2decff77ae771",
+    "native": "sources/native/08_gekko_wingman_puzzle.png",
+    "cutout": "sources/cutout/08_gekko_wingman_puzzle.png",
+    "cutout_sha256": "8f13d5180cea04ba4b27a45f26be2e19bba3731c0bb5e91e4ca846b789d6f88d"
+  },
+  {
+    "design": "09_yoru_bubble_wrap",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "93c53148e32e2b2b4e4e560659ab66c24ebe1cdffc4f7874c360c01328bb4280",
+    "native": "sources/native/09_yoru_bubble_wrap.png",
+    "cutout": "sources/cutout/09_yoru_bubble_wrap.png",
+    "cutout_sha256": "54fa9dc6cb1f79fa5d62656b711f3781c228478539f5708b04d19dba81568672"
+  },
+  {
+    "design": "10_fade_alarm_clock",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "184a5c0fc7f7eb8492f468622382e078cc0225727db1e167025d084e6893aa80",
+    "native": "sources/native/10_fade_alarm_clock.png",
+    "cutout": "sources/cutout/10_fade_alarm_clock.png",
+    "cutout_sha256": "c5502d6294b37c620db607449ca22de59e03e79cfda8eaf82614190260d42f9d"
+  }
+]
