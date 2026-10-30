@@ -1,0 +1,2958 @@
+{
+  "total_tags": 540,
+  "maximum_words": 2,
+  "validation": [
+    {
+      "design": "01_raze_killjoy_repair",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Raze Killjoy",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "wooden mallet",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tiny screwdriver",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "lavender box",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "green beanie",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "orange cap",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "round glasses",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "repair job",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "skeptical look",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "eager helper",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "01_raze_killjoy_repair",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Raze Killjoy",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Holzhammer",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "kleiner Schraubendreher",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "lavendelfarbene Box",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "grüne Mütze",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "orange Kappe",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "runde Brille",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Reparatur",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "skeptischer Blick",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "eifrige Hilfe",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "01_raze_killjoy_repair",
+      "language": "Français",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Raze Killjoy",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "maillet",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "petit tournevis",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "boîte lavande",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "bonnet vert",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "casquette orange",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "lunettes rondes",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "réparation",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "regard sceptique",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "aide enthousiaste",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "01_raze_killjoy_repair",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Raze Killjoy",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "mazo madera",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "destornillador pequeño",
+          "words": 2,
+          "characters": 22
+        },
+        {
+          "tag": "caja lavanda",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "gorro verde",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "gorra naranja",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "gafas redondas",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "reparación",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "mirada escéptica",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "ayuda entusiasta",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "02_sage_hush_hotpot",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Sage Hush",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "hotpot",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "floating noodle",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "pink telekinesis",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "red bowl",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "pearl hair",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "black ponytail",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "teal robe",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "tiny chopsticks",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "dinner delay",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "02_sage_hush_hotpot",
+      "language": "Deutsch",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Sage Hush",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Feuertopf",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "schwebende Nudel",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "rosa Telekinese",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "rote Schüssel",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "perlmuttfarbenes Haar",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "schwarzer Pferdeschwanz",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "türkisfarbenes Gewand",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "kleine Essstäbchen",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "verspätetes Abendessen",
+          "words": 2,
+          "characters": 22
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "02_sage_hush_hotpot",
+      "language": "Français",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Sage Hush",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "fondue chinoise",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "nouille flottante",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "télékinésie rose",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "bol rouge",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "cheveux nacrés",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "cheveux attachés",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "tenue turquoise",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "petites baguettes",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "dîner retardé",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "02_sage_hush_hotpot",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Sage Hush",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "hotpot",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "fideo flotante",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "telequinesis rosa",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "cuenco rojo",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "pelo nacarado",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "coleta negra",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "túnica turquesa",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "palillos pequeños",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "cena retrasada",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "03_brimstone_breach_armwrestle",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Brimstone Breach",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "arm wrestling",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "cracked table",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "orange beret",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "ginger beard",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "mechanical arms",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "wooden stools",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "navy vest",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "green vest",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "friendly rivalry",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "03_brimstone_breach_armwrestle",
+      "language": "Deutsch",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Brimstone Breach",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Armdrücken",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "gerissener Tisch",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "orangefarbenes Barett",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "roter Bart",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "mechanische Arme",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Holzhocker",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "marineblaue Weste",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "grüne Weste",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "freundschaftliche Rivalität",
+          "words": 2,
+          "characters": 27
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "03_brimstone_breach_armwrestle",
+      "language": "Français",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Brimstone Breach",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "duel",
+          "words": 1,
+          "characters": 4
+        },
+        {
+          "tag": "table fissurée",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "béret orange",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "barbe rousse",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "bras mécaniques",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "tabourets",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "gilet marine",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "gilet vert",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "rivalité amicale",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "03_brimstone_breach_armwrestle",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Brimstone Breach",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "pulso",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "mesa agrietada",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "boina naranja",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "barba pelirroja",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "brazos mecánicos",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "taburetes madera",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "chaleco marino",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "chaleco verde",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "rivalidad amistosa",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "04_jett_neon_last_slice",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Jett Neon",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "last slice",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "pizza standoff",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "melted cheese",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "white bun",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "blue pigtails",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "yellow streaks",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "cyan top",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "stubborn looks",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "snack rivalry",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "04_jett_neon_last_slice",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Jett Neon",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "letztes Pizzastück",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Pizzastreit",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "geschmolzener Käse",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "weißer Dutt",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "blaue Zöpfe",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "gelbe Strähnen",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "türkises Oberteil",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "sture Blicke",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Snackrivalität",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "04_jett_neon_last_slice",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Jett Neon",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "dernière part",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "duel pizza",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "fromage fondu",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "chignon blanc",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "couettes bleues",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "mèches jaunes",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "haut turquoise",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "regards têtus",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "rivalité gourmande",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "04_jett_neon_last_slice",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Jett Neon",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "última porción",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "duelo pizzero",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "queso fundido",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "moño blanco",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "coletas azules",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "mechones amarillos",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "top turquesa",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "miradas tercas",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "rivalidad golosa",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "05_omen_fade_knitting",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Omen Fade",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "knitting needles",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "lavender yarn",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tiny scarf",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "sleeping friend",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "cyan eyes",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "white forelock",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "dark cloak",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "cozy break",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "quiet teamwork",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "05_omen_fade_knitting",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Omen Fade",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "Stricknadeln",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "lavendelfarbene Wolle",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "kleiner Schal",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "schlafende Freundin",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "cyanfarbene Augen",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "weiße Stirnsträhne",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "dunkler Umhang",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "gemütliche Pause",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "stille Teamarbeit",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "05_omen_fade_knitting",
+      "language": "Français",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Omen Fade",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "aiguilles",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "laine lavande",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "petite écharpe",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "amie endormie",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "yeux cyan",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "mèche blanche",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "cape sombre",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "pause douillette",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "équipe tranquille",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "05_omen_fade_knitting",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Omen Fade",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "agujas",
+          "words": 1,
+          "characters": 6
+        },
+        {
+          "tag": "lana lavanda",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "bufanda pequeña",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "amiga dormida",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "ojos cian",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "mechón blanco",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "capa oscura",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "descanso acogedor",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "equipo tranquilo",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_sova_remote_search",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Cypher Sova",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "lost remote",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "owl drone",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "lavender cushion",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "handheld scanner",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "blue goggles",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "mechanical eye",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "cream hat",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "cyan beam",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "serious search",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_sova_remote_search",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Cypher Sova",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "verlorene Fernbedienung",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "Eulendrohne",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "lavendelfarbenes Kissen",
+          "words": 2,
+          "characters": 23
+        },
+        {
+          "tag": "Handscanner",
+          "words": 1,
+          "characters": 11
+        },
+        {
+          "tag": "blaue Brille",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "mechanisches Auge",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "cremefarbener Hut",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "cyanfarbener Lichtstrahl",
+          "words": 2,
+          "characters": 24
+        },
+        {
+          "tag": "ernste Suche",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_sova_remote_search",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Cypher Sova",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "télécommande perdue",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "drone hibou",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "coussin lavande",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "scanner portable",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "lunettes bleues",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "œil mécanique",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "chapeau crème",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "faisceau cyan",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "recherche sérieuse",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "06_cypher_sova_remote_search",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Cypher Sova",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "mando perdido",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "dron búho",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "cojín lavanda",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "escáner portátil",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "gafas azules",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "ojo mecánico",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "sombrero crema",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "haz cian",
+          "words": 2,
+          "characters": 8
+        },
+        {
+          "tag": "búsqueda seria",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_yoru_toast_review",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Phoenix Yoru",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "burnt toast",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "mint plate",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "tiny smoke",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "white jacket",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "orange curls",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "blue hair",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "skeptical look",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "proud cook",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "breakfast review",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_yoru_toast_review",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Phoenix Yoru",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "verbrannter Toast",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "mintgrüner Teller",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "kleiner Rauch",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "weiße Jacke",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "orange Locken",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "blaues Haar",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "skeptischer Blick",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "stolzer Koch",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Frühstückskritik",
+          "words": 1,
+          "characters": 16
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_yoru_toast_review",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Phoenix Yoru",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "toast brûlé",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "assiette menthe",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "petite fumée",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "veste blanche",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "boucles orange",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "cheveux bleus",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "regard sceptique",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cuisinier fier",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "critique culinaire",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "07_phoenix_yoru_toast_review",
+      "language": "Español",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Phoenix Yoru",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tostadas quemadas",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "plato menta",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "humo tenue",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "chaqueta blanca",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "rizos naranja",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "pelo azul",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "mirada escéptica",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cocinero orgulloso",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "crítica culinaria",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "08_chamber_reyna_tiny_tea",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Chamber Reyna",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tiny teacup",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "cream teapot",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "small saucer",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "elegant service",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "navy waistcoat",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "round earrings",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "purple hair",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "unimpressed face",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "tea portions",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "08_chamber_reyna_tiny_tea",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Chamber Reyna",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "winzige Teetasse",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cremefarbene Teekanne",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "kleine Untertasse",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "eleganter Service",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "marineblaue Weste",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "runde Ohrringe",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "lila Haar",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "unbeeindruckter Blick",
+          "words": 2,
+          "characters": 21
+        },
+        {
+          "tag": "Teeportionen",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "08_chamber_reyna_tiny_tea",
+      "language": "Français",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Chamber Reyna",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tasse minuscule",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "théière crème",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "petite soucoupe",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "service élégant",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "gilet marine",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "boucles rondes",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "cheveux violets",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "air blasé",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "petite portion",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "08_chamber_reyna_tiny_tea",
+      "language": "Español",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Chamber Reyna",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "taza diminuta",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tetera crema",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "platillo pequeño",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "servicio elegante",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "chaleco marino",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "pendientes redondos",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "pelo violeta",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cara impasible",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "porción pequeña",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "09_gekko_skye_repotting",
+      "language": "English",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Gekko Skye",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "root ball",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "terracotta pot",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "drooping plant",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "soil crumbs",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "green hair",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "red braid",
+          "words": 2,
+          "characters": 9
+        },
+        {
+          "tag": "muddy cheeks",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "gardening duo",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "repotting trouble",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "gaming humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "cartoon art",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "09_gekko_skye_repotting",
+      "language": "Deutsch",
+      "title_words": 7,
+      "tags": [
+        {
+          "tag": "Gekko Skye",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "Wurzelballen",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "Terrakottatopf",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "hängende Pflanze",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "Erdkrümel",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "grünes Haar",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "roter Zopf",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "schmutzige Wangen",
+          "words": 2,
+          "characters": 17
+        },
+        {
+          "tag": "Gartenduo",
+          "words": 1,
+          "characters": 9
+        },
+        {
+          "tag": "Umtopfprobleme",
+          "words": 1,
+          "characters": 14
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "Chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "Gaming Humor",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "Cartoon",
+          "words": 1,
+          "characters": 7
+        },
+        {
+          "tag": "Fankunst",
+          "words": 1,
+          "characters": 8
+        }
+      ]
+    },
+    {
+      "design": "09_gekko_skye_repotting",
+      "language": "Français",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Gekko Skye",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "motte racinaire",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "pot terracotta",
+          "words": 2,
+          "characters": 14
+        },
+        {
+          "tag": "plante tombante",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "terre éparpillée",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "cheveux verts",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "tresse rousse",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "joues sales",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "duo jardinage",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "rempotage difficile",
+          "words": 2,
+          "characters": 19
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humour gaming",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "illustration",
+          "words": 1,
+          "characters": 12
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    },
+    {
+      "design": "09_gekko_skye_repotting",
+      "language": "Español",
+      "title_words": 8,
+      "tags": [
+        {
+          "tag": "Gekko Skye",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "cepellón",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "maceta terracota",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "planta caída",
+          "words": 2,
+          "characters": 12
+        },
+        {
+          "tag": "tierra suelta",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "pelo verde",
+          "words": 2,
+          "characters": 10
+        },
+        {
+          "tag": "trenza pelirroja",
+          "words": 2,
+          "characters": 16
+        },
+        {
+          "tag": "mejillas sucias",
+          "words": 2,
+          "characters": 15
+        },
+        {
+          "tag": "dúo jardinero",
+          "words": 2,
+          "characters": 13
+        },
+        {
+          "tag": "trasplante difícil",
+          "words": 2,
+          "characters": 18
+        },
+        {
+          "tag": "Valorant",
+          "words": 1,
+          "characters": 8
+        },
+        {
+          "tag": "chibi",
+          "words": 1,
+          "characters": 5
+        },
+        {
+          "tag": "humor gamer",
+          "words": 2,
+          "characters": 11
+        },
+        {
+          "tag": "caricatura",
+          "words": 1,
+          "characters": 10
+        },
+        {
+          "tag": "fan art",
+          "words": 2,
+          "characters": 7
+        }
+      ]
+    }
+  ]
+}

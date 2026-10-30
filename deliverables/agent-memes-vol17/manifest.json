@@ -1,0 +1,83 @@
+[
+  {
+    "file": "01_raze_killjoy_repair_7000x7000.png",
+    "bytes": 5825346,
+    "sha256": "ab0b7b0c8b60fe970ecaa32f8ead500303043dd6dc32797c10f110644f06d99a",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "02_sage_hush_hotpot_7000x7000.png",
+    "bytes": 7786561,
+    "sha256": "81253218a2bad7fa8934041f66febd6ea800da1636884cf662177950bfb45bfa",
+    "source_dimensions": [
+      768,
+      1365
+    ]
+  },
+  {
+    "file": "03_brimstone_breach_armwrestle_7000x7000.png",
+    "bytes": 6835159,
+    "sha256": "0445865a85e0d9287013b5165805b2d6fb6b02ba01534458089b29046c06fc62",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "04_jett_neon_last_slice_7000x7000.png",
+    "bytes": 5732358,
+    "sha256": "fdcfe29b0230be10035b14a8e08e4092e364bde0f07d080b21f1a454fa53ddfd",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "05_omen_fade_knitting_7000x7000.png",
+    "bytes": 4865281,
+    "sha256": "d64e8fc926c5eb108d87112fe47a5d829a9365bd4c0b78c6dce68508543036fd",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "06_cypher_sova_remote_search_7000x7000.png",
+    "bytes": 6544635,
+    "sha256": "3790361f7797f5975320dc165642798cb1bed13cf98dc42901070e0260a69d97",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "07_phoenix_yoru_toast_review_7000x7000.png",
+    "bytes": 7657452,
+    "sha256": "325c1cf19a27fb6a757c20189832256c8bc5c9e330e04184085bc102630361fb",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "08_chamber_reyna_tiny_tea_7000x7000.png",
+    "bytes": 5644459,
+    "sha256": "1382ccbd45fe20708f8ef4779a5522e907fcf1fa68e52d9688c359dcf0f775fc",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  },
+  {
+    "file": "09_gekko_skye_repotting_7000x7000.png",
+    "bytes": 6350605,
+    "sha256": "7489cae776d3f9b03427ce5a471bcf449af2a84c6108f9cddc42b0f28bba21fc",
+    "source_dimensions": [
+      1408,
+      768
+    ]
+  }
+]

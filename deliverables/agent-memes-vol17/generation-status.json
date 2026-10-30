@@ -1,0 +1,28 @@
+{
+  "requested": 10,
+  "completed": 9,
+  "included_designs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "pending": [
+    {
+      "number": 10,
+      "agents": [
+        "Astra",
+        "Harbor"
+      ],
+      "scene": "Astra decorates a cupcake with cosmic stars while Harbor tries to shield it",
+      "reason": "Image generation failed; turn generation limit prevented retry",
+      "image_exists": false
+    }
+  ],
+  "delivery": "partial; ninth is not a substitute for tenth"
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "design": "01_raze_killjoy_repair",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "9bd21c8d1d0aa9d719e91cc00a75a8c9ef2bf6b643aed4611b3b49d59fc3e5f5",
+    "native": "sources/native/01_raze_killjoy_repair.png",
+    "cutout": "sources/cutout/01_raze_killjoy_repair.png",
+    "cutout_sha256": "1a8936e0e2cdd683462d96ed89df79944eea24f66d02fe243f123b80feb5939c"
+  },
+  {
+    "design": "02_sage_hush_hotpot",
+    "native_dimensions": [
+      768,
+      1365
+    ],
+    "crop_box": null,
+    "native_sha256": "49196c451b9fb84fa282cf8a4392dc2d7edc0694c65b3ec7378405a917e14eea",
+    "native": "sources/native/02_sage_hush_hotpot.png",
+    "cutout": "sources/cutout/02_sage_hush_hotpot.png",
+    "cutout_sha256": "c7ca629340176eb4bc76f7e7d5baa4795c1a3470c4af3b4e6201148fc9ab7964"
+  },
+  {
+    "design": "03_brimstone_breach_armwrestle",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "e9db46006b06a940e5921b944202ab21024d335254ff1f3643da2256e919f2ef",
+    "native": "sources/native/03_brimstone_breach_armwrestle.png",
+    "cutout": "sources/cutout/03_brimstone_breach_armwrestle.png",
+    "cutout_sha256": "65a6065fcce523101bd2f7b131a2a4a9718b775f1850ed6a52afe28a9aa54bd1"
+  },
+  {
+    "design": "04_jett_neon_last_slice",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "8ceab17c36505fb0094a47d888cb2d97ab86ca7d74908c86d588f23814bc532c",
+    "native": "sources/native/04_jett_neon_last_slice.png",
+    "cutout": "sources/cutout/04_jett_neon_last_slice.png",
+    "cutout_sha256": "1f6197778656a6454bc52b262c009a6b375ae7e71dc2d387042b2bae4430b56f"
+  },
+  {
+    "design": "05_omen_fade_knitting",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "ec16513eb2640f6cf3f75d9886c39261666b03c3c2c9a3640a243d2f26648bc2",
+    "native": "sources/native/05_omen_fade_knitting.png",
+    "cutout": "sources/cutout/05_omen_fade_knitting.png",
+    "cutout_sha256": "647ad645c82c55b8e2f1e1861415a53ebf46d57ce3030e6602bff811529a9071"
+  },
+  {
+    "design": "06_cypher_sova_remote_search",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "92b521c0d3ab7faddea92a97c290a956a3bea43ae0881ed3af380bac5c73490d",
+    "native": "sources/native/06_cypher_sova_remote_search.png",
+    "cutout": "sources/cutout/06_cypher_sova_remote_search.png",
+    "cutout_sha256": "82f38f4118717d057ddf53936931f96abbe7d3bb5603a3326811c202f850c78d"
+  },
+  {
+    "design": "07_phoenix_yoru_toast_review",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "f65ec0abda3e1112dd4e49858abb3522b161852b1e764ebb05a98112995f01b6",
+    "native": "sources/native/07_phoenix_yoru_toast_review.png",
+    "cutout": "sources/cutout/07_phoenix_yoru_toast_review.png",
+    "cutout_sha256": "ef480fa72d8f547c571a0cbf35b24f59a970a31646698711623c00033f3eecaf"
+  },
+  {
+    "design": "08_chamber_reyna_tiny_tea",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "11bd5be8e6552297a546c7ad1d1502c0c4a913fbee218902617501a8afecd8d1",
+    "native": "sources/native/08_chamber_reyna_tiny_tea.png",
+    "cutout": "sources/cutout/08_chamber_reyna_tiny_tea.png",
+    "cutout_sha256": "d9eeba02fbee5f4986517ec0333ba76b42e7993b4bf3ac452ed295792b90ba72"
+  },
+  {
+    "design": "09_gekko_skye_repotting",
+    "native_dimensions": [
+      1408,
+      768
+    ],
+    "crop_box": null,
+    "native_sha256": "b450419441a08817ab53ec936333253f279af29331fff2c520a1b74d137c4259",
+    "native": "sources/native/09_gekko_skye_repotting.png",
+    "cutout": "sources/cutout/09_gekko_skye_repotting.png",
+    "cutout_sha256": "73d8bd0d7569da1f4530004f6afeb15ae7044085b5e38d7726e9091e7f500bc9"
+  }
+]

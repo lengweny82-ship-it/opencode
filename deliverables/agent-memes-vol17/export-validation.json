@@ -1,0 +1,191 @@
+[
+  {
+    "file": "01_raze_killjoy_repair_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1303,
+      6763,
+      5697
+    ],
+    "transparent_pixels": 33583536,
+    "partial_alpha_pixels": 988817,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "02_sage_hush_hotpot_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      749,
+      237,
+      6244,
+      6763
+    ],
+    "transparent_pixels": 28259150,
+    "partial_alpha_pixels": 1592927,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "03_brimstone_breach_armwrestle_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1665,
+      6763,
+      5328
+    ],
+    "transparent_pixels": 34427453,
+    "partial_alpha_pixels": 1123178,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "04_jett_neon_last_slice_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1406,
+      6763,
+      5594
+    ],
+    "transparent_pixels": 37517734,
+    "partial_alpha_pixels": 1152415,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "05_omen_fade_knitting_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1802,
+      6763,
+      5198
+    ],
+    "transparent_pixels": 36360935,
+    "partial_alpha_pixels": 774955,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "06_cypher_sova_remote_search_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1747,
+      6763,
+      5252
+    ],
+    "transparent_pixels": 35459414,
+    "partial_alpha_pixels": 1965124,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "07_phoenix_yoru_toast_review_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      285,
+      6763,
+      6715
+    ],
+    "transparent_pixels": 25190257,
+    "partial_alpha_pixels": 1729999,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "08_chamber_reyna_tiny_tea_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1050,
+      6763,
+      5943
+    ],
+    "transparent_pixels": 35432851,
+    "partial_alpha_pixels": 1057226,
+    "corner_alpha_zero": true
+  },
+  {
+    "file": "09_gekko_skye_repotting_7000x7000.png",
+    "mode": "RGBA",
+    "size": [
+      7000,
+      7000
+    ],
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bounding_box": [
+      237,
+      1542,
+      6763,
+      5451
+    ],
+    "transparent_pixels": 35214122,
+    "partial_alpha_pixels": 1148894,
+    "corner_alpha_zero": true
+  }
+]
